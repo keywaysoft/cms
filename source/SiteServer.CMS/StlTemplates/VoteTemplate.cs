@@ -54,6 +54,7 @@ $(document).ready(function(e) {
         }
     });
 });
+
 function display_vote_[contentID](data){
      if(typeof(data) == ""string"")
          data = eval(""(""+data+"")"");
