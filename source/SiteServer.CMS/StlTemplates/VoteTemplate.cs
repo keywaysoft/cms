@@ -44,8 +44,14 @@ namespace SiteServer.CMS.StlTemplates
         {
             var script = @"
 $(document).ready(function(e) {
-    $.getJSON(""[serviceUrl]&_r=""+Math.random(), function(data){
+      $.ajax({
+        url: '[serviceUrl]',
+        datatype: 'json',
+        type: 'post',
+        data: {},
+        success: function (data) {
             display_vote_[contentID](data);
+        }
     });
 });
 function display_vote_[contentID](data){
