@@ -1,0 +1,81 @@
+<div class="loopBg">
+	<div class="bd">
+		<ul>
+			<li style="background-image: url({Stl.SiteUrl}/Content/Main/Base/img/body-1.png);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{Stl.SiteUrl}/Content/Main/Base/img/body-1.png',sizingMethod='scale');"></li>
+			<li style="background-image: url({Stl.SiteUrl}/Content/Main/Base/img/body-2.png);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{Stl.SiteUrl}/Content/Main/Base/img/body-2.png',sizingMethod='scale');"></li>
+			<li style="background-image: url({Stl.SiteUrl}/Content/Main/Base/img/body-3.png);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{Stl.SiteUrl}/Content/Main/Base/img/body-3.png',sizingMethod='scale');"></li>
+		</ul>
+	</div>
+	<!--页码 可选-->
+	<div class="hd">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</div>
+<script>
+	$(function() {
+		/*背景轮播*/
+		$(".loopBg").slide({
+			mainCell: ".bd ul",
+			autoPlay: true,
+			mouseOverStop: false,
+			effect: "fold",
+			interTime: 12000,
+			delayTime: 8000,
+			startFun: function(i, c) {
+				$(".bd ul li").eq(i).addClass("on");
+			},
+			endFun: function(i, c) {
+				$(".bd ul li").eq(i).siblings().removeClass("on");
+			}
+		});
+	})
+</script>
+<style>
+	/*背景轮播*/
+	
+	.loopBg {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	.loopBg .bd,
+	.loopBg .bd .tempWrap,
+	.loopBg .bd ul,
+	.loopBg .bd li {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.loopBg .bd li {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	
+	.loopBg .bd .on {
+		animation: bigger 8s linear 0s both;
+	}
+	
+	.loopBg .hd {
+		display: none;
+	}
+	
+	@keyframes bigger {
+		from {
+			transform: scale(1);
+		}
+		to {
+			transform: scale(1.05);
+		}
+	}
+</style>

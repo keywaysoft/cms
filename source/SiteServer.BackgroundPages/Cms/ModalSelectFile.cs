@@ -394,7 +394,7 @@ namespace SiteServer.BackgroundPages.Cms
 		private void FillFileSystemsToList(bool isReload)
 		{
 			var builder = new StringBuilder();
-			builder.Append(@"<table class=""table table-bordered table-hover""><tr class=""info thead""><td>名称</td><td width=""80"">大小</td><td width=""120"">类型</td><td width=""120"">修改日期</td></tr>");
+			builder.Append(@"<table class=""table table-bordered table-hover""><tr class=""warning thead""><td>名称</td><td width=""80"">大小</td><td width=""120"">类型</td><td width=""120"">修改日期</td></tr>");
 			var directoryUrl = PageUtility.GetPublishmentSystemUrlByPhysicalPath(PublishmentSystemInfo, _directoryPath);
 
 			var fileSystemInfoExtendCollection = FileManager.GetFileSystemInfoExtendCollection(_directoryPath, isReload);

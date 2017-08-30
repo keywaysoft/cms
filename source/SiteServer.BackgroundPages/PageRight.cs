@@ -18,7 +18,7 @@ namespace SiteServer.BackgroundPages
         {
             if (IsForbidden) return;
 
-            LtlWelcome.Text = "欢迎使用 SiteServer 管理后台";
+            LtlWelcome.Text = "欢迎使用 WCM 管理后台";
 
             LtlVersionInfo.Text = AppManager.GetFullVersion();
 

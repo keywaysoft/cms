@@ -8,7 +8,7 @@ namespace BaiRong.Core
     {
         private AppManager() { }
 
-        public const string Version = "5.0";
+        public const string Version = "2.0";
 
         public static string GetFullVersion()
         {

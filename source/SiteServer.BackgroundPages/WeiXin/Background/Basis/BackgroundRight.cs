@@ -20,7 +20,7 @@ namespace SiteServer.WeiXin.BackgroundPages
             if (!IsPostBack)
             {
                 BreadCrumb(AppManager.WeiXin.LeftMenu.ID_Accounts, AppManager.WeiXin.LeftMenu.Function.ID_Info, string.Empty, AppManager.WeiXin.Permission.WebSite.Info);
-                ltlWelcome.Text = "欢迎使用 SiteServer WeiXin 微信平台";
+                ltlWelcome.Text = "欢迎使用 WCM WeiXin 微信平台";
 
                 var bindingUrl = ConsoleAccountBinding.GetRedirectUrl(PublishmentSystemID, PageUtils.GetWXUrl(
                     $"background_right.aspx?publishmentSystemID={PublishmentSystemID}"));
