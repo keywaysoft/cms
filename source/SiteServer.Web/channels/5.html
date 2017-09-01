@@ -28,41 +28,45 @@
 
         <div class="topBar">
     <div class="siteWidth">
-        <h1 title="中共安州区委区人民政府门户网站" id="logo2"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo-mini.png" /></a></h1>
+        <h1 title="中共安州区委区人民政府门户网站" id="logo2"><a href="/"><img src="/content/main/base/img/logo-mini.png" /></a></h1>
         <ul class="list">
-            <li class="en"><a href="/english">English</a></li>
+            <li class="en"><a href="javascript:void(0);">English</a></li>
             <li class="phone">
-                <a href="javascript:;">手机版</a>
+                <a href="javascript:void(0);">手机版</a>
                 <div class="pic">
                     <img src="/qrcode/qrcode.gif">
                     <i></i>
                 </div>
             </li>
-            <li class="obstacleFree"><a target="_blank" href="/wca.html">无障碍版</a></li>
+            <li class="obstacleFree"><a target="_blank" href="javascript:void(0);">无障碍版</a></li>
             <li class="wechat">
-                <a href="javascript:;">政务微信</a>
+                <a href="javascript:void(0);">政务微信</a>
                 <div class="pic">
                     <img src='/Content/Main/Base/img/weixin.png' />
                     <i></i>
                 </div>
             </li>
-            <li class="robot"><a href="/znjqr">政务机器人</a></li>
+            <li class="robot"><a href="javascript:void(0);">政务机器人</a></li>
         </ul>
     </div>
     <span class="topBarBg"></span>
 </div>
+<div class="topB"></div>
+<script>
+	$(".topBar li").hover(function() {
+		$(this).addClass("on")
+	}, function() {
+		$(this).removeClass("on")
+	});
+</script>
         <script>
         $(".topBar li").hover(function () { $(this).addClass("on") }, function () { $(this).removeClass("on") });
         </script>
         <!-- header S -->
         <header id="header">
     <div class="headerTop siteWidth">
-
-        <h1 title="中共安州区委区人民政府门户网站" id="logo"><a href="http://www.anxian.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
-
+        <h1 title="中共安州区委区人民政府门户网站" id="logo"><a href="/"><img src="/content/main/base/img/logo.png" /></a></h1>
         <div class="siteSearchBar">
-
-
             <div class="s-form">
                 <input type="hidden" id="sitelist" value="[{&quot;Name&quot;:&quot;全站群&quot;,&quot;Value&quot;:0},{&quot;Name&quot;:&quot;本站&quot;,&quot;Value&quot;:1},{&quot;Name&quot;:&quot;审计局&quot;,&quot;Value&quot;:2},{&quot;Name&quot;:&quot;农业局&quot;,&quot;Value&quot;:18}]" />
                 <input type="hidden" id="siteid" name="sid" value="0">
@@ -83,24 +87,23 @@
             </div>
             <script src="/Content/_Common/FullTextSearch/js/default-site-search-box.js"></script>
             <script>
-            document.getElementById("inputkeyword").onkeydown = function (e) {
-                e = e || window.event;
-                if (e.keyCode == 13) {
-                    gSearch();
-                }
-            };
-
-            function gSearch() {
-                var keyword = document.getElementById('inputkeyword').value;
-                var route = document.getElementById('route').value;
-
-                if (keyword == '' || keyword == "请输入关键字") {
-                    alert("请输入关键字");
-                } else {
-                    var siteid = document.getElementById('siteid').value;
-                    window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
-                }
-            }
+	            document.getElementById("inputkeyword").onkeydown = function (e) {
+	                e = e || window.event;
+	                if (e.keyCode == 13) {
+	                    gSearch();
+	                }
+	            };
+	            function gSearch() {
+	                var keyword = document.getElementById('inputkeyword').value;
+	                var route = document.getElementById('route').value;
+	
+	                if (keyword == '' || keyword == "请输入关键字") {
+	                    alert("请输入关键字");
+	                } else {
+	                    var siteid = document.getElementById('siteid').value;
+	                    window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
+	                }
+	            }
             </script>
         </div>
 
@@ -119,7 +122,7 @@
                 </li>
                 <li class="li1" id="li-zw">
                     <h3 class="h1">
-                        <a href="/channels/6.html" target="_self">政务公开</a>
+                        <a href="/channels/1010.html" target="_self">政务公开</a>
                     </h3>
                 </li>
                 <li class="li1" id="li-fw">
@@ -129,7 +132,7 @@
                 </li>
                 <li class="li1" id="li-hd">
                     <h3 class="h1">
-                        <a href="/channels/4.html" target="_self">公众参与</a>
+                        <a href="/channels/1018.html" target="_self">公众参与</a>
                     </h3>
                 </li>
                 <li class="li1" id="li-sq">
@@ -139,11 +142,14 @@
                 </li>
             </ul>
 
-
-            <span class="tip">点击切换<i class="icon iconfont icon-pointerleft"></i></span>
+			
+            <span class="tip" data-id="政务服务">点击切换<i class="icon iconfont icon-pointerleft"></i></span>
         </nav>
         <script>
-          $(".topNav .h1").prepend("<i></i>")
+        	(function(){
+        		$(".topNav .h1").prepend("<i></i>");
+	          	if($(".topNav .tip").data("id") != "首页")$(".topNav .tip").hide();
+        	})();
         </script>
     </div>
 </header>
@@ -151,14 +157,14 @@
 
         <div id="content">
             <!-- 政务服务 -->
-            <iframe src="/cn/zxbs/index_sl_23449.html" height="482" width="100%" scrolling="no" frameborder="0"></iframe>
+            <iframe src="/gov/GovServiceList.html" height="482" width="100%" scrolling="no" frameborder="0"></iframe>
             <!-- 办件展示 -->
             <div class="bjBox">
                 <div class="hd">
                     <h3>办件展示</h3>
                 </div>
                 <div class="bd">
-                    <iframe src="/cn/fw" width="890" scrolling="no" height="236" frameborder="0" vspace="0" hspace="0" marginheight="0" marginwidth="0"></iframe>
+                    <iframe src="/gov/GovServiceCount.html" width="890" scrolling="no" height="236" frameborder="0" vspace="0" hspace="0" marginheight="0" marginwidth="0"></iframe>
                 </div>
             </div>
             <!-- 办件统计 -->

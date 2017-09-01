@@ -1,0 +1,158 @@
+<footer id="footer">
+	<div class="siteWidth">
+		<div class="footNav">
+
+			<a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
+			<a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
+			<a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
+			<a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
+			<a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
+			<a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
+		</div>
+		<div class="copyRight">
+			<p>
+				安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br />地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br />蜀ICP备12001441号<br /> &nbsp;
+				<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1" />川公网安备 51070302110201号</a>
+			</p>
+			<div class="pics">
+				<a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg" /></a> &nbsp;&nbsp;
+				<script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;
+				<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg" /></a> &nbsp;&nbsp;
+				<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png" /></a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- footer E -->
+<script>
+	(function() {
+                var navST;
+		var navST1;
+		var name = 'mainNav';
+		var t = 200;
+		var type = 1;
+		var removeOn = 'False';
+		var effect = 'fade';
+		var appendItem = '#';
+		var li = "#" + name + " li";
+		var index = 0;
+
+		//滚动事件
+		scrollFun();
+		window.onscroll = function(){
+			scrollFun();	
+		}
+		function scrollFun(){
+			if(getScrollTop() > 100) {
+				$(".topBar").addClass("topHei");
+				$("#logo2").addClass("show");
+			} else {
+				$(".topBar").removeClass("topHei");
+				$("#logo2").removeClass("show");
+			}
+		}
+		function getScrollTop() {
+			var scrollPos;
+			if(window.pageYOffset) {
+				scrollPos = window.pageYOffset;
+			} else if(document.compatMode && document.compatMode != 'BackCompat') {
+				scrollPos = document.documentElement.scrollTop;
+			} else if(document.body) {
+				scrollPos = document.body.scrollTop;
+			}
+			return scrollPos;
+		}
+		
+		//栏目页调整
+		if($(".path").length>0){
+			//当前状态
+   			/*var _url = document.querySelectorAll(".path a")[1].getAttribute("href"),
+				_name = document.querySelectorAll(".path a")[1].innerHTML;*/
+
+                        var _url= "/";
+                        var _name = "首页1";
+                        var _title = $(".sideMenu .hd h3").data("title");
+			//$(".sideMenu .hd h3").html(_name);
+			$(".mainNav .li1 a").each(function(i,e){
+				if($(e).attr("href") == _url){
+					$(e).closest(".li1").addClass("on1").siblings().removeClass("on1");
+					index = i;
+				}
+			})
+                        $(".sideMenu .singleList li a").each(function(i,e){
+				if($(e).html() == _title){
+					$(e).parent().addClass("on");
+				}
+			})
+			//.topBar
+			$(".topBar").addClass("topFixed");
+		}
+		
+
+		//鼠标离开导航后，回复默认.on1类位置
+		$("#" + name)
+			.hover(
+				function() {
+					if(navST1 != null) {
+						clearTimeout(navST1);
+					}
+				},
+				function() {
+					navST1 = setTimeout(function() {
+							$("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
+						},
+						500);
+				}
+			);
+
+		if(type == '1') {
+			li = "#" + name + " .li1";
+		}
+		if(appendItem != '#') { //插入内容
+			var appendHtml = $(appendItem).html();
+			$(li).first().append(appendHtml);
+			$(appendItem).remove();
+		}
+
+		if(type == '3') {
+			$("#" + name + " .on1").find("ul").first().show();
+		}
+
+		$(li)
+			.hover(function() {
+					var curItem = $(this);
+					var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+					$(li).removeClass("on" + onNum);
+					curItem.addClass("on" + onNum);
+					navST = setTimeout(function() { //延时触发
+
+							if($("ul:first", curItem).css("display") != "block") {
+								$(li + " .ul" + onNum).hide();
+								if(effect == 'fade') {
+									$("ul:first", curItem).fadeIn(t);
+								} else {
+									$("ul:first", curItem).slideDown(t);
+								}
+							};
+							navST = null;
+						},
+						t);
+				},
+				function() {
+					if(navST != null) {
+						clearTimeout(navST);
+					}
+					if(type == '1' || type == '2') {
+						if(effect == 'fade') {
+							$(this).find("ul").first().fadeOut(t);
+						} else {
+							$(this).find("ul").first().slideUp(t);
+						}
+					}
+					if(removeOn == 'True') {
+						$(this).removeClass("on1");
+					}
+				},
+				t); //end hover
+	})()
+</script>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="安州区人民政府门户网站,安州区政府,安州" />
+    <meta name="description" content="安州区人民政府门户网站 安州区  安州政府" />
+    <meta name="application-name" content="安州区人民政府门户网站" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true" />
+    <title>{Channel.Title}-{Content.Title}</title>
+    <stl:include file="/include/headLink.html"></stl:include>
+    <link href="/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <div class="wrap">
+      <!--背景轮播-->
+      <stl:include file="/include/bgSlide.html"></stl:include>
+      <!--topBar-->
+      <stl:include file="/include/topBar.html"></stl:include>
+      <!-- header S -->
+      <stl:include file="/include/header.html"></stl:include>
+
+      <!-- content S -->
+      <div id="content">
+        <div class="path">          
+        </div>
+        <!-- side S -->
+        <aside class="side">
+
+          <div id="sideMenu" class="sideMenu">
+            <div class="hd">
+                <!-- <stl:sqlContents connectionString="server=192.168.13.93;uid=sa;pwd=123456;database=anzhou" cellpadding="2">                                <stl:queryString>
+                                    select *from wcm_GovPublicCategory where ClassCode='important'and ParentsCount=0
+                                </stl:queryString>
+                                <h3>
+                                  <a href="{stl.siteUrl}/InfoList.html?Category4ID={sql.CategoryID}"><stl:sqlContent                                                type="CategoryName"></stl:sqlContent></a>
+        
+                                  </h3>
+              </stl:sqlContents>-->
+            </div>
+            <div class="bd">
+              <ul class="singleList">
+                <stl:sqlContents connectionString="server=192.168.13.93;uid=sa;pwd=123456;database=anzhou" cellpadding="2">
+                                <stl:queryString>
+                                    select *from wcm_GovPublicCategory where ClassCode='important'and ParentsCount=0
+                                </stl:queryString>
+                                <li><a href="{stl.siteUrl}/InfoList.html?Category4ID={sql.CategoryID}"><stl:sqlContent type="CategoryName"></stl:sqlContent></a></li>
+                            </stl:sqlContents>
+              </ul>
+            </div>
+          </div>
+          <script>
+//            if(jQuery("#sideMenu .bd li").size() === 0) {
+//              jQuery("#sideMenu").hide();
+//            }
+          </script>
+        </aside>
+        <!-- side E -->
+        <!-- mainContent S -->
+        <div class="mainContent">
+          <div class="mainBox">
+            <div class="mHd">                      
+          
+            </div>
+            <div class="mBd">
+              <!-- 正文内容 S -->
+           <stl:dynamic><stl:sqlContents connectionString="server=192.168.13.93;uid=sa;pwd=123456;database=anzhou" cellpadding="2">
+ <stl:queryString>  select * from model_WCM_GovPublic where Category4ID={request.category4ID} </stl:queryString>
+ <li>
+   <a href="{stl.siteurl}/contents/{sql.NodeID}/{sql.ID}.html" target="_blank" title="{sql.title}">
+   <stl:sqlContent type="Title"></stl:sqlContent>
+     </a>
+   ----- <stl:sqlContent type="AddDate"></stl:sqlContent>  
+  </li>
+ </stl:sqlContents></stl:dynamic>
+              
+              <!-- 正文内容 E -->
+            </div>
+          </div>
+        </div>
+        <!-- mainContent E -->
+      </div>
+      <!-- content E -->
+
+      <stl:include file="/include/footer.html"></stl:include>
+    </div>
+  </body>
+
+</html>

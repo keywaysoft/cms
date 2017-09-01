@@ -11,27 +11,21 @@
     <meta name="format-detection" content="telephone=no, email=no">
     <meta name="HandheldFriendly" content="true" />
     <title>{Channel.Title}-{Content.Title}</title>
-    <link href="{Stl.SiteUrl}/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
-    <link href="{Stl.SiteUrl}/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
-    <link href="{Stl.SiteUrl}/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
-    <link href="{Stl.SiteUrl}/sitefiles/assets/commentInput/style.css" rel="stylesheet" type="text/css" />
-    <script src="{Stl.SiteUrl}/sitefiles/assets/commentInput/script.js" language="javascript"></script>
-    <link href="{Stl.SiteUrl}/Content/_Common/Base/css/power.css" rel="stylesheet" />
-    <script src="{Stl.SiteUrl}/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
-    <script src="{Stl.SiteUrl}/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
-    <!--     <script src="/Content/_Common/Base/js/antiClickjack.js"></script> -->
-    <script src="{Stl.SiteUrl}/Content/_Common/Base/js/webCommon.js"></script>
-    <script src="{Stl.SiteUrl}/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
-    <script src="{Stl.SiteUrl}/Content/_Common/Base/js/StoT.js"></script>
+    <stl:include file="/include/headLink.html"></stl:include>
+    <link href="/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
+    <script src="/Content/_Common/Base/js/qrcode.min.js"></script>
+    <script src="/Content/_Common/Assets/Scripts/jquery.PrintArea.js"></script>
+    <script src="/Content/_Common/Base/js/article.js"></script>
+    
 </head>
 <body>
     <div class="wrap">
         <!--背景轮播-->
-    <stl:include file="/include/bgSlide.html"></stl:include>
-    <!--topBar-->
-    <stl:include file="/include/topBar.html"></stl:include>
-    <!-- header S -->
-    <stl:include file="/include/header.html"></stl:include>
+		<stl:include file="/include/bgSlide.html"></stl:include>
+		<!--topBar-->
+		<stl:include file="/include/topBar.html"></stl:include>
+		<!-- header S -->
+		<stl:include file="/include/header.html"></stl:include>
         
         <!-- content S -->
         <div id="content">
@@ -40,7 +34,7 @@
             </div>
             <!-- 正文内容 S -->
             <article class="articleCon">
-                <div class="printArea" data-power-area='content'>
+                <div class="printArea">
                     <!-- 标题 -->
                     <h2 class="title">
                         <stl:content type="Title"></stl:content>
@@ -50,17 +44,27 @@
                     </div>
                     <!-- 正文 -->
                     <div class="conTxt" data-power-defaultFontSize="16" data-power-defaultLineHeight="2" data-power-imgMaxWidth="800">
-                        <p><stl:content type="Content"></stl:content></p>
-                        
-                        <stl:commentInput></stl:commentInput>
-                        <stl:vote ></stl:vote>
+                        <stl:content type="Content"></stl:content>
                     </div>
                 </div>
-
+                
+                <stl:commentInput></stl:commentInput>
 
                 <div class="qrCode">
-                    扫一扫在手机打开当前页<br /><stl:vote ></stl:vote>
-                    <img src="/qrcode/qrcode.gif" />
+                    扫一扫在手机打开当前页
+                    <div id="qrcodeContent" title="{Stl.CurrentUrl}" style="width:150px;height:150px;margin:0 auto;padding:20px;box-sizing:border-box;"></div>
+                    <script>
+                    	(function() {
+							var qrcode = new QRCode('qrcodeContent', {
+								text: window.location.host + document.getElementById("qrcodeContent").getAttribute("title"),
+								width: 110,
+								height: 110,
+								colorDark : '#000000',
+								colorLight : '#ffffff',
+								correctLevel : QRCode.CorrectLevel.H
+							});
+                    	})();
+                    </script>
                 </div>                
                 <!-- comment -->
 
@@ -86,16 +90,22 @@
                             ~(-new Date() / 36e5)];
                     }
                     </script>
-                    <a href="javascript:;" class="dyBtn" data-power-command="printarea">【打印正文】</a>
+                    <a href="javascript:;" class="dyBtn">【打印正文】</a>
+                    <script>
+                    	$(".dyBtn").on("click",function(){
+                    		$(".printArea").printArea();
+                    	});
+                    </script>
                 </div>
                 <div class="others">
-                    <div class="prev">
-                        <span>shang上一篇：</span><a href="/hd/yqhy/content_105606">网传在川本一批招生高校投档线 省教育考试院辟谣：假的！</a>
-                        <span class="date">[ 2017-07-13 ]</span>
-                    </div>
-                    <div class="next">
-                        <span>下一篇：没有了！</span>
-                    </div>
+                	<st:navigation>
+                		<div class="prev">
+                			<span><stl:navigation tipText="上一篇:" emptyText="没有了" type="PreviousContent"></stl:navigation></span>
+	                    </div>
+	                    <div class="next">
+	                        <span><stl:navigation tipText="下一篇:" emptyText="没有了" type="NextContent"></stl:navigation></span>
+	                    </div>
+                	</st:navigation>
                 </div>
                 <div class="rankWrap">
                     <!-- 点击排行 -->
@@ -105,66 +115,22 @@
                         </div>
                         <div class="bd">
                             <ul class="rankList">
-
-                                <li class="first hot">
-                                    <em class="number">1</em>
-                                    <a href="/xw/rdgz/content_4596" target="_blank" title="标题：安州房产市场发展28条出台 大学生、农民购房可享补助
-点击数：2878
-发表时间：2015-04-28">
-                                        安州房产市场发展28条出台 大学生、农民购房可享补助
-                                    </a>
-                                </li>
-
-
-                                <li class="hot">
-                                    <em class="number">2</em>
-                                    <a href="/xw/rdgz/content_3678" target="_blank" title="标题：打破“铁饭碗” 机关事业单位人员今后咋养老？
-点击数：2772
-发表时间：2015-01-15">
-                                        打破“铁饭碗” 机关事业单位人员今后咋养老？
-                                    </a>
-                                </li>
-
-
-                                <li class="hot">
-                                    <em class="number">3</em>
-                                    <a href="/xw/rdgz/content_4893" target="_blank" title="标题：安州今年养老金个体参保标准出台 年缴费最低4308元
-点击数：2732
-发表时间：2015-06-08">
-                                        安州今年养老金个体参保标准出台 年缴费最低4308元
-                                    </a>
-                                </li>
-
-
-                                <li>
-                                    <em class="number">4</em>
-                                    <a href="/xw/rdgz/content_3963" target="_blank" title="标题：政府工作报告绘就新一年安州区发展蓝图
-点击数：2649
-发表时间：2015-02-06">
-                                        政府工作报告绘就新一年安州区发展蓝图
-                                    </a>
-                                </li>
-
-
-                                <li>
-                                    <em class="number">5</em>
-                                    <a href="/xw/rdgz/content_4888" target="_blank" title="标题：7月1日起四川提高最低工资标准 平均上调10.5%
-点击数：2324
-发表时间：2015-06-09">
-                                        7月1日起四川提高最低工资标准 平均上调10.5%
-                                    </a>
-                                </li>
-
-
-                                <li class="last">
-                                    <em class="number">6</em>
-                                    <a href="/xw/rdgz/content_8180" target="_blank" title="标题：200元/平米购房补贴政策 安州继续实施一年
-点击数：2245
-发表时间：2016-03-24">
-                                        200元/平米购房补贴政策 安州继续实施一年
-                                    </a>
-                                </li>
-
+                            	<stl:contents topLevel="1" scope="all" order="Hits" totalNum="6">
+                            		<stl:if type="ItemIndex" operate="LessThan" value="4">
+                            			<stl:yes>
+                            				<li class="hot">
+			                                    <em class="number">{content.ItemIndex}</em>
+			                                    <stl:a title="{content.Title}">{content.Title}</stl:a>
+			                                </li>
+                            			</stl:yes>
+                            			<stl:no>
+                            				<li>
+			                                    <em class="number">{content.ItemIndex}</em>
+			                                    <stl:a title="{content.Title}">{content.Title}</stl:a>
+			                                </li>
+                            			</stl:no>
+                            		</stl:if>
+								</stl:contents>
                             </ul>
                         </div>
                     </div>
@@ -175,28 +141,19 @@
                         </div>
                         <div class="bd">
                             <ul class="picPageList picPageListA">
-                                <li class="first">
-                                    <div class="pic">
-                                        <a href="/xw/jrxx/content_113178">
-                                            <img alt="安州：创新机制抓双拥 军民融合抓双拥" src="/upload/main/image/2017/08/01/201708020903158425_240_180.jpg" width="240" height="180" />
-                                        </a>
-                                    </div>
-                                    <div class="title">
-                                        <a class="tit" href="/xw/jrxx/content_113178" title="安州：创新机制抓双拥 军民融合抓双拥">安州：创新机制抓双拥 军民融合抓双拥</a>
-                                    </div>
-                                    <span class="titleBg"></span>
-                                </li>
-                                <li class="last">
-                                    <div class="pic">
-                                        <a href="/xw/jrxx/content_113176">
-                                            <img alt="花荄镇对89个村开展财务审计 整治“微腐败”" src="/upload/main/image/2017/08/01/201708020900070984_240_180.jpg" width="240" height="180" />
-                                        </a>
-                                    </div>
-                                    <div class="title">
-                                        <a class="tit" href="/xw/jrxx/content_113176" title="花荄镇对89个村开展财务审计 整治“微腐败”">花荄镇对89个村开展财务审计 整治“微腐败”</a>
-                                    </div>
-                                    <span class="titleBg"></span>
-                                </li>
+                            	<stl:contents topLevel="1" scope="all" isHot="true" isImage="true" totalNum="2">
+                            		<li>
+	                                    <div class="pic">
+	                                    	<stl:a>
+	                                    		<stl:image alt="{content.Title}" width="240" height="180"></stl:image>
+	                                    	</stl:a>
+	                                    </div>
+	                                    <div class="title">
+	                                    	<stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+	                                    </div>
+	                                    <span class="titleBg"></span>
+	                               </li>
+								</stl:contents>
                             </ul>
                         </div>
                     </div>
@@ -204,17 +161,8 @@
             </article>
             <!-- 正文内容 E -->
         </div>
-        
         <!-- content E -->
         <stl:include file="/include/footer.html"></stl:include>
-        
     </div>
-    <script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
-    <script src="/Content/_Common/Base/js/power.js"></script>
-
-    <script src="/Content/_Common/Assets/Scripts/jquery.PrintArea.js"></script>
-    <script src="/Content/_Common/Base/js/article.js"></script>
-
 </body>
 </html>
-

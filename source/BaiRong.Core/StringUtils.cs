@@ -30,16 +30,16 @@ namespace BaiRong.Core
             public const string TitleImageAppendix = "t_";
             public const string SmallImageAppendix = "s_";
 
-            public const string CompanyName = "北京百容千域软件技术开发有限责任公司";
-            public const string CompanyUrl = "http://www.siteserver.cn";
+            public const string CompanyName = "四川科瑞软件有限责任公司";
+            public const string CompanyUrl = "http://www.keywaysoft.com";
             public const string ProductName = "SITESERVER";
-            public const string ProductUrl = "http://www.siteserver.cn";
+            public const string ProductUrl = "http://www.keywaysoft.com";
 
-            public const string UrlMoban = "http://moban.siteserver.cn/templates.xml";
+            public const string UrlMoban = "http://moban.keywaysoft.com/templates.xml";
 
             public static string GetStlUrl(bool isEntity, string label)
             {
-                return isEntity ? $"http://stl.siteserver.cn/e-{label}/index.html" : $"http://stl.siteserver.cn/{label.Substring("stl:".Length)}/index.html";
+                return isEntity ? $"http://stl.keywaysoft.com/e-{label}/index.html" : $"http://stl.keywaysoft.com/{label.Substring("stl:".Length)}/index.html";
             }
         }
 

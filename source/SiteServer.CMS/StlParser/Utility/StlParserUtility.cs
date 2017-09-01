@@ -34,7 +34,7 @@ namespace SiteServer.CMS.StlParser.Utility
 
         private const string XmlDeclaration = "<?xml version='1.0'?>";
 
-        private const string XmlNamespaceStart = "<stl:document xmlns=\"http://www.siteserver.cn/stl\" xmlns:stl=\"http://www.siteserver.cn/stl\" xmlns:STL=\"http://www.siteserver.cn/stl\" xmlns:sTL=\"http://www.siteserver.cn/stl\" xmlns:stL=\"http://www.siteserver.cn/stl\" xmlns:sTl=\"http://www.siteserver.cn/stl\" xmlns:Stl=\"http://www.siteserver.cn/stl\" xmlns:StL=\"http://www.siteserver.cn/stl\" xmlns:asp=\"http://www.siteserver.cn/stl\" xmlns:ext=\"http://www.siteserver.cn/stl\">";
+        private const string XmlNamespaceStart = "<stl:document xmlns=\"http://www.keywaysoft.com/stl\" xmlns:stl=\"http://www.keywaysoft.com/stl\" xmlns:STL=\"http://www.keywaysoft.com/stl\" xmlns:sTL=\"http://www.keywaysoft.com/stl\" xmlns:stL=\"http://www.keywaysoft.com/stl\" xmlns:sTl=\"http://www.keywaysoft.com/stl\" xmlns:Stl=\"http://www.keywaysoft.com/stl\" xmlns:StL=\"http://www.keywaysoft.com/stl\" xmlns:asp=\"http://www.keywaysoft.com/stl\" xmlns:ext=\"http://www.keywaysoft.com/stl\">";
 
         private const string XmlNamespaceEnd = "</stl:document>";
 
@@ -68,7 +68,7 @@ namespace SiteServer.CMS.StlParser.Utility
         {
             if (!string.IsNullOrEmpty(content))
             {
-                return content.Replace(@" xmlns=""http://www.siteserver.cn/stl""", string.Empty).Replace(@" xmlns:stl=""http://www.siteserver.cn/stl""", string.Empty);
+                return content.Replace(@" xmlns=""http://www.keywaysoft.com/stl""", string.Empty).Replace(@" xmlns:stl=""http://www.keywaysoft.com/stl""", string.Empty);
             }
             return string.Empty;
         }
@@ -112,9 +112,9 @@ namespace SiteServer.CMS.StlParser.Utility
             content = content.Replace("&gt;", ">");
             content = content.Replace("&lt;", "<");
             content = content.Replace("&amp;", "&");
-            content = content.Replace(" xmlns=\"http://www.siteserver.cn/stl\"", string.Empty);
-            content = content.Replace(" xmlns:stl=\"http://www.siteserver.cn/stl\"", string.Empty);
-            content = content.Replace(" xmlns:asp=\"http://www.siteserver.cn/stl\"", string.Empty);
+            content = content.Replace(" xmlns=\"http://www.keywaysoft.com/stl\"", string.Empty);
+            content = content.Replace(" xmlns:stl=\"http://www.keywaysoft.com/stl\"", string.Empty);
+            content = content.Replace(" xmlns:asp=\"http://www.keywaysoft.com/stl\"", string.Empty);
             content = content.Replace("&amp;#", "&#");
             if (pageInfo?.TemplateInfo == null) return content;
 

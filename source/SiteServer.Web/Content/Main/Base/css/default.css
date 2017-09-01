@@ -320,28 +320,28 @@ input[type=button], input[type=submit], input[type=file], button {
     top:0;
     text-decoration:none
 }
-.topNav #li-xw .a1{
+.topNav #li-xw a{
     background-position: 30px -286px;
 }
-.topNav #li-zw .a1{
+.topNav #li-zw a{
     background-position: 30px -211px;
 }
-.topNav #li-ld .a1{
+.topNav #li-ld a{
     background-position: 30px -439px;
 }
-.topNav #li-fw .a1{
+.topNav #li-fw a{
     background-position: 30px -513px;
 }
-.topNav #li-hd .a1{
+.topNav #li-hd a{
     background-position: 35px -361px;
 }
-.topNav #li-jg .a1{
+.topNav #li-jg a{
     background-position: 30px -134px;
 }
-.topNav #li-sq .a1{
+.topNav #li-sq a{
     background-position: 30px -58px;
 }
-.topNav #li-zt .a1{
+.topNav #li-zt a{
     background-position: 30px -591px;
 }
 /* 搜索框 */
@@ -1667,3 +1667,35 @@ div.codeinp input {
 #select_content7{ left:-891px;}
 #select_content8{ left:-1023px;}
 #select_content9{ left:-1023px;}
+
+
+.search .singleList li a{
+  background-image: none;
+  padding: 5px 20px;
+  font-size: 14px;
+}
+
+.search .singleList>li {
+  border: 1px solid #eee;
+}
+
+.search .singleList>li li {
+  border: 0;
+}
+.search .singleList .on a{
+background-color:white !important;
+}
+.search .singleList .fTitle {
+    background-color: #f8f8f8;
+    font-size: 16px;
+    padding-right: 35px;
+}
+.mainBox .fTitle, .mainBox .fOrder{
+ display:block;
+ float:right;
+ font-size:16px;
+ font-weight: normal;
+}
+
+
+

@@ -14,6 +14,7 @@
     <meta name="HandheldFriendly" content="true" />
     <title>中共安州区委区人民政府门户网站</title>
     <stl:include file="/include/headLink.html"></stl:include>
+    <script src="/Content/_Common/Base/js/indexJSRed.js"></script>
       <link href="/Content/Main/iconfont/iconfont.css" rel="stylesheet" />
     <link href="/Content/Main/Home/css/index.css" rel="stylesheet" />
   </head>
@@ -29,45 +30,6 @@
       <stl:include file="/include/header.html"></stl:include>
       <!-- header E -->
 
-      <!-- 引导页按钮组 -->
-      <ul class="container indBtns">
-        <li class="home">
-          <a href="/">
-            <i class="icon iconfont icon-shouye1"></i>
-            <h5>首页</h5>
-          </a>
-        </li>
-        <li class="news">
-          <i class="icon iconfont icon-icon02"></i>
-          <h5><stl:a channelIndex="政务动态" target="_self">政务动态</stl:a></h5>
-        </li>
-        <li class="gov">
-          <i class="icon iconfont icon-jiaotongshishi-"></i>
-          <h5><stl:a channelIndex="政务公开" target="_self">政务公开</stl:a></h5>
-        </li>
-        <li class="service">
-          <i class="icon iconfont icon-document_fill"></i>
-          <h5><stl:a channelIndex="政务服务" target="_self">政务服务</stl:a></h5>
-        </li>
-        <li class="interaction">
-          <i class="icon iconfont icon-gongzhong"></i>
-          <h5><stl:a channelIndex="公众参与" target="_self">公众参与</stl:a></h5>
-        </li>
-        <li class="about bnone">
-          <i class="icon iconfont icon-feiji"></i>
-          <h5><stl:a channelIndex="走进安州" target="_self">走进安州</stl:a></h5>
-        </li>
-        <li class="mBtn bnone">
-          <a class="open" href="javascript:void(0)">
-            <i class="icon iconfont icon-p-menus"></i>
-          </a>
-        </li>
-        <span class="tip">点击下方展开<i class="icon iconfont icon-shoushijiaocheng"></i></span>
-      </ul>
-      <script>
-        hover(".indBtns li");
-      </script>
-
       <!-- content S -->
       <div id="content">
         <!-- 栏目切换 -->
@@ -77,281 +39,164 @@
             <!-- 新闻头条 -->
             <dl class="headNew">
               <dt>
-                            <div class="jrgz"><div class="jrgz_top"><p>新闻头条</p></div> <div class="jrgz_bt"><p class="dis_ib"> 2017.8.2    周三</p></div></div>
-                        </dt>
+                              <div class="jrgz">
+                                <div class="jrgz_top"><p>新闻头条</p></div> 
+                                <div class="jrgz_bt"><p class="dis_ib"></p></div>
+                              </div>
+                          </dt>
               <dd>
                 <ul>
-                  <li class="first last t ">
-                    <div class="con">
-                      <div class="title">
-                        <a class="tit" href="{Stl.SiteUrl}/xw/jrxx/content_113070" title="市文明城市建设督导组对我区文明城市建设工作进行拉网式督导检查">市文明城市建设督导组对我区文明城市建设工作进行拉网式督导检查</a>
+                  <stl:contents channelIndex="首页" scope="All" isTop="true" isHot="true" totalNum="1">
+                    <li data-date="{content.AddDate}">
+                      <div class="con">
+                        <div class="title">
+                          <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+                        </div>
+                        <span class="titleBg"></span>
+                        <div class="intro">
+                          <stl:content type="Summary"></stl:content><stl:a class="more">[详细]</stl:a>
+                        </div>
                       </div>
-                      <span class="titleBg"></span>
-
-                      <div class="intro">市文明办主任韩贵钧、副主任赵准带领市文明城市建设督查组，对我区全国文明城市建设工作进行全面拉网式督导检查。相关单位负责人发表意见
-                        <a class="more" href="/xw/jrxx/content_113070">[详细]</a>
-                      </div>
-                    </div>
-
-                  </li>
-
+                    </li>
+                  </stl:contents>
                 </ul>
               </dd>
             </dl>
             <div class="row rowA">
               <!-- 大图 -->
               <div id="slide-news" class="slide-news">
-                <div class="slide-md">
-                  <h2 class="slide-hd">
-                                    <a href="1.html" target="_blank">彭宇行在调研群团工作时强调为绵阳科学发展凝聚强大正能量</a>
-                                    <span>11月24日，市委书记彭宇行前往市职工创新创业中心、梁声文化音乐和电影鉴赏运用推广基地、四川凯路威电子有限公司等地，调研进一步做好新形势下的群团工作，出席群团工作座谈会并讲话。市委副书记付康参加调研并主持座谈会。</span>
-                                </h2>
-                  <p class="slide-bd">
-                    <a href="1.html" target="_blank">
-                      <img border="0" src="{Stl.SiteUrl}/upload/main/contentmanage/article/image/91be97f107a7434593b16c4496c1dd0e.jpg">
-                    </a>
-                  </p>
-                  <p class="slide-ft">
-                  </p>
-                </div>
-                <div class="slide-md hide">
-                  <h2 class="slide-hd">
-                                    <a href="2.html" target="_blank">[环境问题督导]胡斌到秀水镇督导环境问题整改情况</a>
-                                    <span>8月2日，区委副书记胡斌带队到秀水镇督导环保督查反馈问题整改完成情况。胡斌一行先后前往绵阳市神龙重科实业有限公司、绵阳市金鸿饲料有限公司查看厂区环境，听取企业负责人环保问题整改落实情况汇报...</span>
-                                </h2>
-                  <p class="slide-bd">
-                    <a href="2.html" target="_blank">
-                      <img border="0" src="{Stl.SiteUrl}/upload/main/contentmanage/article/image/48f699abbb9845759f62be3422e6ffab.jpg">
-                    </a>
-                  </p>
-                  <p class="slide-ft">
-                  </p>
-                </div>
-                <div class="slide-md hide">
-                  <h2 class="slide-hd">
-                                    <a href="3.html" target="_blank">区委书记廖雪梅 慰问区人武部官兵</a>
-                                    <span>8月1日，区委书记廖雪梅到区人武部慰问部队官兵，向他们致以节日的祝贺和亲切的问候，感谢他们为安州经济社会发展作出的贡献，强调军民同心，合力推进全省经济生态强区建设。</span>
-                                </h2>
-                  <p class="slide-bd">
-                    <a href="3.html" target="_blank">
-                      <img border="0" src="{Stl.SiteUrl}/upload/main/contentmanage/article/image/22c56297a4934e2cb9aed85b365d615b.jpg">
-                    </a>
-                  </p>
-                  <p class="slide-ft">
-                  </p>
-                </div>
+                <stl:contents channelIndex="首页" scope="All" isTop="true" isHot="true" isImage="true" totalNum="3">
+                  <stl:if type="ItemIndex" operate="Equals" value="1">
+                    <stl:yes>
+                      <div class="slide-md">
+                        <h2 class="slide-hd">
+                          <stl:a>{content.Title}</stl:a>
+                                            <span><stl:content type="Summary"></stl:content></span>
+                                        </h2>
+                        <p class="slide-bd">
+                          <stl:a>
+                            <stl:image border="0"></stl:image>
+                          </stl:a>
+                        </p>
+                      </div>
+                    </stl:yes>
+                    <stl:no>
+                      <div class="slide-md hide">
+                        <h2 class="slide-hd">
+                          <stl:a>{content.Title}</stl:a>
+                                            <span><stl:content type="Summary"></stl:content></span>
+                                        </h2>
+                        <p class="slide-bd">
+                          <stl:a>
+                            <stl:image border="0"></stl:image>
+                          </stl:a>
+                        </p>
+                      </div>
+                    </stl:no>
+                  </stl:if>
+                </stl:contents>
                 <ul class="slide-tabs">
-                  <li class="tab current">
-                    <a href="1.html"></a>
-                  </li>
-                  <li class="tab">
-                    <a href="2.html"></a>
-                  </li>
-                  <li class="tab">
-                    <a href="3.html"></a>
-                  </li>
+                  <stl:contents channelIndex="首页" scope="All" isTop="true" isHot="true" isImage="true" totalNum="3">
+                    <stl:if type="ItemIndex" operate="Equals" value="1">
+                      <stl:yes>
+                        <li class="tab current"><a></a></li>
+                      </stl:yes>
+                      <stl:no>
+                        <li class="tab"><a></a></li>
+                      </stl:no>
+                    </stl:if>
+                  </stl:contents>
                 </ul>
               </div>
             </div>
             <!-- rowA S -->
           </div>
-          <!-- 新闻 -->
+          <!-- 动态 -->
           <div class="newsPage">
             <!-- 本地要闻等切换 -->
             <div class="box indTab" id="indBdyw">
               <div class="hd">
                 <ul>
-                  <li>
-                    <a href="{Stl.SiteUrl}/xw/jrxx">今日安州</a>
-                  </li>
-                  <li>
-                    <a href="{Stl.SiteUrl}/xw/zwyw">政务要闻</a>
-                  </li>
-                  <li></li>
-                  <li>
-                    <a href="/xw/bmdt122">部门动态</a>
-                  </li>
+                  <li><stl:a channelIndex="今日安州"></stl:a></li>
+                  <li><stl:a channelIndex="政务要闻"></stl:a></li>
+                  <li><stl:a channelIndex="工作动态"></stl:a></li>
                 </ul>
               </div>
               <div class="bd">
                 <ul class="topicList">
-
-                  <li class="first t ">
-
-                    <div class="con">
-                      <div class="title">
-                        <a class="tit" href="/xw/jrxx/content_113077" title="全省深化统计管理体制改革座谈会在安州召开">全省深化统计管理体制改革座谈会在安州召开</a>
-                      </div>
-                      <span class="titleBg"></span>
-
-                      <div class="intro">
-                        要在大数据运用上走出新路子7月27日至28日，全省深化统计管理体制改革座谈会在安州召开。会议强调，要围绕大局，加强统计预警、预测分析，提高统计服务水平，在创新中做到应统尽统。…
-                      </div>
-                    </div>
-
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/jrxx/content_113070" title="辽安产业合作园区召开&quot;自贸红利、区域共享&quot;对接会">辽安产业合作园区召开"自贸红利、区域共享"对接会</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/jrxx/content_113082" title="安州区花荄镇、桑枣镇将成为南开大学基层实践基地">安州区花荄镇、桑枣镇将成为南开大学基层实践基地</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/jrxx/content_113062" title="廖雪梅率队督导安州区环境保护突出问题">廖雪梅率队督导安州区环境保护突出问题</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/jrxx/content_113058" title="廖雪梅率队督导安州桑枣镇和乐兴镇环保突出问题">廖雪梅率队督导安州桑枣镇和乐兴镇环保突出问题</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/jrxx/content_113067" title="安州区表扬100名优秀复员退伍军人">安州区表扬100名优秀复员退伍军人</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/jrxx/content_113056" title="安州召开集贸市场创文工作现场推进会">安州召开集贸市场创文工作现场推进会</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/jrxx/content_113054" title="四川日报：安州“创文” 小举动折射大文明">四川日报：安州“创文” 小举动折射大文明</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/jrxx/content_113044" title="花荄镇：李昊天出席全区整治群众身边“微腐败”村级财务审计工作动员会">花荄镇：李昊天出席全区整治群众身边“微腐败”村级财务审计工作动…</a>
-                  </li>
-
+                  <stl:contents channelIndex="今日安州" totalNum="9">
+                    <stl:if type="ItemIndex" operate="Equals" value="1">
+                      <stl:yes>
+                        <li class="first t ">
+                          <div class="con">
+                            <div class="title">
+                              <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+                            </div>
+                            <span class="titleBg"></span>
+                            <div class="intro">
+                              <stl:content type="Summary"></stl:content>
+                            </div>
+                          </div>
+                        </li>
+                      </stl:yes>
+                      <stl:no>
+                        <li class="n">
+                          <span class="date">{content.AddDate}</span>
+                          <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+                        </li>
+                      </stl:no>
+                    </stl:if>
+                  </stl:contents>
                 </ul>
                 <ul class="topicList">
-
-                  <li class="first t ">
-
-                    <div class="con">
-                      <div class="title">
-                        <a class="tit" href="/xw/zwyw/content_113125" title="市委常委、副市长王明华出席《百岁女红军—王定国》理论文献片新闻发布会">市委常委、副市长王明华出席《百岁女红军—王定国》理论文献片…</a>
-                      </div>
-                      <span class="titleBg"></span>
-
-                      <div class="intro">
-                        为庆祝中国人民解放军建军90周年，迎接党的十九大胜利召开，7月30日，由中国林业生态发展促进会王定国公益委员会、上海亚洲电视艺术中心联合制作的理论文献纪录片《百岁女红军—王定…
-                      </div>
-                    </div>
-
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/zwyw/content_113078" title="全省深化统计管理体制改革座谈会在安州召开">全省深化统计管理体制改革座谈会在安州召开</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/zwyw/content_113071" title="辽安产业合作园区召开&quot;自贸红利、区域共享&quot;对接会">辽安产业合作园区召开"自贸红利、区域共享"对接会</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/zwyw/content_113083" title="安州区花荄镇、桑枣镇将成为南开大学基层实践基地">安州区花荄镇、桑枣镇将成为南开大学基层实践基地</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/zwyw/content_113106" title="我省将推广绿色机关标准化建设 在安州等3市试点">我省将推广绿色机关标准化建设 在安州等3市试点</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/zwyw/content_113035" title="抓好2017下半年工作 省政府放九个大招">抓好2017下半年工作 省政府放九个大招</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-28</span>
-                    <a class="tit" href="/xw/zwyw/content_112942" title="安州区及安州区与长虹集团项目签约仪式在安州举行">安州区及安州区与长虹集团项目签约仪式在安州举行</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-28</span>
-                    <a class="tit" href="/xw/zwyw/content_111482" title="安州：抓好自贸区建设 加快发展外向型经济">安州：抓好自贸区建设 加快发展外向型经济</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-28</span>
-                    <a class="tit" href="/xw/zwyw/content_111499" title="安州区领导慰问区人武部官兵:发扬双拥传统 支持安州发展">安州区领导慰问区人武部官兵:发扬双拥传统 支持安州发展</a>
-                  </li>
-
+                  <stl:contents channelIndex="政务要闻" totalNum="9">
+                    <stl:if type="ItemIndex" operate="Equals" value="1">
+                      <stl:yes>
+                        <li class="first t ">
+                          <div class="con">
+                            <div class="title">
+                              <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+                            </div>
+                            <span class="titleBg"></span>
+                            <div class="intro">
+                              <stl:content type="Summary"></stl:content>
+                            </div>
+                          </div>
+                        </li>
+                      </stl:yes>
+                      <stl:no>
+                        <li class="n">
+                          <span class="date">{content.AddDate}</span>
+                          <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+                        </li>
+                      </stl:no>
+                    </stl:if>
+                  </stl:contents>
                 </ul>
                 <ul class="topicList">
-
-                  <li class="noData">暂无资料</li>
-
-                </ul>
-                <ul class="topicList">
-
-                  <li class="first t ">
-
-                    <div class="con">
-                      <div class="title">
-                        <a class="tit" href="/xw/bmdt122/content_113068" title="安州区表扬100名优秀复员退伍军人">安州区表扬100名优秀复员退伍军人</a>
-                      </div>
-                      <span class="titleBg"></span>
-
-                      <div class="intro">
-                        7月30日，在中国人民解放军建军90周年前夕，安州区召开全市优秀复员退伍军人表扬大会，对三区四县涌现出的100名优秀复员退伍军人进行表扬。安州区副市长熊启权代表安州区政府向受到表…
-                      </div>
-                    </div>
-
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/bmdt122/content_113053" title="安州森林防火指挥部：森林防火防控要“无死角、无盲区”">安州森林防火指挥部：森林防火防控要“无死角、无盲区”</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/bmdt122/content_113047" title="安州城西将建连江公园 造价3.5亿元绿地率82.5%">安州城西将建连江公园 造价3.5亿元绿地率82.5%</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/bmdt122/content_113027" title="安州区发放首批四川省工会会员服务卡">安州区发放首批四川省工会会员服务卡</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-31</span>
-                    <a class="tit" href="/xw/bmdt122/content_113023" title="安州区开通“智慧安州医保” 实现掌上医保服务 ">安州区开通“智慧安州医保” 实现掌上医保服务 </a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-28</span>
-                    <a class="tit" href="/xw/bmdt122/content_111520" title="安州：发挥人才库智囊团作用 聚焦热点难点问题">安州：发挥人才库智囊团作用 聚焦热点难点问题</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-28</span>
-                    <a class="tit" href="/xw/bmdt122/content_111488" title="预留轨道 双向六车道的安州长江五桥通过专家评审">预留轨道 双向六车道的安州长江五桥通过专家评审</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-27</span>
-                    <a class="tit" href="/xw/bmdt122/content_111428" title="省委编办领导莅泸调研 安州&quot;岗编分离&quot;工作受肯定">省委编办领导莅泸调研 安州"岗编分离"工作受肯定</a>
-                  </li>
-
-                  <li class="n">
-                    <span class="date">2017-07-27</span>
-                    <a class="tit" href="/xw/bmdt122/content_111434" title="安州区科知局高标准严要求开展市级众创空间认定">安州区科知局高标准严要求开展市级众创空间认定</a>
-                  </li>
-
+                  <stl:contents channelIndex="工作动态" totalNum="9">
+                    <stl:if type="ItemIndex" operate="Equals" value="1">
+                      <stl:yes>
+                        <li class="first t ">
+                          <div class="con">
+                            <div class="title">
+                              <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+                            </div>
+                            <span class="titleBg"></span>
+                            <div class="intro">
+                              <stl:content type="Summary"></stl:content>
+                            </div>
+                          </div>
+                        </li>
+                      </stl:yes>
+                      <stl:no>
+                        <li class="n">
+                          <span class="date">{content.AddDate}</span>
+                          <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+                        </li>
+                      </stl:no>
+                    </stl:if>
+                  </stl:contents>
                 </ul>
               </div>
             </div>
@@ -359,128 +204,86 @@
             <div class="box indTab" id="indBmgg">
               <div class="hd">
                 <ul>
-                  <li>
-                    <a href="/xw/bmgg">便民公告</a>
-                  </li>
-                  <li>
-                    <a href="/xw/mskd">民生快递</a>
-                  </li>
+                  <li><stl:a chennelIndex="便民公告">便民公告</stl:a></li>
+                  <li><stl:a chennelIndex="民生快递">民生快递</stl:a></li>
                 </ul>
               </div>
               <div class="bd">
                 <ul class="dateList">
-
-                  <li class="first">
-
-                    <dl class="date">
-                      <dt>31</dt>
-                      <dd>2017-07</dd>
-                    </dl>
-                    <div class="con">
-                      <div class="title">
-                        <a class="tit" href="/xw/bmgg/content_113092" title="7月31日-8月14日 安州停电消息播报">7月31日-8月14日 安州停电消息播报</a>
-                      </div>
-
-                      <div class="intro">
-                        7月31 日安州益鑫钢铁有限公司（二期）
-                        <a class="more" href="/xw/bmgg/content_113092">[详细]</a>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-
-                    <dl class="date">
-                      <dt>31</dt>
-                      <dd>2017-07</dd>
-                    </dl>
-                    <div class="con">
-                      <div class="title">
-                        <a class="tit" href="/xw/bmgg/content_113091" title="安州电表欠费跳闸 反插购电卡可透支10元电量应急">安州电表欠费跳闸 反插购电卡可透支10元电量应急</a>
-                      </div>
-
-                      <div class="intro">
-                        炎炎夏日，因为忘记缴电费晚上突然停电，又没法及时为电表充值是件很让人崩溃的事。遇到这种突发情况该怎么办？7月24日，国家电网安州供电公…
-                        <a class="more" href="/xw/bmgg/content_113091">[详细]</a>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li class="last">
-
-                    <dl class="date">
-                      <dt>31</dt>
-                      <dd>2017-07</dd>
-                    </dl>
-                    <div class="con">
-                      <div class="title">
-                        <a class="tit" href="/xw/bmgg/content_113090" title="安州：花荄镇城区公立幼儿园摇号结果产生">安州：花荄镇城区公立幼儿园摇号结果产生</a>
-                      </div>
-
-                      <div class="intro">
-                        7月28日，花荄镇城区人民南路幼儿园、铜店街幼儿园、新马路幼儿园城西分园以及梓橦路学校附属幼儿园4所公办幼儿园，以现场摇号的方式抽取录取…
-                        <a class="more" href="/xw/bmgg/content_113090">[详细]</a>
-                      </div>
-                    </div>
-                  </li>
-
+                  <stl:contents channelIndex="便民公告" totalNum="3">
+                    <stl:if type="ItemIndex" operate="Equals" value="1">
+                      <stl:yes>
+                        <li class="first">
+                          <dl class="date">
+                            <dt><stl:content type="AddDate" formatString="dd"></stl:content></dt>
+                            <dd><stl:content type="AddDate" formatString="yyyy-MM"></stl:content></dd>
+                          </dl>
+                          <div class="con">
+                            <div class="title">
+                              <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+                            </div>
+                            <div class="intro">
+                              <stl:content type="Summary"></stl:content><stl:a class="more">[详细]</stl:a>
+                            </div>
+                          </div>
+                        </li>
+                      </stl:yes>
+                      <stl:no>
+                        <li>
+                          <dl class="date">
+                            <dt><stl:content type="AddDate" formatString="dd"></stl:content></dt>
+                            <dd><stl:content type="AddDate" formatString="yyyy-MM"></stl:content></dd>
+                          </dl>
+                          <div class="con">
+                            <div class="title">
+                              <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+                            </div>
+                            <div class="intro">
+                              <stl:content type="Summary"></stl:content><stl:a class="more">[详细]</stl:a>
+                            </div>
+                          </div>
+                        </li>
+                      </stl:no>
+                    </stl:if>
+                  </stl:contents>
                 </ul>
                 <ul class="dateList">
-
-                  <li class="first">
-
-                    <dl class="date">
-                      <dt>31</dt>
-                      <dd>2017-07</dd>
-                    </dl>
-                    <div class="con">
-                      <div class="title">
-                        <a class="tit" href="/xw/mskd/content_113086" title="安州区花荄镇、桑枣镇将成为南开大学基层实践基地">安州区花荄镇、桑枣镇将成为南开大学基层实践基地</a>
-                      </div>
-
-                      <div class="intro">
-
-                        <a class="more" href="/xw/mskd/content_113086">[详细]</a>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li>
-
-                    <dl class="date">
-                      <dt>31</dt>
-                      <dd>2017-07</dd>
-                    </dl>
-                    <div class="con">
-                      <div class="title">
-                        <a class="tit" href="/xw/mskd/content_113064" title="廖雪梅率队督导安州区环境保护突出问题">廖雪梅率队督导安州区环境保护突出问题</a>
-                      </div>
-
-                      <div class="intro">
-                        7月29日，安州区委副书记、市长廖雪梅率市经信委、市环保局、市住建局、市农业局、市水务局等部门负责人，现场督导安州区环境保护突出问题。廖雪梅…
-                        <a class="more" href="/xw/mskd/content_113064">[详细]</a>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li class="last">
-
-                    <dl class="date">
-                      <dt>31</dt>
-                      <dd>2017-07</dd>
-                    </dl>
-                    <div class="con">
-                      <div class="title">
-                        <a class="tit" href="/xw/mskd/content_113057" title="安州召开集贸市场创文工作现场推进会">安州召开集贸市场创文工作现场推进会</a>
-                      </div>
-
-                      <div class="intro">
-
-                        <a class="more" href="/xw/mskd/content_113057">[详细]</a>
-                      </div>
-                    </div>
-                  </li>
-
+                  <stl:contents channelIndex="民生快递" totalNum="3">
+                    <stl:if type="ItemIndex" operate="Equals" value="1">
+                      <stl:yes>
+                        <li class="first">
+                          <dl class="date">
+                            <dt><stl:content type="AddDate" formatString="dd"></stl:content></dt>
+                            <dd><stl:content type="AddDate" formatString="yyyy-MM"></stl:content></dd>
+                          </dl>
+                          <div class="con">
+                            <div class="title">
+                              <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+                            </div>
+                            <div class="intro">
+                              <stl:content type="Summary"></stl:content><stl:a class="more">[详细]</stl:a>
+                            </div>
+                          </div>
+                        </li>
+                      </stl:yes>
+                      <stl:no>
+                        <li>
+                          <dl class="date">
+                            <dt><stl:content type="AddDate" formatString="dd"></stl:content></dt>
+                            <dd><stl:content type="AddDate" formatString="yyyy-MM"></stl:content></dd>
+                          </dl>
+                          <div class="con">
+                            <div class="title">
+                              <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+                            </div>
+                            <div class="intro">
+                              <stl:content type="Summary"></stl:content><stl:a class="more">[详细]</stl:a>
+                            </div>
+                          </div>
+                        </li>
+                      </stl:no>
+                    </stl:if>
+                  </stl:contents>
                 </ul>
               </div>
             </div>
@@ -1079,12 +882,8 @@
               <div class="box indTab" id="indSjxx">
                 <div class="hd">
                   <ul>
-                    <li>
-                      <a href="http://anxian.my.gov.cn/" target="_blank">书记、区长信箱</a>
-                    </li>
-                    <li>
-                      <a href="http://anxian.my.gov.cn:82/" target="_blank">举报投诉</a>
-                    </li>
+                    <li><stl:a channelIndex="书记、区长信箱">书记、区长信箱</stl:a></li>
+                    <li><stl:a channelIndex="书记、区长信箱">举报投诉</stl:a></li>
                   </ul>
                 </div>
                 <div class="bd">
@@ -1187,40 +986,37 @@
               <!-- 在线访谈 -->
               <div class="box" id="indYgzw">
                 <div class="hd">
-                  <a class="more" href="/onlineinterview/">更多&gt;&gt;</a>
-                  <h3><a href="/onlineinterview/">在线访谈</a></h3>
+                  <stl:a class="more" channelIndex="在线访谈">更多&gt;&gt;</stl:a>
+                  <h3><stl:a channelIndex="在线访谈">在线访谈</stl:a></h3>
                 </div>
                 <div class="bd">
-
-                  <div class="interviewItem">
-                    <div class="interviewPic">
-
-                      <a href="/onlineinterview/36">
-
-                        <img alt="河长制･河长治" src="/upload/main/onlineinterview/moduledefault/image/201707241711158886_200_150.jpg" width="200" height="150" />
-
-                      </a>
-                    </div>
-                    <div class="interviewCon">
-                      <div class="title">
-                        <span class="label">主题：</span>
-                        <span class="con"><a href="/onlineinterview/36">河长制･河长治</a></span>
+                  <stl:contents channelIndex="在线访谈" isImage="true" totalNum="1">
+                    <div class="interviewItem">
+                      <div class="interviewPic">
+                        <stl:a>
+                          <stl:image alt="{content.Title}" width="200" height="150"></stl:image>
+                        </stl:a>
                       </div>
-                      <div class="date">
-                        <span class="label">时间：</span>
-                        <span class="con">2017-07-19 10:00</span>
-                      </div>
-                      <div class="guest">
-                        <span class="label">嘉宾：</span>
-                        <span class="con">国网安州供电公司副总经理 高俊</span>
-                      </div>
-                      <div class="intro">
-                        <span class="label">简介：</span>
-                        <span class="con">2017年7月19日10时，安州新闻网“有话请您说——安州区网络问政平台”，邀请国网安州供电公司副总经理高俊做客“新闻会客厅”接受“在线访谈”，重点就我市电网建设、电力供应及电费缴纳等工作与广大网友作在线交...</span>
+                      <div class="interviewCon">
+                        <div class="title">
+                          <span class="label">主题：</span>
+                          <span class="con"><stl:a>{content.Title}</stl:a></span>
+                        </div>
+                        <div class="date">
+                          <span class="label">时间：</span>
+                          <span class="con"><stl:content type="AddDate" formatString="yyyy-MM-dd hh:mm"></stl:content></span>
+                        </div>
+                        <div class="guest">
+                          <span class="label">嘉宾：</span>
+                          <span class="con">区水务局局长 杨小海</span>
+                        </div>
+                        <div class="intro">
+                          <span class="label">简介：</span>
+                          <span class="con"><stl:content type="Summary"></stl:content></span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-
+                  </stl:contents>
                   <ul class="itvBtns">
                     <li class="li1">
                       <a href="/onlineinterview/">往期访谈</a>
@@ -1235,103 +1031,61 @@
               <div class="box indTab" id="indSjxx">
                 <div class="hd">
                   <ul>
-                    <li>
-                      <a href="/hd/yjzj">意见征集</a>
-                    </li>
-                    <li>
-                      <a href="/survey/list">网上调查</a>
-                    </li>
+                    <li><stl:a channelIndex="意见征集">意见征集</stl:a></li>
+                    <li><stl:a channelIndex="网上调查">网上调查</stl:a></li>
                   </ul>
                 </div>
                 <div class="bd">
                   <ul class="infoList infoList-idea">
-
-                    <li class="first">
-                      <a href="/hd/yjzj/zzjh/content_105592" target="_blank" title="标题：《全国农业现代化规划（2016-2020年）》实施方案（征求意见稿）征求意见
-点击数：248
-发表时间：2017-07-12">
-                        《全国农业现代化规划（2016-2020年）》实施方案（…
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="/hd/yjzj/zzjh/content_105591" target="_blank" title="标题：《四川省高速公路网路线命名和编号方案》征求意见
-点击数：259
-发表时间：2017-07-12">
-                        《四川省高速公路网路线命名和编号方案》征求意见
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="/hd/yjzj/jgfk/content_105590" target="_blank" title="标题：四川居民实体零售店和网上购物情况调查报告
-点击数：265
-发表时间：2017-07-12">
-                        四川居民实体零售店和网上购物情况调查报告
-                      </a>
-                    </li>
-
-                    <li class="last">
-                      <a href="/hd/yjzj/jgfk/content_105589" target="_blank" title="标题：2017年四川居民购房意愿网上调查报告
-点击数：357
-发表时间：2017-07-12">
-                        2017年四川居民购房意愿网上调查报告
-                      </a>
-                    </li>
-
+                    <stl:contents channelIndex="意见征集" totalNum="4">
+                      <li><stl:a title="{content.Title}">{content.Title}</stl:a></li>
+                    </stl:contents>
                   </ul>
                   <ul class="infoList infoList-idea">
-
-                    <li>
-                      <a href="/survey/19">2017年安州区政府信息公开公众满意度网上调查</a>
-                    </li>
-                    <li>
-                      <a href="/survey/18">2017年安州“3.15”消费者权益日专项网上调查专项网…</a>
-                    </li>
-                    <li>
-                      <a href="/survey/13">您认为本网站栏目调整后，哪一块内容得到提升，效果…</a>
-                    </li>
-
+                    <stl:contents channelIndex="网上调查" totalNum="4">
+                      <li><stl:a title="{content.Title}">{content.Title}</stl:a></li>
+                    </stl:contents>
                   </ul>
                 </div>
               </div>
             </div>
             <!-- side E -->
           </div>
-          <!-- 市情 -->
+          <!-- 走进安州 -->
           <div class="aboutPage">
             <div class="mainContent">
               <!-- 最美安州切换 -->
               <div class="aboutBox">
                 <div class="bd">
                   <div class="intro">
-                    安州历史厚重，人杰地灵。置县于公元347年（东晋永和三年），先后经历西浦县、平川县、金山县、龙安县、安州、安县等设置，花荄镇联丰村观斗山、沸水镇境内都曾为故城城址。公元1374年降安州为安县，县城由安州故城迁至安昌镇。2002年县政府驻地由安昌镇迁至花荄镇。2016年3月20日国务院批复同意撤销安县设立绵阳市安州区，同年5月20日挂牌成立。这里人文荟萃、英才辈出，是清代旷世才子李调元的桑梓，也是现代著名作家沙汀的故里，“长征”时期红四方面军曾在千佛山阻击激战70余天，抗日战争和解放战争中11496人从军参战，抗美援朝中陈开茂、蔡朝兴被誉为黄继光式的战斗英雄。…
+                    <stl:contents channelIndex="安州简介" totalNum="1">
+                      <stl:content type="Summary"></stl:content>
+                    </stl:contents>
                   </div>
                 </div>
                 <div class="hd">
                   <ul>
-
                     <li class="li1 first">
-                      <a class="tit" href="/sq/zjlz/lzls" title="历史沿革">历史沿革</a>
+                      <stl:a class="tit" title="历史沿革" channelIndex="历史沿革">历史沿革</stl:a>
                     </li>
                     <li class="li2">
-                      <a class="tit" href="/sq/zjlz/jbqk" title="安州概况">安州概况</a>
+                      <stl:a class="tit" title="安州概况" channelIndex="安州概况">安州概况</stl:a>
                     </li>
                     <li class="li3">
-                      <a class="tit" href="/sq/zjlz/zrgk" title="安州人文">安州人文</a>
+                      <stl:a class="tit" title="安州人文" channelIndex="安州人文">安州人文</stl:a>
                     </li>
                     <li class="li4">
-                      <a class="tit" href="/sq/zjlz/hygk" title="安州年鉴">安州年鉴</a>
+                      <stl:a class="tit" title="安州年鉴" channelIndex="安州年鉴">安州年鉴</stl:a>
                     </li>
                     <li class="li5">
-                      <a class="tit" href="/sq/zjlz/cwlc" title="招商引资">招商引资</a>
+                      <stl:a class="tit" title="招商引资" channelIndex="招商引资">招商引资</stl:a>
                     </li>
                     <li class="li6">
-                      <a class="tit" href="/sq/zjlz/lzzy" title="安州旅游">安州旅游</a>
+                      <stl:a class="tit" title="安州旅游" channelIndex="安州旅游">安州旅游</stl:a>
                     </li>
                     <li class="li7 last">
-                      <a class="tit" href="http://www.lzghj.gov.cn/guihuachengguo/" title="城市规划">城市规划</a>
+                      <stl:a class="tit" title="城市规划" channelIndex="城市规划">城市规划</stl:a>
                     </li>
-
                   </ul>
                 </div>
               </div>
@@ -1434,124 +1188,160 @@
         </div>
       </footer>
       <script>
+        //时间格式化
+        Date.prototype.format = function(format) {
+          var args = {
+            "M+": this.getMonth() + 1,
+            "d+": this.getDate(),
+            "h+": this.getHours(),
+            "m+": this.getMinutes(),
+            "s+": this.getSeconds(),
+            "q+": Math.floor((this.getMonth() + 3) / 3), //quarter
+            "S": this.getMilliseconds()
+          };
+          if(/(y+)/.test(format)) format = format.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+          for(var i in args) {
+            var n = args[i];
+            if(new RegExp("(" + i + ")").test(format)) format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? n : ("00" + n).substr(("" + n).length));
+          }
+          return format;
+        };
+      
+        //时间显示
+        var _d = $(".headNew dd li").data("date"),
+          weekday=new Array(7);
+        weekday[0]="周日";
+        weekday[1]="周一";
+        weekday[2]="周二";
+        weekday[3]="周三";
+        weekday[4]="周四";
+        weekday[5]="周五";
+        weekday[6]="周六";
+        $(".dis_ib").html(_d+" "+weekday[new Date(_d).getDay()]);
+      
+        //滚动事件
+        scrollFun();
+        window.onscroll = function(){
+          scrollFun();  
+        }
+        function scrollFun(){
+          if(getScrollTop() > 100) {
+            $(".topBar").addClass("topHei");
+            $("#logo2").addClass("show");
+          } else {
+            $(".topBar").removeClass("topHei");
+            $("#logo2").removeClass("show");
+          }
+        }
+        function getScrollTop() {
+          var scrollPos;
+          if(window.pageYOffset) {
+            scrollPos = window.pageYOffset;
+          } else if(document.compatMode && document.compatMode != 'BackCompat') {
+            scrollPos = document.documentElement.scrollTop;
+          } else if(document.body) {
+            scrollPos = document.body.scrollTop;
+          }
+          return scrollPos;
+        }
+      </script>
+      
+      <script>
         $("#mainNav #li-home .a1").removeAttr("href");
-          $(".indTab,.aboutBox").slide({
-            delayTime: 0
-          });
-          $(".aboutPage .side").slide({
-            titCell: ".hd",
-            targetCell: ".bd",
-            mainCell: ".none",
-            effect: "slideDown"
-          });
-          $(".wrap").slide({
-            titCell: ".mainNav li",
-            mainCell: ".topColumns",
-            effect: "fade",
-            prevCell: ".none",
-            nextCell: ".none"
-          });
-      
-      
-          // 引导状态
-          var _h = $(window).height();
-          var paddingTop = _h - 180;
-          var contentHeight = (_h - 324) < 480 ? 480 : (_h - 324);
-      
-          //.wrap高度
-          $(".wrap").css("min-height", _h);
-      
-          if(paddingTop < 350) {
-            paddingTop = 350
-          }
-          $(".headerTop").css("paddingTop", paddingTop);
-          var isOpen = false;
-          var openFunc = function(speed, speed_logo) {
-            clearTimeout(sT);
-            if(isOpen == false) {
-              isOpen = true;
-              $(".topBar").addClass("topFixed");
-              $(".topB,.topNav").addClass("open");
-              $("#logo").animate({
-                "left": 30,
-                "top": 45
-              }, speed_logo, "swing");
-              $(".siteSearchBar").animate({
-                "right": 30,
-                "top": 55
-              }, speed, "swing", function() {
-                $("#content").css("visibility", "visible").animate({
-                  "height": contentHeight
-                }, speed, "swing");
-              });
-              $(".headerTop").animate({
-                "paddingTop": 160
+        $(".indTab,.aboutBox").slide({
+          delayTime: 0
+        });
+        $(".aboutPage .side").slide({
+          titCell: ".hd",
+          targetCell: ".bd",
+          mainCell: ".none",
+          effect: "slideDown"
+        });
+        $(".wrap").slide({
+          titCell: ".mainNav li",
+          mainCell: ".topColumns",
+          effect: "fade",
+          prevCell: ".none",
+          nextCell: ".none"
+        });
+    
+    
+        // 引导状态
+        var _h = $(window).height();
+        var paddingTop = _h - 180;
+        var contentHeight = (_h - 324) < 480 ? 480 : (_h - 324);
+    
+        //.wrap高度
+        $(".wrap").css("min-height", _h);
+    
+        if(paddingTop < 350) {
+          paddingTop = 350
+        }
+        $(".headerTop").css("paddingTop", paddingTop);
+        var isOpen = false;
+        var openFunc = function(speed, speed_logo) {
+          clearTimeout(sT);
+          if(isOpen == false) {
+            isOpen = true;
+            $(".topBar").addClass("topFixed");
+            $(".topB,.topNav").addClass("open");
+            $("#logo").animate({
+              "left": 30,
+              "top": 45
+            }, speed_logo, "swing");
+            $(".siteSearchBar").animate({
+              "right": 30,
+              "top": 55
+            }, speed, "swing", function() {
+              $("#content").css("visibility", "visible").animate({
+                "height": contentHeight
               }, speed, "swing");
-            } else if(isOpen == true) {
-              isOpen = false;
-              $(".topBar").removeClass("topFixed topHei");
-              $(".topB,.topNav").removeClass("open");
-              $("#logo2").removeClass("show");
-              $("#content").css({
-                "visibility": "hidden",
-                "height": 1
-              });
-              $(".headerTop").animate({
-                "paddingTop": paddingTop
-              }, speed, "swing", function() {
-      
-              });
-              $("#logo").animate({
-                "left": 412,
-                "top": 80
-              }, speed_logo, "swing");
-              $(".siteSearchBar").animate({
-                "right": 310,
-                "top": 210
-              }, speed, "swing");
-            }
+            });
+            $(".headerTop").animate({
+              "paddingTop": 160
+            }, speed, "swing");
+          } else if(isOpen == true) {
+            isOpen = false;
+            $(".topBar").removeClass("topFixed topHei");
+            $(".topB,.topNav").removeClass("open");
+            $("#logo2").removeClass("show");
+            $("#content").css({
+              "visibility": "hidden",
+              "height": 1
+            });
+            $(".headerTop").animate({
+              "paddingTop": paddingTop
+            }, speed, "swing", function() {
+    
+            });
+            $("#logo").animate({
+              "left": 412,
+              "top": 80
+            }, speed_logo, "swing");
+            $(".siteSearchBar").animate({
+              "right": 310,
+              "top": 210
+            }, speed, "swing");
           }
-          $(".indBtns .open").click(function() {
-            openFunc(1000, 1500)
-          });
-          $(".menuBtn").click(function() {
-            openFunc(1000, 1500)
-          });
-          var sT = setTimeout(function() {
-            if(isOpen == false) {
-              openFunc(1000, 1500)
-            }
-          }, 10000);
-          
-          //滚动事件
-          window.onscroll = function() {
-            if(getScrollTop() > 100) {
-              $(".topBar").addClass("topHei");
-              $("#logo2").addClass("show");
-            } else {
-              $(".topBar").removeClass("topHei");
-              $("#logo2").removeClass("show");
-            }
-          }
+        }
+        $(".menuBtn").click(function() {
+          openFunc(1000, 1500)
+        });
+        //cookie记录
+        if($.cookie('Flag')){
+          openFunc(1000, 1500);
+        }
+        $.cookie('Flag', "1", { expires: 1, path: '/' });
         
-          function getScrollTop() {
-            var scrollPos;
-            if(window.pageYOffset) {
-              scrollPos = window.pageYOffset;
-            } else if(document.compatMode && document.compatMode != 'BackCompat') {
-              scrollPos = document.documentElement.scrollTop;
-            } else if(document.body) {
-              scrollPos = document.body.scrollTop;
-            }
-            return scrollPos;
+        var sT = setTimeout(function() {
+          if(isOpen == false) {
+            openFunc(1000, 1500)
           }
+        }, 10000);
       </script>
 
       
     </div>
-    <script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
-    <script src="/Content/_Common/Base/js/power.js"></script>
-
   </body>
 
 </html>

@@ -16,13 +16,13 @@
 </head>
 <body>
     <div class="wrap">
-      <!--背景轮播-->
-    <stl:include file="/include/bgSlide.html"></stl:include>
-    <!--topBar-->
+    	<!--背景轮播-->
+		<stl:include file="/include/bgSlide.html"></stl:include>
+		<!--topBar-->
         <stl:include file="/include/topBar.html"></stl:include>
         <!-- header S -->
         <stl:include file="/include/header.html"></stl:include>
-        <!-- header E -->
+
         <!-- content S -->
         <div id="content" class="newsPage">
             <div class="path">              
@@ -34,48 +34,48 @@
                 <div id="focusNews" class="focusBox">
                     <div class="bd">
                         <ul>
-                          <stl:contents channelIndex="政务动态" scope="All" isTop="true" isImage="true" totalNum="5">
+                        	<stl:contents channelIndex="政务动态" scope="All" isTop="true" isImage="true" totalNum="5">
                                 <li>
-                                  <div class="pic">
-                                    <stl:a target="_blank">
-                                      <stl:image alt="{content.Title}"></stl:image>
-                                    </stl:a>
-                                  </div>
-                                  <div class="con">
-                                      <h3 class="title"><stl:a class="tit" title="{content.Title}">{content.Title}</stl:a></h3>
-                                      <span class="titleBg"></span>
-                                  </div>
-                              </li>
-                          </stl:contents>
+	                                <div class="pic">
+	                                	<stl:a>
+	                                		<stl:image alt="{content.Title}"></stl:image>
+	                                	</stl:a>
+	                                </div>
+	                                <div class="con">
+	                                    <h3 class="title"><stl:a class="tit" title="{content.Title}">{content.Title}</stl:a></h3>
+	                                    <span class="titleBg"></span>
+	                                </div>
+	                            </li>
+                        	</stl:contents>
                         </ul>
                     </div>
                     <div class="hd">
                         <ul>
-                          <stl:contents channelIndex="政务动态" scope="All" isTop="true" isImage="true" totalNum="5">
+                        	<stl:contents channelIndex="政务动态" scope="All" isTop="true" isImage="true" totalNum="5">
                                 <li></li>
-                          </stl:contents>
+                        	</stl:contents>
                         </ul>
                     </div>
                 </div>
                 <script language="javascript"> jQuery("#focusNews").slide({ mainCell: ".bd ul", effect: "fold", autoPlay: true, vis: "auto", interTime: 3500 });</script>
                 <ul class="topicList">
-                  <stl:contents channelIndex="政务动态" scope="All" isTop="true" isImage="false" totalNum="3">
+                	<stl:contents channelIndex="政务动态" scope="All" isTop="true" isImage="false" totalNum="3">
                         <li class="t">
-                          <dl class="date">
-                              <dt><stl:content type="AddDate" formatString="HH:mm:ss"></stl:content></dt>
-                              <dd><stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content></dd>
-                          </dl>
-                          <div class="con">
-                              <div class="title">
-                                <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
-                              </div>
-                              <span class="titleBg"></span>
-                              <div class="intro">
-                                <stl:content type="Summary"></stl:content>
-                              </div>
-                          </div>
-                      </li>
-                  </stl:contents>
+	                        <dl class="date">
+	                            <dt><stl:content type="AddDate" formatString="HH:mm:ss"></stl:content></dt>
+	                            <dd><stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content></dd>
+	                        </dl>
+	                        <div class="con">
+	                            <div class="title">
+	                            	<stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+	                            </div>
+	                            <span class="titleBg"></span>
+	                            <div class="intro">
+	                            	<stl:content type="Summary"></stl:content>
+	                            </div>
+	                        </div>
+	                    </li>
+                	</stl:contents>
                 </ul>
             </div>
             <!-- rowA E -->
@@ -87,65 +87,84 @@
                         <div class="hd">
                             <a class="more" href='javascript:void(0)'>更多&gt;&gt;</a>
                             <ul>
-                                <li><stl:a channelIndex="政务要闻" target="_self">政务要闻</stl:a></li>
-                                <li><stl:a channelIndex="国省要闻" target="_self">国省要闻</stl:a></li>
-                                <li><stl:a channelIndex="工作动态" target="_self">工作动态</stl:a></li>
+                            	<li><stl:a channelIndex="今日安州">今日安州</stl:a></li>
+                                <li><stl:a channelIndex="政务要闻">政务要闻</stl:a></li>
+                                <li><stl:a channelIndex="国省要闻">国省要闻</stl:a></li>
+                                <li><stl:a channelIndex="工作动态">工作动态</stl:a></li>
                             </ul>
                         </div>
                         <div class="bd largStyle">
-                            <ul class="dateList">
-                              <stl:contents channelIndex="政务要闻" totalNum="5">
-                                <li>
-                                      <dl class="date">
-                                          <dt><stl:content type="AddDate" formatString="dd"></stl:content></dt>
-                                          <dd><stl:content type="AddDate" formatString="yyyy-MM"></stl:content></dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
-                                          </div>
-                                          <div class="intro">
-                                               <stl:content type="Summary"></stl:content><stl:a class="detail">[详细]</stl:a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              </stl:contents>
+                        	<ul class="dateList">
+                            	<stl:contents channelIndex="今日安州" totalNum="5">
+                            		<li>
+	                                    <dl class="date">
+	                                        <dt><stl:content type="AddDate" formatString="dd"></stl:content></dt>
+	                                        <dd><stl:content type="AddDate" formatString="yyyy-MM"></stl:content></dd>
+	                                    </dl>
+	                                    <div class="con">
+	                                        <div class="title">
+	                                        	<stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+	                                        </div>
+	                                        <div class="intro">
+	                                           	<stl:content type="Summary"></stl:content><stl:a class="detail">[详细]</stl:a>
+	                                        </div>
+	                                    </div>
+	                                </li>
+                            	</stl:contents>
                             </ul>
                             <ul class="dateList">
-                              <stl:contents channelIndex="国省要闻" totalNum="5">
-                                <li>
-                                      <dl class="date">
-                                          <dt><stl:content type="AddDate" formatString="dd"></stl:content></dt>
-                                          <dd><stl:content type="AddDate" formatString="yyyy-MM"></stl:content></dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
-                                          </div>
-                                          <div class="intro">
-                                               <stl:content type="Summary"></stl:content><stl:a class="detail">[详细]</stl:a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              </stl:contents>
+                            	<stl:contents channelIndex="政务要闻" totalNum="5">
+                            		<li>
+	                                    <dl class="date">
+	                                        <dt><stl:content type="AddDate" formatString="dd"></stl:content></dt>
+	                                        <dd><stl:content type="AddDate" formatString="yyyy-MM"></stl:content></dd>
+	                                    </dl>
+	                                    <div class="con">
+	                                        <div class="title">
+	                                        	<stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+	                                        </div>
+	                                        <div class="intro">
+	                                           	<stl:content type="Summary"></stl:content><stl:a class="detail">[详细]</stl:a>
+	                                        </div>
+	                                    </div>
+	                                </li>
+                            	</stl:contents>
+                            </ul>
+                            <ul class="dateList">
+                            	<stl:contents channelIndex="国省要闻" totalNum="5">
+                            		<li>
+	                                    <dl class="date">
+	                                        <dt><stl:content type="AddDate" formatString="dd"></stl:content></dt>
+	                                        <dd><stl:content type="AddDate" formatString="yyyy-MM"></stl:content></dd>
+	                                    </dl>
+	                                    <div class="con">
+	                                        <div class="title">
+	                                        	<stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+	                                        </div>
+	                                        <div class="intro">
+	                                           	<stl:content type="Summary"></stl:content><stl:a class="detail">[详细]</stl:a>
+	                                        </div>
+	                                    </div>
+	                                </li>
+                            	</stl:contents>
                             </ul>
                             <ul class="dateList">
                                 <stl:contents channelIndex="工作动态" totalNum="5">
-                                <li>
-                                      <dl class="date">
-                                          <dt><stl:content type="AddDate" formatString="dd"></stl:content></dt>
-                                          <dd><stl:content type="AddDate" formatString="yyyy-MM"></stl:content></dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
-                                          </div>
-                                          <div class="intro">
-                                               <stl:content type="Summary"></stl:content><stl:a class="detail">[详细]</stl:a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              </stl:contents>
+                            		<li>
+	                                    <dl class="date">
+	                                        <dt><stl:content type="AddDate" formatString="dd"></stl:content></dt>
+	                                        <dd><stl:content type="AddDate" formatString="yyyy-MM"></stl:content></dd>
+	                                    </dl>
+	                                    <div class="con">
+	                                        <div class="title">
+	                                        	<stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+	                                        </div>
+	                                        <div class="intro">
+	                                           	<stl:content type="Summary"></stl:content><stl:a class="detail">[详细]</stl:a>
+	                                        </div>
+	                                    </div>
+	                                </li>
+                            	</stl:contents>
                             </ul>
                             
                         </div>
@@ -155,35 +174,35 @@
                         <div class="hd">
                             <a class="more" href='javascript:void(0)'>更多&gt;&gt;</a>
                             <ul>
-                                <li><stl:a channelIndex="解读回应" target="_self">解读回应</stl:a></li>
-                                <li><stl:a channelIndex="回应关切" target="_self">回应关切</stl:a></li>
-                                <li><stl:a channelIndex="新闻发布会" target="_self">新闻发布会</stl:a></li>
+                                <li><stl:a channelIndex="解读回应">解读回应</stl:a></li>
+                                <li><stl:a channelIndex="回应关切">回应关切</stl:a></li>
+                                <li><stl:a channelIndex="新闻发布会">新闻发布会</stl:a></li>
                             </ul>
                         </div>
                         <div class="bd">
                             <ul class="infoList">
                                 <stl:contents channelIndex="解读回应" totalNum="7">
-                                  <li>
-                                      <span class="date"><stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content></span>
-                                      <stl:a title="{content.Title}" target="_blank">{content.Title}</stl:a>
-                                  </li>
-                              </stl:contents>
+	                                <li>
+	                                    <span class="date"><stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content></span>
+	                                    <stl:a title="{content.Title}">{content.Title}</stl:a>
+	                                </li>
+                            	</stl:contents>
                             </ul>
                             <ul class="infoList">
-                              <stl:contents channelIndex="回应关切" totalNum="7">
-                                  <li>
-                                      <span class="date"><stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content></span>
-                                      <stl:a title="{content.Title}" target="_blank">{content.Title}</stl:a>
-                                  </li>
-                              </stl:contents>
+                            	<stl:contents channelIndex="回应关切" totalNum="7">
+	                                <li>
+	                                    <span class="date"><stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content></span>
+	                                    <stl:a title="{content.Title}">{content.Title}</stl:a>
+	                                </li>
+                            	</stl:contents>
                             </ul>
                             <ul class="infoList">
-                              <stl:contents channelIndex="新闻发布会" totalNum="7">
-                                  <li>
-                                      <span class="date"><stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content></span>
-                                      <stl:a title="{content.Title}" target="_blank">{content.Title}</stl:a>
-                                  </li>
-                              </stl:contents>
+                            	<stl:contents channelIndex="新闻发布会" totalNum="7">
+	                                <li>
+	                                    <span class="date"><stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content></span>
+	                                    <stl:a title="{content.Title}">{content.Title}</stl:a>
+	                                </li>
+                            	</stl:contents>
                             </ul>
                         </div>
                     </div>
@@ -193,24 +212,24 @@
                     <!-- 视频新闻 -->
                     <div class="boxB" id="tpxw">
                         <div class="hd">
-                            <stl:a class="more" channelIndex="视频新闻" target="_self">更多&gt;&gt;</stl:a>
-                            <h3><stl:a channelIndex="视频新闻" target="_self">视频新闻</stl:a></h3>
+                            <stl:a class="more" channelIndex="视频新闻">更多&gt;&gt;</stl:a>
+                            <h3><stl:a channelIndex="视频新闻">视频新闻</stl:a></h3>
                         </div>
                         <div class="bd">
                             <ul class="picPageList picPageListA">
-                              <stl:contents channelIndex="视频新闻" isImage="true" totalNum="3">
-                                  <li>
-                                      <div class="pic">
-                                        <stl:a>
-                                          <stl:image alt="{content.Title}"></stl:image>
-                                        </stl:a>
-                                      </div>
-                                      <div class="title">
-                                        <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
-                                      </div>
-                                      <span class="titleBg"></span>
-                                  </li>
-                              </stl:contents>
+                            	<stl:contents channelIndex="视频新闻" isImage="true" totalNum="3">
+	                                <li>
+	                                    <div class="pic">
+	                                    	<stl:a>
+	                                    		<stl:image alt="{content.Title}"></stl:image>
+	                                    	</stl:a>
+	                                    </div>
+	                                    <div class="title">
+	                                    	<stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+	                                    </div>
+	                                    <span class="titleBg"></span>
+	                                </li>
+                            	</stl:contents>
                             </ul>
                         </div>
                     </div>
@@ -219,46 +238,59 @@
                     <!-- 政府公告 -->
                     <div class="news-sideBox" id="zfgg">
                         <div class="hd">
-                            <stl:a class="more" channelIndex="政府公告" target="_self">更多&gt;&gt;</stl:a>
+                            <stl:a class="more" channelIndex="政府公告">更多&gt;&gt;</stl:a>
                             <h3><stl:a channelIndex="政府公告"></stl:a></h3>
                         </div>
                         <div class="bd">
                             <ul class="dateList">
-                <stl:contents channelIndex="政府公告" totalNum="3">
-                  <li>
-                    <dl class="date">
-                                          <dt><stl:content type="AddDate" formatString="dd"></stl:content></dt>
-                                          <dd><stl:content type="AddDate" formatString="yyyy-MM"></stl:content></dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
-                                          </div>
-                                          <div class="intro">
-                                               <stl:content type="Summary"></stl:content><stl:a class="detail">[详细]</stl:a>
-                                          </div>
-                                      </div>
-                                  </li>
-                </stl:contents>
+								<stl:contents channelIndex="政府公告" totalNum="3">
+									<li>
+										<dl class="date">
+	                                        <dt><stl:content type="AddDate" formatString="dd"></stl:content></dt>
+	                                        <dd><stl:content type="AddDate" formatString="yyyy-MM"></stl:content></dd>
+	                                    </dl>
+	                                    <div class="con">
+	                                        <div class="title">
+	                                        	<stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+	                                        </div>
+	                                        <div class="intro">
+	                                           	<stl:content type="Summary"></stl:content><stl:a class="detail">[详细]</stl:a>
+	                                        </div>
+	                                    </div>
+	                                </li>
+								</stl:contents>
                             </ul>
                         </div>
                     </div>
                     <!-- 便民公告 -->
                     <div class="news-sideBox" id="bmgg">
                         <div class="hd">
-                            <stl:a class="more" channelIndex="便民公告" target="_self">更多&gt;&gt;</stl:a>
-                            <h3><stl:a channelIndex="便民公告"></stl:a></h3>
+                            <a class="more" href='javascript:void(0)'>更多&gt;&gt;</a>
+                            <ul>
+                            	<li><h3><stl:a channelIndex="便民公告"></stl:a></h3></li>
+                            	<li><h3><stl:a channelIndex="民生快递"></stl:a></h3></li>
+                            </ul>
                         </div>
                         <div class="bd">
                             <ul class="infoList">
-                              <stl:contents channelIndex="便民公告" totalNum="8">
-                                  <li>
-                                      <stl:a title="{content.Title}" target="_blank">{content.Title}</stl:a>
-                                  </li>
-                              </stl:contents>
+                            	<stl:contents channelIndex="便民公告" totalNum="8">
+	                                <li>
+	                                    <stl:a title="{content.Title}">{content.Title}</stl:a>
+	                                </li>
+                            	</stl:contents>
+                            </ul>
+                            <ul class="infoList">
+                            	<stl:contents channelIndex="民生快递" totalNum="8">
+	                                <li>
+	                                    <stl:a title="{content.Title}">{content.Title}</stl:a>
+	                                </li>
+                            	</stl:contents>
                             </ul>
                         </div>
                     </div>
+                    <script>
+                    jQuery("#bmgg").slide({ vis:1, delayTime:0, startFun: function (i, c, s, t) { s.find(".more").attr("href", t.eq(i).find("a").attr("href")) } });
+                    </script>
                     <!-- 热点关注 -->
                     <div class="news-sideBox" id="rdtj">
                         <div class="hd">
@@ -266,22 +298,22 @@
                         </div>
                         <div class="bd">
                             <ul class="rankList">
-                              <stl:contents channelIndex="热点关注" totalNum="10">
-                                <stl:if type="ItemIndex" operate="LessThan" value="4">
-                                  <stl:yes> 
-                                    <li class="hot"> 
-                                      <em class="number">{content.ItemIndex}</em>
-                                          <stl:a target="_blank" title="{content.Title}">{content.Title}</stl:a>
-                                      </li>
-                                  </stl:yes>  
-                                  <stl:no> 
-                                    <li> 
-                                      <em class="number">{content.ItemIndex}</em>
-                                          <stl:a target="_blank" title="{content.Title}">{content.Title}</stl:a>
-                                      </li>
-                                  </stl:no>  
-                                </stl:if>
-                              </stl:contents>
+                            	<stl:contents channelIndex="热点关注" totalNum="10">
+                            		<stl:if type="ItemIndex" operate="LessThan" value="4">
+                            			<stl:yes> 
+                            				<li class="hot"> 
+                            					<em class="number">{content.ItemIndex}</em>
+			                                    <stl:a title="{content.Title}">{content.Title}</stl:a>
+			                                </li>
+                            			</stl:yes>  
+                            			<stl:no> 
+                            				<li> 
+                            					<em class="number">{content.ItemIndex}</em>
+			                                    <stl:a title="{content.Title}">{content.Title}</stl:a>
+			                                </li>
+                            			</stl:no>  
+                            		</stl:if>
+                            	</stl:contents>
                             </ul>
                         </div>
                     </div>
@@ -292,9 +324,6 @@
         <!-- content E -->
         <!-- footer S -->
         <stl:include file="/include/footer.html"></stl:include>
-    </div>
-    <script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
-    <script src="/Content/_Common/Base/js/power.js"></script>
-
+</div>
 </body>
 </html>

@@ -11,13 +11,10 @@
     <meta name="format-detection" content="telephone=no, email=no">
     <meta name="HandheldFriendly" content="true" />
     <title>政务动态_安州区人民政府门户网站</title>
-    
     <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
 <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
 <link href="/Content/Main/Base/css/cssWeiban.css" rel="stylesheet" type="text/css" />
-<link href="/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
 <link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
-
 <script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
 <script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
 <script src="/Content/_Common/Base/js/webCommon.js"></script>
@@ -25,6 +22,7 @@
 <script src="/Content/_Common/Base/js/slides.js"></script>
 <script src="/Content/_Common/Base/js/indexJSRed.js"></script>
 <script src="/Content/_Common/Base/js/StoT.js"></script>
+    <link href="/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
 <script>var $pageInfo = {publishmentSystemID : 1, channelID : 1026, contentID : 0, siteUrl : "", homeUrl : "/home", currentUrl : "/channels/1026.html", rootUrl : "", apiUrl : "/api"};</script></head>
 <body>
     <div class="wrap">
@@ -201,7 +199,7 @@
                 </li>
                 <li class="li1" id="li-zw">
                     <h3 class="h1">
-                        <a href="/channels/6.html" target="_self">政务公开</a>
+                        <a href="/channels/1026.html" target="_self">政务公开</a>
                     </h3>
                 </li>
                 <li class="li1" id="li-fw">
@@ -978,6 +976,31 @@
 </footer>
 <!-- footer E -->
 <script>
+	//滚动事件
+	window.onscroll = function() {
+		if(getScrollTop() > 100) {
+			$(".topBar").addClass("topHei");
+			$("#logo2").addClass("show");
+		} else {
+			$(".topBar").removeClass("topHei");
+			$("#logo2").removeClass("show");
+		}
+	}
+
+	function getScrollTop() {
+		var scrollPos;
+		if(window.pageYOffset) {
+			scrollPos = window.pageYOffset;
+		} else if(document.compatMode && document.compatMode != 'BackCompat') {
+			scrollPos = document.documentElement.scrollTop;
+		} else if(document.body) {
+			scrollPos = document.body.scrollTop;
+		}
+		return scrollPos;
+	}
+</script>
+
+<script>
 	(function () {
         var navST;
         var navST1;
@@ -1002,6 +1025,8 @@
 			})
 			//.topNav .tip
 			$(".topNav .tip").hide();
+			//.topBar
+			$(".topBar").addClass("topFixed");
 		}
 
         //鼠标离开导航后，回复默认.on1类位置

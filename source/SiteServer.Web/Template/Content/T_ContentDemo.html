@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" />
+    <meta name="description" />
+    <meta name="application-name" content="安州区人民政府门户网站" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true" />
+    <title>{Channel.Title}-{Content.Title}</title>
+    <link href="{Stl.SiteUrl}/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
+    <link href="{Stl.SiteUrl}/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+    <link href="{Stl.SiteUrl}/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
+    <link href="{Stl.SiteUrl}/sitefiles/assets/commentInput/style.css" rel="stylesheet" type="text/css" />
+    <script src="{Stl.SiteUrl}/sitefiles/assets/commentInput/script.js" language="javascript"></script>
+    <link href="{Stl.SiteUrl}/Content/_Common/Base/css/power.css" rel="stylesheet" />
+    <script src="{Stl.SiteUrl}/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
+    <script src="{Stl.SiteUrl}/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
+    <!--     <script src="/Content/_Common/Base/js/antiClickjack.js"></script> -->
+    <script src="{Stl.SiteUrl}/Content/_Common/Base/js/webCommon.js"></script>
+    <script src="{Stl.SiteUrl}/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
+    <script src="{Stl.SiteUrl}/Content/_Common/Base/js/StoT.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!--背景轮播-->
+    <stl:include file="/include/bgSlide.html"></stl:include>
+    <!--topBar-->
+    <stl:include file="/include/topBar.html"></stl:include>
+    <!-- header S -->
+    <stl:include file="/include/header.html"></stl:include>
+        
+        <!-- content S -->
+        <div id="content">
+            <div class="path">
+                <em>您的位置：</em><stl:location separator=">"></stl:location>               
+            </div>
+          <h1>读取扩展字段测试</h1> 
+                <h2> <stl:content type="Title"></stl:content></h2>
+           <h1> <stl:content type="Keywords"></stl:content></h1>
+          
+           <h1> <stl:content type="DocumentNo"></stl:content></h1>
+          <h1> <stl:content type="Publisher"></stl:content></h1>
+               <h2>categoryID:<stl:content type="Category5ID"></stl:content ></h2>
+          验证发布成功
+          <stl:content type="Title"></stl:content >
+          
+            <a href="{Stl.CurrentUrl}?title=这里是中文标题&name=here is the english name&pageId=123">{Stl.CurrentUrl}?title=这里是中文标题&name=here is the english name&pageId=123</a>
+<hr>
+<stl:dynamic>
+  <table class="table table-bordered table-straped">
+  <tr class="info thead">
+    <td width="150">参数名称</td>
+    <td>参数值</td>
+  </tr>
+  <tr>
+    <td>title</td>
+    <td><code>{Request.title}</code></td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td><code>{Request.name}</code></td>
+  </tr>
+  <tr>
+    <td>pageId</td>
+    <td><code>{Request.pageId}</code></td>
+  </tr>
+  </table>
+</stl:dynamic>
+          
+          
+        </div>
+            
+      
+    
+      
+        <!-- content E -->
+        <stl:include file="/include/footer.html"></stl:include>
+        
+    </div>
+    <script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
+    <script src="/Content/_Common/Base/js/power.js"></script>
+
+    <script src="/Content/_Common/Assets/Scripts/jquery.PrintArea.js"></script>
+    <script src="/Content/_Common/Base/js/article.js"></script>
+
+</body>
+</html>
+
+

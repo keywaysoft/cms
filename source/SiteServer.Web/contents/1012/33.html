@@ -12,25 +12,27 @@
     <meta name="HandheldFriendly" content="true" />
     <title>回应关切-&#9;  安州羽毛球不应成为被忽视的运动</title>
     <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
-    <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+<link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+<link href="/Content/Main/Base/css/cssWeiban.css" rel="stylesheet" type="text/css" />
+<link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
+<script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
+<script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
+<script src="/Content/_Common/Base/js/webCommon.js"></script>
+<script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
+<script src="/Content/_Common/Base/js/slides.js"></script>
+<script src="/Content/_Common/Base/js/StoT.js"></script>
     <link href="/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
-    <link href="/sitefiles/assets/commentInput/style.css" rel="stylesheet" type="text/css" />
-    <script src="/sitefiles/assets/commentInput/script.js" language="javascript"></script>
-    <link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
-    <script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
-    <script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
-    <!--     <script src="/Content/_Common/Base/js/antiClickjack.js"></script> -->
-    <script src="/Content/_Common/Base/js/webCommon.js"></script>
-    <script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
-    <script src="/Content/_Common/Base/js/StoT.js"></script>
+    <script src="/Content/_Common/Base/js/qrcode.min.js"></script>
+    <script src="/Content/_Common/Assets/Scripts/jquery.PrintArea.js"></script>
+    <script src="/Content/_Common/Base/js/article.js"></script>
+    
 <script>var $pageInfo = {publishmentSystemID : 1, channelID : 1012, contentID : 33, siteUrl : "", homeUrl : "/home", currentUrl : "/contents/1012/33.html", rootUrl : "", apiUrl : "/api"};</script></head>
 <body>
-<script type="text/javascript" charset="utf-8" src="/sitefiles/assets/components/jquery-1.9.1.min.js"></script><script type="text/javascript" charset="utf-8" src="/sitefiles/assets/jquery/jquery-jtemplates.js"></script><link href="/sitefiles/assets/jquery/showLoading/css/showLoading.css" rel="stylesheet" media="screen" /><script type="text/javascript" charset="utf-8" src="/sitefiles/assets/jquery/showLoading/js/jquery.showLoading.min.js"></script><script type="text/javascript" charset="utf-8" src="/sitefiles/assets/jquery/validate.js"></script><script type="text/javascript">!window.jQuery&&document.write('<script src="/sitefiles/assets/components/jquery-1.9.1.min.js" language="javascript"></'+'script>');</script><script src="/sitefiles/assets/components/js.cookie.js" type="text/javascript"></script><link href="/sitefiles/assets/vote/css/vote.css" type="text/css" rel="stylesheet" />
-<script src="/sitefiles/assets/components/lodash-4.17.4.min.js" type="text/javascript"></script><script src="/sitefiles/assets/components/stlClient.js" type="text/javascript"></script><script src="/sitefiles/assets/components/vue-2.1.10.min.js" type="text/javascript"></script>
+<script src="/sitefiles/assets/components/js.cookie.js" type="text/javascript"></script><script src="/sitefiles/assets/components/lodash-4.17.4.min.js" type="text/javascript"></script><script src="/sitefiles/assets/components/stlClient.js" type="text/javascript"></script><script src="/sitefiles/assets/components/vue-2.1.10.min.js" type="text/javascript"></script>
 
     <div class="wrap">
         <!--背景轮播-->
-    <div class="loopBg">
+		<div class="loopBg">
 	<div class="bd">
 		<ul>
 			<li style="background-image: url(/Content/Main/Base/img/body-1.png);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Main/Base/img/body-1.png',sizingMethod='scale');"></li>
@@ -111,41 +113,45 @@
 		}
 	}
 </style>
-    <!--topBar-->
-    <div class="topBar">
+		<!--topBar-->
+		<div class="topBar">
     <div class="siteWidth">
-        <h1 title="中共安州区委区人民政府门户网站" id="logo2"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo-mini.png" /></a></h1>
+        <h1 title="中共安州区委区人民政府门户网站" id="logo2"><a href="/"><img src="/content/main/base/img/logo-mini.png" /></a></h1>
         <ul class="list">
-            <li class="en"><a href="/english">English</a></li>
+            <li class="en"><a href="javascript:void(0);">English</a></li>
             <li class="phone">
-                <a href="javascript:;">手机版</a>
+                <a href="javascript:void(0);">手机版</a>
                 <div class="pic">
                     <img src="/qrcode/qrcode.gif">
                     <i></i>
                 </div>
             </li>
-            <li class="obstacleFree"><a target="_blank" href="/wca.html">无障碍版</a></li>
+            <li class="obstacleFree"><a target="_blank" href="javascript:void(0);">无障碍版</a></li>
             <li class="wechat">
-                <a href="javascript:;">政务微信</a>
+                <a href="javascript:void(0);">政务微信</a>
                 <div class="pic">
                     <img src='/Content/Main/Base/img/weixin.png' />
                     <i></i>
                 </div>
             </li>
-            <li class="robot"><a href="/znjqr">政务机器人</a></li>
+            <li class="robot"><a href="javascript:void(0);">政务机器人</a></li>
         </ul>
     </div>
     <span class="topBarBg"></span>
 </div>
-    <!-- header S -->
-    <header id="header">
+<div class="topB"></div>
+<script>
+	$(".topBar li").hover(function() {
+		$(this).addClass("on")
+	}, function() {
+		$(this).removeClass("on")
+	});
+</script>
+		<!-- header S -->
+		<header id="header">
     <div class="headerTop siteWidth">
-
-        <h1 title="中共安州区委区人民政府门户网站" id="logo"><a href="http://www.anxian.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
-
+        <h1 title="中共安州区委区人民政府门户网站" id="logo"><a href="/"><img src="/content/main/base/img/logo.png" /></a></h1>
         <div class="siteSearchBar">
-
-
             <div class="s-form">
                 <input type="hidden" id="sitelist" value="[{&quot;Name&quot;:&quot;全站群&quot;,&quot;Value&quot;:0},{&quot;Name&quot;:&quot;本站&quot;,&quot;Value&quot;:1},{&quot;Name&quot;:&quot;审计局&quot;,&quot;Value&quot;:2},{&quot;Name&quot;:&quot;农业局&quot;,&quot;Value&quot;:18}]" />
                 <input type="hidden" id="siteid" name="sid" value="0">
@@ -166,24 +172,23 @@
             </div>
             <script src="/Content/_Common/FullTextSearch/js/default-site-search-box.js"></script>
             <script>
-            document.getElementById("inputkeyword").onkeydown = function (e) {
-                e = e || window.event;
-                if (e.keyCode == 13) {
-                    gSearch();
-                }
-            };
-
-            function gSearch() {
-                var keyword = document.getElementById('inputkeyword').value;
-                var route = document.getElementById('route').value;
-
-                if (keyword == '' || keyword == "请输入关键字") {
-                    alert("请输入关键字");
-                } else {
-                    var siteid = document.getElementById('siteid').value;
-                    window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
-                }
-            }
+	            document.getElementById("inputkeyword").onkeydown = function (e) {
+	                e = e || window.event;
+	                if (e.keyCode == 13) {
+	                    gSearch();
+	                }
+	            };
+	            function gSearch() {
+	                var keyword = document.getElementById('inputkeyword').value;
+	                var route = document.getElementById('route').value;
+	
+	                if (keyword == '' || keyword == "请输入关键字") {
+	                    alert("请输入关键字");
+	                } else {
+	                    var siteid = document.getElementById('siteid').value;
+	                    window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
+	                }
+	            }
             </script>
         </div>
 
@@ -202,7 +207,7 @@
                 </li>
                 <li class="li1" id="li-zw">
                     <h3 class="h1">
-                        <a href="/channels/6.html" target="_self">政务公开</a>
+                        <a href="/channels/1010.html" target="_self">政务公开</a>
                     </h3>
                 </li>
                 <li class="li1" id="li-fw">
@@ -212,7 +217,7 @@
                 </li>
                 <li class="li1" id="li-hd">
                     <h3 class="h1">
-                        <a href="/channels/4.html" target="_self">公众参与</a>
+                        <a href="/channels/1018.html" target="_self">公众参与</a>
                     </h3>
                 </li>
                 <li class="li1" id="li-sq">
@@ -222,11 +227,14 @@
                 </li>
             </ul>
 
-
-            <span class="tip">点击切换<i class="icon iconfont icon-pointerleft"></i></span>
+			
+            <span class="tip" data-id="回应关切">点击切换<i class="icon iconfont icon-pointerleft"></i></span>
         </nav>
         <script>
-          $(".topNav .h1").prepend("<i></i>")
+        	(function(){
+        		$(".topNav .h1").prepend("<i></i>");
+	          	if($(".topNav .tip").data("id") != "首页")$(".topNav .tip").hide();
+        	})();
         </script>
     </div>
 </header>
@@ -238,7 +246,7 @@
             </div>
             <!-- 正文内容 S -->
             <article class="articleCon">
-                <div class="printArea" data-power-area='content'>
+                <div class="printArea">
                     <!-- 标题 -->
                     <h2 class="title">
                         &#9;  安州羽毛球不应成为被忽视的运动
@@ -248,9 +256,11 @@
                     </div>
                     <!-- 正文 -->
                     <div class="conTxt" data-power-defaultFontSize="16" data-power-defaultLineHeight="2" data-power-imgMaxWidth="800">
-                        <p><p><span style="font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">我是落户安州的一名外地人。因走亲戚来到安州之后，看到安州不大不小、城市美丽、基础设施完善，故决意定居于此。</span><br/><span style="font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从休闲散步到体育馆去学打羽毛球，快乐的生活让5年的时光飞快地度过。球艺和球友也越来越多，也让我更加热爱上了这片他乡的土地，真有种“暖风吹得游人醉，只把安州当故乡”之感。</span><br/><span style="font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但至去年以来，体育馆羽毛球场馆就经常以这样那样的理由被占用，一会要打乒乓球赛，一会要搞桥牌赛，一会又要搞蓝球赛……..至此，快乐的羽毛球运动和一群正值状大的羽毛球队伍就开始不断的降温。现在更是，一到暑假、寒假，体育馆就干脆把羽毛球活动停了，专职让外边承包搞篮球培训，很多球友无耐之下只有去九州体育馆、去区外的体育设施打球，有的干脆就放弃的这们运动，这让刚刚起步的安州羽毛球运动更受重创，也从某种层面而言，是把安州的人气在往区外推。</span><br/><span style="font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在驱车区外打球之时，当问及“你们安州就没有羽毛球场地么？”时，我只有相视一笑。在此，我真的想问一句，篮球、乒乓球重要，羽毛球就真的不重要么？</span><br/><span style="font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我也向馆内反映过，但从原来羽毛球馆人声鼎沸到当下因为常期闭馆、人员外流的情况来看，我的反映不值一提，也不受关注。但于公于私，我都觉得，这项运动应该发展，这种活动应该开展，只有均衡的运动发展，才能让安州幸福满满、更具吸引。</span><br/><span style="font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为此，我特向廖书记建议，能否让体育馆长态开放羽毛球馆，哪怕一周开几次，只要时间固定，，球友和爱好者就根据这个时间点来安排活动，这样长此以往，这项运动的人员就会再次云集，羽毛球运动也能得到均衡发展。</span><br/><span style="font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如不当的地方，请见谅！</span></p><p><span style="color: rgb(26, 26, 26); font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">市民同志： 你好！ 你有关“安州区羽毛球不应成为被忽视的运动”的来信收悉。感谢你对安州体育事业的关心。现将有关情况回复如下： 安州区体育馆是我区重要的全民健身场地，为满足群众健身需要，体育馆每周一、三、五上午为免费开放，市、区下达体育馆免费开放每年4.5万人次，我区近几年每年免费开放在5.2万人次以上。同时，区体育馆每周星期一至星期五下午15:00-20:00全馆对外开放（不包括有重大活动安排期间）。 根据安州区2017年全民健身活动计划和省市比赛安排，体育馆要进行篮球、象棋、乒乓球、桥牌等活动。2017年安州区总工会安排5至6月在体育馆开展全区“劳动杯”职工运动会，进行象棋、桥牌、乒乓球、拔河、篮球等五项比赛活动，比赛涉及全区18个乡镇、区级20多个部门以及市内多个单位，项目多、人员广、时间跨度长，每天比赛进行到21:00以后。另外，“三大球”的发展和业余训练，是体育馆的一项重要职能，体育馆承担了全区青少年篮球训练任务，而平时学生因学习不能到体育馆参加训练，只能利用寒暑假组织训练。 由于上述原因，羽毛球锻炼只能根据实际情况安排时间，我区只有一个体育馆，要承担体育所有项目的训练和比赛，无法固定时间段。根据青少年篮球训练安排，7月5- 22日篮球正常训练，在没有其他赛事安排的情况下，每周一、四晚上可以安排羽毛球锻炼，7月23日-8月5日可以每天满足羽毛球锻炼，9月份开始，羽毛球锻炼时间将有一定的保证。由此给广大羽毛球爱好者锻炼带来了不便深表歉意。 以后我馆将打紧安排各项赛事活动，尽量安排更多的时间给羽毛球爱好者锻炼。 若有其他疑问，请与我局体卫艺股股长刘清平联系，联系电话：0816-4338090。 绵阳市安州区教育和体育局 2017年7月10日&nbsp;</span></p><span style="color: rgb(26, 26, 26); font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></span></p>
-                        
-                        
+                        <p><span style="font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">我是落户安州的一名外地人。因走亲戚来到安州之后，看到安州不大不小、城市美丽、基础设施完善，故决意定居于此。</span><br/><span style="font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从休闲散步到体育馆去学打羽毛球，快乐的生活让5年的时光飞快地度过。球艺和球友也越来越多，也让我更加热爱上了这片他乡的土地，真有种“暖风吹得游人醉，只把安州当故乡”之感。</span><br/><span style="font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;但至去年以来，体育馆羽毛球场馆就经常以这样那样的理由被占用，一会要打乒乓球赛，一会要搞桥牌赛，一会又要搞蓝球赛……..至此，快乐的羽毛球运动和一群正值状大的羽毛球队伍就开始不断的降温。现在更是，一到暑假、寒假，体育馆就干脆把羽毛球活动停了，专职让外边承包搞篮球培训，很多球友无耐之下只有去九州体育馆、去区外的体育设施打球，有的干脆就放弃的这们运动，这让刚刚起步的安州羽毛球运动更受重创，也从某种层面而言，是把安州的人气在往区外推。</span><br/><span style="font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在驱车区外打球之时，当问及“你们安州就没有羽毛球场地么？”时，我只有相视一笑。在此，我真的想问一句，篮球、乒乓球重要，羽毛球就真的不重要么？</span><br/><span style="font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我也向馆内反映过，但从原来羽毛球馆人声鼎沸到当下因为常期闭馆、人员外流的情况来看，我的反映不值一提，也不受关注。但于公于私，我都觉得，这项运动应该发展，这种活动应该开展，只有均衡的运动发展，才能让安州幸福满满、更具吸引。</span><br/><span style="font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为此，我特向廖书记建议，能否让体育馆长态开放羽毛球馆，哪怕一周开几次，只要时间固定，，球友和爱好者就根据这个时间点来安排活动，这样长此以往，这项运动的人员就会再次云集，羽毛球运动也能得到均衡发展。</span><br/><span style="font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如不当的地方，请见谅！</span></p><p><span style="color: rgb(26, 26, 26); font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; background-color: rgb(255, 255, 255);">市民同志： 你好！ 你有关“安州区羽毛球不应成为被忽视的运动”的来信收悉。感谢你对安州体育事业的关心。现将有关情况回复如下： 安州区体育馆是我区重要的全民健身场地，为满足群众健身需要，体育馆每周一、三、五上午为免费开放，市、区下达体育馆免费开放每年4.5万人次，我区近几年每年免费开放在5.2万人次以上。同时，区体育馆每周星期一至星期五下午15:00-20:00全馆对外开放（不包括有重大活动安排期间）。 根据安州区2017年全民健身活动计划和省市比赛安排，体育馆要进行篮球、象棋、乒乓球、桥牌等活动。2017年安州区总工会安排5至6月在体育馆开展全区“劳动杯”职工运动会，进行象棋、桥牌、乒乓球、拔河、篮球等五项比赛活动，比赛涉及全区18个乡镇、区级20多个部门以及市内多个单位，项目多、人员广、时间跨度长，每天比赛进行到21:00以后。另外，“三大球”的发展和业余训练，是体育馆的一项重要职能，体育馆承担了全区青少年篮球训练任务，而平时学生因学习不能到体育馆参加训练，只能利用寒暑假组织训练。 由于上述原因，羽毛球锻炼只能根据实际情况安排时间，我区只有一个体育馆，要承担体育所有项目的训练和比赛，无法固定时间段。根据青少年篮球训练安排，7月5- 22日篮球正常训练，在没有其他赛事安排的情况下，每周一、四晚上可以安排羽毛球锻炼，7月23日-8月5日可以每天满足羽毛球锻炼，9月份开始，羽毛球锻炼时间将有一定的保证。由此给广大羽毛球爱好者锻炼带来了不便深表歉意。 以后我馆将打紧安排各项赛事活动，尽量安排更多的时间给羽毛球爱好者锻炼。 若有其他疑问，请与我局体卫艺股股长刘清平联系，联系电话：0816-4338090。 绵阳市安州区教育和体育局 2017年7月10日&nbsp;</span></p><span style="color: rgb(26, 26, 26); font-family: 微软雅黑, 黑休, Tahoma, Geneva, sans-serif, 宋体; font-size: 12px; white-space: normal; background-color: rgb(255, 255, 255);"><br/></span>
+                    </div>
+                </div>
+                
+                
 <link href="/sitefiles/assets/commentInput/style.css" rel="stylesheet" type="text/css" />
 <script src="/sitefiles/assets/commentInput/script.js" language="javascript"></script>
 <div id="stlCommentContainer" class="stlCommentContainer">
@@ -377,14 +387,22 @@
     loadComments('/home', '/api/stl/comments/1/1012/33', '/api/stl/comments/1/1012/33/actions/add', '/api/stl/comments/1/1012/33/actions/good', '/api/stl/comments/1/1012/33/actions/delete', '/api/users/actions/logout', 10, false);
 </script>
 
-                        
-                    </div>
-                </div>
-
 
                 <div class="qrCode">
-                    扫一扫在手机打开当前页<br />
-                    <img src="/qrcode/qrcode.gif" />
+                    扫一扫在手机打开当前页
+                    <div id="qrcodeContent" title="/contents/1012/33.html" style="width:150px;height:150px;margin:0 auto;padding:20px;box-sizing:border-box;"></div>
+                    <script>
+                    	(function() {
+							var qrcode = new QRCode('qrcodeContent', {
+								text: window.location.host + document.getElementById("qrcodeContent").getAttribute("title"),
+								width: 110,
+								height: 110,
+								colorDark : '#000000',
+								colorLight : '#ffffff',
+								correctLevel : QRCode.CorrectLevel.H
+							});
+                    	})();
+                    </script>
                 </div>                
                 <!-- comment -->
 
@@ -410,16 +428,22 @@
                             ~(-new Date() / 36e5)];
                     }
                     </script>
-                    <a href="javascript:;" class="dyBtn" data-power-command="printarea">【打印正文】</a>
+                    <a href="javascript:;" class="dyBtn">【打印正文】</a>
+                    <script>
+                    	$(".dyBtn").on("click",function(){
+                    		$(".printArea").printArea();
+                    	});
+                    </script>
                 </div>
                 <div class="others">
-                    <div class="prev">
-                        <span>shang上一篇：</span><a href="/hd/yqhy/content_105606">网传在川本一批招生高校投档线 省教育考试院辟谣：假的！</a>
-                        <span class="date">[ 2017-07-13 ]</span>
-                    </div>
-                    <div class="next">
-                        <span>下一篇：没有了！</span>
-                    </div>
+                	<st:navigation>
+                		<div class="prev">
+                			<span>上一篇:没有了</span>
+	                    </div>
+	                    <div class="next">
+	                        <span>下一篇:<a href="/contents/1012/32.html">&#9;  关于长兴小区烧烤店扰民的问题</a></span>
+	                    </div>
+                	</st:navigation>
                 </div>
                 <div class="rankWrap">
                     <!-- 点击排行 -->
@@ -429,66 +453,49 @@
                         </div>
                         <div class="bd">
                             <ul class="rankList">
-
-                                <li class="first hot">
-                                    <em class="number">1</em>
-                                    <a href="/xw/rdgz/content_4596" target="_blank" title="标题：安州房产市场发展28条出台 大学生、农民购房可享补助
-点击数：2878
-发表时间：2015-04-28">
-                                        安州房产市场发展28条出台 大学生、农民购房可享补助
-                                    </a>
-                                </li>
-
-
-                                <li class="hot">
-                                    <em class="number">2</em>
-                                    <a href="/xw/rdgz/content_3678" target="_blank" title="标题：打破“铁饭碗” 机关事业单位人员今后咋养老？
-点击数：2772
-发表时间：2015-01-15">
-                                        打破“铁饭碗” 机关事业单位人员今后咋养老？
-                                    </a>
-                                </li>
-
-
-                                <li class="hot">
-                                    <em class="number">3</em>
-                                    <a href="/xw/rdgz/content_4893" target="_blank" title="标题：安州今年养老金个体参保标准出台 年缴费最低4308元
-点击数：2732
-发表时间：2015-06-08">
-                                        安州今年养老金个体参保标准出台 年缴费最低4308元
-                                    </a>
-                                </li>
-
-
-                                <li>
-                                    <em class="number">4</em>
-                                    <a href="/xw/rdgz/content_3963" target="_blank" title="标题：政府工作报告绘就新一年安州区发展蓝图
-点击数：2649
-发表时间：2015-02-06">
-                                        政府工作报告绘就新一年安州区发展蓝图
-                                    </a>
-                                </li>
-
-
-                                <li>
-                                    <em class="number">5</em>
-                                    <a href="/xw/rdgz/content_4888" target="_blank" title="标题：7月1日起四川提高最低工资标准 平均上调10.5%
-点击数：2324
-发表时间：2015-06-09">
-                                        7月1日起四川提高最低工资标准 平均上调10.5%
-                                    </a>
-                                </li>
-
-
-                                <li class="last">
-                                    <em class="number">6</em>
-                                    <a href="/xw/rdgz/content_8180" target="_blank" title="标题：200元/平米购房补贴政策 安州继续实施一年
-点击数：2245
-发表时间：2016-03-24">
-                                        200元/平米购房补贴政策 安州继续实施一年
-                                    </a>
-                                </li>
-
+                            	
+                            		
+                            				<li class="hot">
+			                                    <em class="number">1</em>
+			                                    <a href="/contents/2225/243.html" title="&#9;  安州羽毛球不应成为被忽视的运动">&#9;  安州羽毛球不应成为被忽视的运动</a>
+			                                </li>
+                            			
+								
+                            		
+                            				<li class="hot">
+			                                    <em class="number">2</em>
+			                                    <a href="/contents/2225/242.html" title="&#9;  关于长兴小区烧烤店扰民的问题">&#9;  关于长兴小区烧烤店扰民的问题</a>
+			                                </li>
+                            			
+								
+                            		
+                            				<li class="hot">
+			                                    <em class="number">3</em>
+			                                    <a href="/contents/2225/241.html" title="&#9;  河堤问题">&#9;  河堤问题</a>
+			                                </li>
+                            			
+								
+                            		
+                            				<li>
+			                                    <em class="number">4</em>
+			                                    <a href="/contents/2225/240.html" title="  建议在道路一侧建隔音墙">  建议在道路一侧建隔音墙</a>
+			                                </li>
+                            			
+								
+                            		
+                            				<li>
+			                                    <em class="number">5</em>
+			                                    <a href="/contents/2225/239.html" title="客运车辆乱停乱放站外上客没有得到有效治理">客运车辆乱停乱放站外上客没有得到有效治理</a>
+			                                </li>
+                            			
+								
+                            		
+                            				<li>
+			                                    <em class="number">6</em>
+			                                    <a href="/contents/2225/238.html" title="文明城市中的不文明">文明城市中的不文明</a>
+			                                </li>
+                            			
+								
                             </ul>
                         </div>
                     </div>
@@ -499,28 +506,31 @@
                         </div>
                         <div class="bd">
                             <ul class="picPageList picPageListA">
-                                <li class="first">
-                                    <div class="pic">
-                                        <a href="/xw/jrxx/content_113178">
-                                            <img alt="安州：创新机制抓双拥 军民融合抓双拥" src="/upload/main/image/2017/08/01/201708020903158425_240_180.jpg" width="240" height="180" />
-                                        </a>
-                                    </div>
-                                    <div class="title">
-                                        <a class="tit" href="/xw/jrxx/content_113178" title="安州：创新机制抓双拥 军民融合抓双拥">安州：创新机制抓双拥 军民融合抓双拥</a>
-                                    </div>
-                                    <span class="titleBg"></span>
-                                </li>
-                                <li class="last">
-                                    <div class="pic">
-                                        <a href="/xw/jrxx/content_113176">
-                                            <img alt="花荄镇对89个村开展财务审计 整治“微腐败”" src="/upload/main/image/2017/08/01/201708020900070984_240_180.jpg" width="240" height="180" />
-                                        </a>
-                                    </div>
-                                    <div class="title">
-                                        <a class="tit" href="/xw/jrxx/content_113176" title="花荄镇对89个村开展财务审计 整治“微腐败”">花荄镇对89个村开展财务审计 整治“微腐败”</a>
-                                    </div>
-                                    <span class="titleBg"></span>
-                                </li>
+                            	
+                            		<li>
+	                                    <div class="pic">
+	                                    	<a href="/contents/1014/49.html">
+	                                    		<img src="/upload/images/2017/8/t_29145436740.jpg" alt="感谢你对安州体育事业的关心" width="240" height="180" />
+	                                    	</a>
+	                                    </div>
+	                                    <div class="title">
+	                                    	<a href="/contents/1014/49.html" class="tit" title="感谢你对安州体育事业的关心">感谢你对安州体育事业的关心</a>
+	                                    </div>
+	                                    <span class="titleBg"></span>
+	                               </li>
+								
+                            		<li>
+	                                    <div class="pic">
+	                                    	<a href="/contents/8/5.html">
+	                                    		<img src="/upload/images/2017/8/t_299545697.jpg" alt="廖雪梅到永河镇调研" width="240" height="180" />
+	                                    	</a>
+	                                    </div>
+	                                    <div class="title">
+	                                    	<a href="/contents/8/5.html" class="tit" title="廖雪梅到永河镇调研">廖雪梅到永河镇调研</a>
+	                                    </div>
+	                                    <span class="titleBg"></span>
+	                               </li>
+								
                             </ul>
                         </div>
                     </div>
@@ -528,133 +538,165 @@
             </article>
             <!-- 正文内容 E -->
         </div>
-        
         <!-- content E -->
         <footer id="footer">
-    <div class="siteWidth">
-        <div class="footNav">
+	<div class="siteWidth">
+		<div class="footNav">
 
-            <a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
-            <a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
-            <a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
-            <a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
-            <a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
-            <a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
-        </div>
-        <div class="copyRight">
-            <p>
-                安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br />地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br />蜀ICP备12001441号<br /> &nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1" />川公网安备 51070302110201号</a>
-            </p>
-            <div class="pics">
-                <a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg" /></a> &nbsp;&nbsp;
-                <script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg" /></a> &nbsp;&nbsp;<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png" /></a>
-            </div>
-        </div>
-    </div>
+			<a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
+			<a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
+			<a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
+			<a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
+			<a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
+			<a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
+		</div>
+		<div class="copyRight">
+			<p>
+				安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br />地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br />蜀ICP备12001441号<br /> &nbsp;
+				<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1" />川公网安备 51070302110201号</a>
+			</p>
+			<div class="pics">
+				<a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg" /></a> &nbsp;&nbsp;
+				<script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;
+				<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg" /></a> &nbsp;&nbsp;
+				<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png" /></a>
+			</div>
+		</div>
+	</div>
 </footer>
 <!-- footer E -->
 <script>
-	(function () {
-        var navST;
-        var navST1;
-        var name = 'mainNav';
-        var t = 200;
-        var type = 1;
-        var removeOn = 'False';
-        var effect = 'fade';
-        var appendItem = '#';
-        var li = "#" + name + " li";
-        var index = 0;
-
-        //栏目页调整
+	(function() {
+		var navST;
+		var navST1;
+		var name = 'mainNav';
+		var t = 200;
+		var type = 1;
+		var removeOn = 'False';
+		var effect = 'fade';
+		var appendItem = '#';
+		var li = "#" + name + " li";
+		var index = 0;
+		
+		
+		//滚动事件
+		scrollFun();
+		window.onscroll = function(){
+			scrollFun();	
+		}
+		function scrollFun(){
+			if(getScrollTop() > 100) {
+				$(".topBar").addClass("topHei");
+				$("#logo2").addClass("show");
+			} else {
+				$(".topBar").removeClass("topHei");
+				$("#logo2").removeClass("show");
+			}
+		}
+		function getScrollTop() {
+			var scrollPos;
+			if(window.pageYOffset) {
+				scrollPos = window.pageYOffset;
+			} else if(document.compatMode && document.compatMode != 'BackCompat') {
+				scrollPos = document.documentElement.scrollTop;
+			} else if(document.body) {
+				scrollPos = document.body.scrollTop;
+			}
+			return scrollPos;
+		}
+		
+		//栏目页调整
 		if($(".path").length>0){
 			//当前状态
-			var _url = document.querySelectorAll(".path a")[1].getAttribute("href");
+			var _url = document.querySelectorAll(".path a")[1].getAttribute("href"),
+				_name = document.querySelectorAll(".path a")[1].innerHTML,
+				_title = $(".sideMenu .hd h3").data("title");
+			$(".sideMenu .hd h3").html(_name);
 			$(".mainNav .li1 a").each(function(i,e){
 				if($(e).attr("href") == _url){
 					$(e).closest(".li1").addClass("on1").siblings().removeClass("on1");
 					index = i;
 				}
 			})
-			//.topNav .tip
-			$(".topNav .tip").hide();
+			$(".sideMenu .singleList li a").each(function(i,e){
+				if($(e).html() == _title){
+					$(e).parent().addClass("on");
+				}
+			})
+			
+			//.topBar
+			$(".topBar").addClass("topFixed");
+		}
+		
+		
+
+		//鼠标离开导航后，回复默认.on1类位置
+		$("#" + name)
+			.hover(
+				function() {
+					if(navST1 != null) {
+						clearTimeout(navST1);
+					}
+				},
+				function() {
+					navST1 = setTimeout(function() {
+							$("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
+						},
+						500);
+				}
+			);
+
+		if(type == '1') {
+			li = "#" + name + " .li1";
+		}
+		if(appendItem != '#') { //插入内容
+			var appendHtml = $(appendItem).html();
+			$(li).first().append(appendHtml);
+			$(appendItem).remove();
 		}
 
-        //鼠标离开导航后，回复默认.on1类位置
-        $("#" + name)
-            .hover(
-                function () {
-                    if (navST1 != null) {
-                        clearTimeout(navST1);
-                    }
-                },
-                function () {
-                    navST1 = setTimeout(function () {
-                            $("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
-                        },
-                        500);
-                }
-            );
+		if(type == '3') {
+			$("#" + name + " .on1").find("ul").first().show();
+		}
 
-        if (type == '1') {
-            li = "#" + name + " .li1";
-        }
-        if (appendItem != '#') { //插入内容
-            var appendHtml = $(appendItem).html();
-            $(li).first().append(appendHtml);
-            $(appendItem).remove();
-        }
+		$(li)
+			.hover(function() {
+					var curItem = $(this);
+					var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+					$(li).removeClass("on" + onNum);
+					curItem.addClass("on" + onNum);
+					navST = setTimeout(function() { //延时触发
 
-        if (type == '3') {
-            $("#" + name + " .on1").find("ul").first().show();
-        }
-
-        $(li)
-            .hover(function () {
-                    var curItem = $(this);
-                    var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
-                    $(li).removeClass("on" + onNum);
-                    curItem.addClass("on" + onNum);
-                    navST = setTimeout(function () { //延时触发
-
-                            if ($("ul:first", curItem).css("display") != "block") {
-                                $(li + " .ul" + onNum).hide();
-                                if (effect == 'fade') {
-                                    $("ul:first", curItem).fadeIn(t);
-                                } else {
-                                    $("ul:first", curItem).slideDown(t);
-                                }
-                            };
-                            navST = null;
-                        },
-                        t);
-                },
-                function () {
-                    if (navST != null) {
-                        clearTimeout(navST);
-                    }
-                    if (type == '1' || type == '2') {
-                        if (effect == 'fade') {
-                            $(this).find("ul").first().fadeOut(t);
-                        } else {
-                            $(this).find("ul").first().slideUp(t);
-                        }
-                    }
-                    if (removeOn == 'True') {
-                        $(this).removeClass("on1");
-                    }
-                },
-                t); //end hover
-    })()
+							if($("ul:first", curItem).css("display") != "block") {
+								$(li + " .ul" + onNum).hide();
+								if(effect == 'fade') {
+									$("ul:first", curItem).fadeIn(t);
+								} else {
+									$("ul:first", curItem).slideDown(t);
+								}
+							};
+							navST = null;
+						},
+						t);
+				},
+				function() {
+					if(navST != null) {
+						clearTimeout(navST);
+					}
+					if(type == '1' || type == '2') {
+						if(effect == 'fade') {
+							$(this).find("ul").first().fadeOut(t);
+						} else {
+							$(this).find("ul").first().slideUp(t);
+						}
+					}
+					if(removeOn == 'True') {
+						$(this).removeClass("on1");
+					}
+				},
+				t); //end hover
+	})()
 </script>
-        
     </div>
-    <script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
-    <script src="/Content/_Common/Base/js/power.js"></script>
-
-    <script src="/Content/_Common/Assets/Scripts/jquery.PrintArea.js"></script>
-    <script src="/Content/_Common/Base/js/article.js"></script>
-
 </body>
 </html>
-

@@ -438,6 +438,9 @@ img {
 .ewb-map-img {
     float: left;
     position: relative;
+    width:444px;
+    height:285px;
+    overflow:hidden;
 }
 
 .ewb-map-copy {
@@ -495,10 +498,18 @@ img {
 }
 
 .ewb-map-info p {
+	max-height:288px;
+	overflow:hidden;
     line-height: 32px;
     font-size:13px;
     text-align:justify;
     text-indent: 2em;
+    position:relative;
+}
+.ewb-map-info p a{
+	position:absolute;
+	bottom:0;
+	right:0;
 }
 
 .ewb-intro-item {
@@ -751,9 +762,10 @@ img {
     overflow:hidden;
     opacity:0;
     transition:all .5s;
+    display:none;
 }
 
-.ewb-survey-bd.show{ opacity: 1;}
+.ewb-survey-bd.show{ opacity: 1; display:block;}
 
 .ewb-survey-l {
     width: 48%;

@@ -1,25 +1,33 @@
-﻿<div class="topBar">
+<div class="topBar">
     <div class="siteWidth">
-        <h1 title="中共安州区委区人民政府门户网站" id="logo2"><a href="http://www.luzhou.gov.cn"><img src="{Stl.SiteUrl}/content/main/base/img/logo-mini.png" /></a></h1>
+        <h1 title="中共安州区委区人民政府门户网站" id="logo2"><a href="/"><img src="/content/main/base/img/logo-mini.png" /></a></h1>
         <ul class="list">
-            <li class="en"><a href="{Stl.SiteUrl}/english">English</a></li>
+            <li class="en"><a href="javascript:void(0);">English</a></li>
             <li class="phone">
-                <a href="javascript:;">手机版</a>
+                <a href="javascript:void(0);">手机版</a>
                 <div class="pic">
-                    <img src="{Stl.SiteUrl}/qrcode/qrcode.gif">
+                    <img src="/qrcode/qrcode.gif">
                     <i></i>
                 </div>
             </li>
-            <li class="obstacleFree"><a target="_blank" href="{Stl.SiteUrl}/wca.html">无障碍版</a></li>
+            <li class="obstacleFree"><a target="_blank" href="javascript:void(0);">无障碍版</a></li>
             <li class="wechat">
-                <a href="javascript:;">政务微信</a>
+                <a href="javascript:void(0);">政务微信</a>
                 <div class="pic">
-                    <img src='{Stl.SiteUrl}/Content/Main/Base/img/weixin.png' />
+                    <img src='/Content/Main/Base/img/weixin.png' />
                     <i></i>
                 </div>
             </li>
-            <li class="robot"><a href="{Stl.SiteUrl}/znjqr">政务机器人</a></li>
+            <li class="robot"><a href="javascript:void(0);">政务机器人</a></li>
         </ul>
     </div>
     <span class="topBarBg"></span>
 </div>
+<div class="topB"></div>
+<script>
+	$(".topBar li").hover(function() {
+		$(this).addClass("on")
+	}, function() {
+		$(this).removeClass("on")
+	});
+</script>

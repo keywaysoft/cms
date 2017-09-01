@@ -19,21 +19,17 @@ $(document).ready(function () {
                 var lkWord = $(this).parent().parent().next().find("a").eq(0).text();
                 $(this).parent().parent().next().find("a").eq(0).html("<span>"+ lkWord +"</span>");
                 $(this).parent().parent().next().find("a").eq(0).children("span:eq(0)").trigger('click');
-            }
-            $(this).prev().attr("src", "/keyway/assets/icons/tree/plus-3.png");
-            $(this).prev().attr("isopen","false");
+            }            
+            $(this).prev().attr("isopen", "false");            
             $(this).prev().click();
+            $(this).prev().attr("src", "/keyway/assets/icons/tree/plus-3.png");
              navReset();
-        })
-
-        /*美化目录树图标*/
-        if( $(this).children("img").eq(0).attr("isopen") == "false"){
-            //$(this).children("img").eq(0).attr("src", "/keyway/assets/icons/tree/plus-1.png");
-        }else{
-            //$(this).children("img").eq(0).attr("src","/keyway/assets/icons/tree/plus-2.png");
-        }
+        })       
     });
-    $(".left-table tr[treeitemlevel=1] td img[isopen]").attr("src", "/keyway/assets/icons/tree/plus-3.png");
+    $(".left-table tr td img[isopen]").attr("src", "/keyway/assets/icons/tree/plus-3.png");
+    $(".left-table tr td img[isopen]").click(function () {
+        $(".left-table tr td img[isopen]").attr("src", "/keyway/assets/icons/tree/plus-3.png");
+    });
 });
 
 function boxMenuSwitch()
@@ -50,7 +46,7 @@ function boxMenu(){
     $('.left-table tr[treeitemlevel=1] td').each(function(){
         $(this).children("img").eq(0).hide();
     });
-    $(".toggle-nav i").removeClass().addClass('icon-arrow-right');
+    $(".toggle-nav i").removeClass().addClass('icon-arrow-right');    
 }
 
 function navReset(){
@@ -61,5 +57,5 @@ function navReset(){
     $('.left-table tr[treeitemlevel=1] td').each(function(){
         $(this).children("img").eq(0).show();
     });
-    $(".toggle-nav i").removeClass().addClass('icon-arrow-left');
+    $(".toggle-nav i").removeClass().addClass('icon-arrow-left');    
 }

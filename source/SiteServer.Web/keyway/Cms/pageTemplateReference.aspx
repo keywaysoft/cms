@@ -18,7 +18,7 @@
       <tr>
         <td>
           <blockquote style="margin-left:15px;margin-top:10px;">
-            <p>STL语言为SiteServer模板语言(SiteServer Template Language)的缩写，是一种和HTML语言类似的服务器端语言。</p>
+            <p>STL语言为Keyway WCM模板语言(System Template Language)的缩写，是一种和HTML语言类似的服务器端语言。</p>
           </blockquote>
         </td>
       </tr>

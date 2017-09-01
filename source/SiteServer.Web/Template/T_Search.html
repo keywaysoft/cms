@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="安州区人民政府门户网站,安州区政府,安州" />
+    <meta name="description" content="安州区人民政府门户网站 安州区  安州政府" />
+    <meta name="application-name" content="安州区人民政府门户网站" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true" />
+    <title>{Channel.Title}-{Content.Title}</title>
+    <stl:include file="/include/headLink.html"></stl:include>
+    <link href="/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <div class="wrap">
+      <!--背景轮播-->
+      <stl:include file="/include/bgSlide.html"></stl:include>
+      <!--topBar-->
+      <stl:include file="/include/topBar.html"></stl:include>
+      <!-- header S -->
+      <stl:include file="/include/header.html"></stl:include>
+
+      <!-- content S -->
+      <div id="content">
+        <div class="path">
+          <em>您的位置：</em> 首页 >  搜索
+        </div>
+        <!-- side S -->
+        <aside class="side">
+
+          <div id="sideMenu" class="sideMenu search">
+            <div class="hd">
+              <h3>搜索范围</h3>
+            </div>
+            <div class="bd">
+              <ul class="singleList">               
+                 <li  class="fTitle">查询范围</li>
+                <li>
+                  <ul>
+                    <li class="on"><a href="">全部</a></li>
+                    <li><a href="">标题</a></li>
+                    <li><a href="">内容</a></li>
+                  </ul>
+                 </li>   
+                 <li class="fTitle">
+                     时间范围
+                 </li>                
+                 <li>
+                    <ul>
+                      <li  class="on"><a href="">全部</a></li>
+                      <li><a href="">一天内</a></li>
+                      <li><a href="">一周内</a></li>
+                      <li><a href="">一月内</a></li>
+                      <li><a href="">一年内</a></li>
+                      <li><a href="">指定时间</a></li>
+                    </ul>                    
+                  </li>                            
+              </ul>
+            </div>
+          </div>
+          <script>
+//            if(jQuery("#sideMenu .bd li").size() === 0) {
+//              jQuery("#sideMenu").hide();
+//            }
+          </script>
+        </aside>
+        <!-- side E -->
+        <!-- mainContent S -->
+        <div class="mainContent">
+          <div class="mainBox">
+            <div class="mHd">
+              <h3>搜索关键字：<span class="fKeyword">江油</span> <span class="badge">50</span>
+                <span class="pull-right fTitle">政务动态/政务公开/办事服务</span>
+                <span class="pull-right fOrder">排序</span>
+              </h3>
+<form method="get" class="search" action="{Stl.SiteUrl}/utils/search.html" ><input class="text" type="text" name="word" placeholder="搜索"></form>
+            </div>
+            <div class="mBd">
+               <stl:search type="title,content" isHighlight="true">          <stl:loading>
+            <div class="alert alert-info" role="alert">
+              <strong>提示!</strong> 系统正在搜索中，请稍后...
+            </div>
+          </stl:loading>
+          <stl:yes>           
+              
+              
+              <!-- 正文内容 S -->
+              <ul class="pageTPList">
+                <stl:pageContents channelIndex="{Channel.Title}" pageNum="15">
+                      <li>
+                    <div class="title">
+                      <stl:a class="tit" title="{content.Title}">{content.Title}</stl:a>
+                    </div>
+                    <stl:itemTemplate selected="image">
+                      <div class="pic">
+                        <stl:a>
+                          <stl:image alt="{content.Title}"></stl:image>
+                        </stl:a>
+                      </div>
+                    </stl:itemTemplate>
+                    <div class="con">
+                      <div class="intro">
+                        <stl:content type="Summary"></stl:content>
+                      </div>
+                      <div class="others">
+                        <span class="date">{content.AddDate}</span>
+                      </div>
+                    </div>
+                  </li>
+                 </stl:pageContents>
+              </ul>
+              <script>
+                hover($(".pageTPList li"), "on")
+              </script>
+              <stl:pageItems>
+                    <div class="page">
+                  <stl:pageItem class="first" type="FirstPage" text="首页"></stl:pageItem>
+                      <stl:pageItem class="prev" type="PreviousPage" text="上一页"></stl:pageItem>
+                      
+                      <stl:pageItem type="PageNavigation">
+                        <stl:yes>
+                          <a href="{Current.Url}">{Current.Num}</a>
+                        </stl:yes>
+                        <stl:no>  
+                          <a class="current">{Current.Num}</a>
+                        </stl:no>
+                    </stl:pageItem>
+                      
+                      <stl:pageItem class="next" type="NextPage" text="下一页"></stl:pageItem>
+                      <stl:pageItem class="last" type="LastPage" text="尾页"></stl:pageItem>    
+                      
+                      <span class="total">共<stl:pageItem type="TotalNum"></stl:pageItem>条信息/共<stl:pageItem type="TotalPageNum"></stl:pageItem>页</span>
+                    <span class="select">跳转到第<stl:pageItem type="PageSelect"></stl:pageItem>页</span>
+                </div>
+                </stl:pageItems>
+              
+            
+              </stl:yes>
+               <stl:no>            <div class="alert alert-danger" role="alert">
+              <strong>抱歉!</strong> 找不到和您的查询相符的项目
+            </div>
+          </stl:no>
+        </stl:search>
+              <!-- 正文内容 E -->
+            </div>
+          </div>
+        </div>
+        <!-- mainContent E -->
+      </div>
+      <!-- content E -->
+
+      <stl:include file="/include/footer_utils.html"></stl:include>
+    </div>
+  </body>
+
+</html>

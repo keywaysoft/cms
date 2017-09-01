@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+  
+  <h1>  <stl:channel type="Title"></stl:channel></h1>
+  <h2><stl:channel channelIndex="国民经济管理" type="CountOfChannels"></stl:channel></h2>
+  <li><stl:channel parent="true" type="AddDate"></stl:channel></li>
+  <li> {channel.up.title}</li>
+  <li>{Stl.SiteId}</li>
+  
+  <h1>判断参数，动态加载模板</h1>
+  <stl:if testType="{Request.type}" testOperate="Equals" testValue="1">
+    {Request.type}
+        <stl:yes>
+            <LI><A href="/" class="current">hong's红色模板</A></LI>
+        </stl:yes>
+        <stl:no>
+            <LI>黄色模板</LI>
+        </stl:no>
+   </stl:if>
+  
+  
+  <p>
+ <stl:contents channelIndex="其他">
+   <stl:content type="Title"></stl:content>
+</stl:contents>
+    </p>
+</body>
+</html>

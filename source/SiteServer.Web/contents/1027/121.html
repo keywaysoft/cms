@@ -202,7 +202,7 @@
                 </li>
                 <li class="li1" id="li-zw">
                     <h3 class="h1">
-                        <a href="/channels/6.html" target="_self">政务公开</a>
+                        <a href="/channels/1027.html" target="_self">政务公开</a>
                     </h3>
                 </li>
                 <li class="li1" id="li-fw">
@@ -554,6 +554,31 @@
 </footer>
 <!-- footer E -->
 <script>
+	//滚动事件
+	window.onscroll = function() {
+		if(getScrollTop() > 100) {
+			$(".topBar").addClass("topHei");
+			$("#logo2").addClass("show");
+		} else {
+			$(".topBar").removeClass("topHei");
+			$("#logo2").removeClass("show");
+		}
+	}
+
+	function getScrollTop() {
+		var scrollPos;
+		if(window.pageYOffset) {
+			scrollPos = window.pageYOffset;
+		} else if(document.compatMode && document.compatMode != 'BackCompat') {
+			scrollPos = document.documentElement.scrollTop;
+		} else if(document.body) {
+			scrollPos = document.body.scrollTop;
+		}
+		return scrollPos;
+	}
+</script>
+
+<script>
 	(function () {
         var navST;
         var navST1;
@@ -578,6 +603,8 @@
 			})
 			//.topNav .tip
 			$(".topNav .tip").hide();
+			//.topBar
+			$(".topBar").addClass("topFixed");
 		}
 
         //鼠标离开导航后，回复默认.on1类位置

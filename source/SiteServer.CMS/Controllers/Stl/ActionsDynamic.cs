@@ -21,7 +21,7 @@ namespace SiteServer.CMS.Controllers.Stl
     isPageRefresh: {isPageRefresh.ToString().ToLower()},
     pageUrl: '{TranslateUtils.EncryptStringBySecretKey(pageUrl)}',
     ajaxDivId: '{ajaxDivId}',
-    templateContent: '{TranslateUtils.EncryptStringBySecretKey(templateContent)}'
+    templateContent: '{TranslateUtils.EncryptStringBySecretKey(templateContent)}',   
 }}";
         }
     }

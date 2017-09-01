@@ -12,25 +12,27 @@
     <meta name="HandheldFriendly" content="true" />
     <title>视频新闻-文明，每位市民的坚守</title>
     <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
-    <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+<link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+<link href="/Content/Main/Base/css/cssWeiban.css" rel="stylesheet" type="text/css" />
+<link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
+<script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
+<script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
+<script src="/Content/_Common/Base/js/webCommon.js"></script>
+<script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
+<script src="/Content/_Common/Base/js/slides.js"></script>
+<script src="/Content/_Common/Base/js/StoT.js"></script>
     <link href="/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
-    <link href="/sitefiles/assets/commentInput/style.css" rel="stylesheet" type="text/css" />
-    <script src="/sitefiles/assets/commentInput/script.js" language="javascript"></script>
-    <link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
-    <script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
-    <script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
-    <!--     <script src="/Content/_Common/Base/js/antiClickjack.js"></script> -->
-    <script src="/Content/_Common/Base/js/webCommon.js"></script>
-    <script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
-    <script src="/Content/_Common/Base/js/StoT.js"></script>
+    <script src="/Content/_Common/Base/js/qrcode.min.js"></script>
+    <script src="/Content/_Common/Assets/Scripts/jquery.PrintArea.js"></script>
+    <script src="/Content/_Common/Base/js/article.js"></script>
+    
 <script>var $pageInfo = {publishmentSystemID : 1, channelID : 1014, contentID : 42, siteUrl : "", homeUrl : "/home", currentUrl : "/contents/1014/42.html", rootUrl : "", apiUrl : "/api"};</script></head>
 <body>
-<script type="text/javascript" charset="utf-8" src="/sitefiles/assets/components/jquery-1.9.1.min.js"></script><script type="text/javascript" charset="utf-8" src="/sitefiles/assets/jquery/jquery-jtemplates.js"></script><link href="/sitefiles/assets/jquery/showLoading/css/showLoading.css" rel="stylesheet" media="screen" /><script type="text/javascript" charset="utf-8" src="/sitefiles/assets/jquery/showLoading/js/jquery.showLoading.min.js"></script><script type="text/javascript" charset="utf-8" src="/sitefiles/assets/jquery/validate.js"></script><script type="text/javascript">!window.jQuery&&document.write('<script src="/sitefiles/assets/components/jquery-1.9.1.min.js" language="javascript"></'+'script>');</script><script src="/sitefiles/assets/components/js.cookie.js" type="text/javascript"></script><link href="/sitefiles/assets/vote/css/vote.css" type="text/css" rel="stylesheet" />
-<script src="/sitefiles/assets/components/lodash-4.17.4.min.js" type="text/javascript"></script><script src="/sitefiles/assets/components/stlClient.js" type="text/javascript"></script><script src="/sitefiles/assets/components/vue-2.1.10.min.js" type="text/javascript"></script>
+<script src="/sitefiles/assets/components/js.cookie.js" type="text/javascript"></script><script src="/sitefiles/assets/components/lodash-4.17.4.min.js" type="text/javascript"></script><script src="/sitefiles/assets/components/stlClient.js" type="text/javascript"></script><script src="/sitefiles/assets/components/vue-2.1.10.min.js" type="text/javascript"></script>
 
     <div class="wrap">
         <!--背景轮播-->
-    <div class="loopBg">
+		<div class="loopBg">
 	<div class="bd">
 		<ul>
 			<li style="background-image: url(/Content/Main/Base/img/body-1.png);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Main/Base/img/body-1.png',sizingMethod='scale');"></li>
@@ -111,41 +113,45 @@
 		}
 	}
 </style>
-    <!--topBar-->
-    <div class="topBar">
+		<!--topBar-->
+		<div class="topBar">
     <div class="siteWidth">
-        <h1 title="中共安州区委区人民政府门户网站" id="logo2"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo-mini.png" /></a></h1>
+        <h1 title="中共安州区委区人民政府门户网站" id="logo2"><a href="/"><img src="/content/main/base/img/logo-mini.png" /></a></h1>
         <ul class="list">
-            <li class="en"><a href="/english">English</a></li>
+            <li class="en"><a href="javascript:void(0);">English</a></li>
             <li class="phone">
-                <a href="javascript:;">手机版</a>
+                <a href="javascript:void(0);">手机版</a>
                 <div class="pic">
                     <img src="/qrcode/qrcode.gif">
                     <i></i>
                 </div>
             </li>
-            <li class="obstacleFree"><a target="_blank" href="/wca.html">无障碍版</a></li>
+            <li class="obstacleFree"><a target="_blank" href="javascript:void(0);">无障碍版</a></li>
             <li class="wechat">
-                <a href="javascript:;">政务微信</a>
+                <a href="javascript:void(0);">政务微信</a>
                 <div class="pic">
                     <img src='/Content/Main/Base/img/weixin.png' />
                     <i></i>
                 </div>
             </li>
-            <li class="robot"><a href="/znjqr">政务机器人</a></li>
+            <li class="robot"><a href="javascript:void(0);">政务机器人</a></li>
         </ul>
     </div>
     <span class="topBarBg"></span>
 </div>
-    <!-- header S -->
-    <header id="header">
+<div class="topB"></div>
+<script>
+	$(".topBar li").hover(function() {
+		$(this).addClass("on")
+	}, function() {
+		$(this).removeClass("on")
+	});
+</script>
+		<!-- header S -->
+		<header id="header">
     <div class="headerTop siteWidth">
-
-        <h1 title="中共安州区委区人民政府门户网站" id="logo"><a href="http://www.anxian.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
-
+        <h1 title="中共安州区委区人民政府门户网站" id="logo"><a href="/"><img src="/content/main/base/img/logo.png" /></a></h1>
         <div class="siteSearchBar">
-
-
             <div class="s-form">
                 <input type="hidden" id="sitelist" value="[{&quot;Name&quot;:&quot;全站群&quot;,&quot;Value&quot;:0},{&quot;Name&quot;:&quot;本站&quot;,&quot;Value&quot;:1},{&quot;Name&quot;:&quot;审计局&quot;,&quot;Value&quot;:2},{&quot;Name&quot;:&quot;农业局&quot;,&quot;Value&quot;:18}]" />
                 <input type="hidden" id="siteid" name="sid" value="0">
@@ -166,24 +172,23 @@
             </div>
             <script src="/Content/_Common/FullTextSearch/js/default-site-search-box.js"></script>
             <script>
-            document.getElementById("inputkeyword").onkeydown = function (e) {
-                e = e || window.event;
-                if (e.keyCode == 13) {
-                    gSearch();
-                }
-            };
-
-            function gSearch() {
-                var keyword = document.getElementById('inputkeyword').value;
-                var route = document.getElementById('route').value;
-
-                if (keyword == '' || keyword == "请输入关键字") {
-                    alert("请输入关键字");
-                } else {
-                    var siteid = document.getElementById('siteid').value;
-                    window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
-                }
-            }
+	            document.getElementById("inputkeyword").onkeydown = function (e) {
+	                e = e || window.event;
+	                if (e.keyCode == 13) {
+	                    gSearch();
+	                }
+	            };
+	            function gSearch() {
+	                var keyword = document.getElementById('inputkeyword').value;
+	                var route = document.getElementById('route').value;
+	
+	                if (keyword == '' || keyword == "请输入关键字") {
+	                    alert("请输入关键字");
+	                } else {
+	                    var siteid = document.getElementById('siteid').value;
+	                    window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
+	                }
+	            }
             </script>
         </div>
 
@@ -202,7 +207,7 @@
                 </li>
                 <li class="li1" id="li-zw">
                     <h3 class="h1">
-                        <a href="/channels/6.html" target="_self">政务公开</a>
+                        <a href="/channels/1010.html" target="_self">政务公开</a>
                     </h3>
                 </li>
                 <li class="li1" id="li-fw">
@@ -212,7 +217,7 @@
                 </li>
                 <li class="li1" id="li-hd">
                     <h3 class="h1">
-                        <a href="/channels/4.html" target="_self">公众参与</a>
+                        <a href="/channels/1018.html" target="_self">公众参与</a>
                     </h3>
                 </li>
                 <li class="li1" id="li-sq">
@@ -222,11 +227,14 @@
                 </li>
             </ul>
 
-
-            <span class="tip">点击切换<i class="icon iconfont icon-pointerleft"></i></span>
+			
+            <span class="tip" data-id="视频新闻">点击切换<i class="icon iconfont icon-pointerleft"></i></span>
         </nav>
         <script>
-          $(".topNav .h1").prepend("<i></i>")
+        	(function(){
+        		$(".topNav .h1").prepend("<i></i>");
+	          	if($(".topNav .tip").data("id") != "首页")$(".topNav .tip").hide();
+        	})();
         </script>
     </div>
 </header>
@@ -238,7 +246,7 @@
             </div>
             <!-- 正文内容 S -->
             <article class="articleCon">
-                <div class="printArea" data-power-area='content'>
+                <div class="printArea">
                     <!-- 标题 -->
                     <h2 class="title">
                         文明，每位市民的坚守
@@ -248,9 +256,11 @@
                     </div>
                     <!-- 正文 -->
                     <div class="conTxt" data-power-defaultFontSize="16" data-power-defaultLineHeight="2" data-power-imgMaxWidth="800">
-                        <p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;"><img src="/upload/images/2017/8/s_29145654853.jpg"/>一座城市能够不断发展，最根本的力量源自不断传承的城市精神。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">撤县设区以来，文明城市建设在安州区已不再只是目标，更不是一句口号，它是人们的一举一动，是城市的一草一木。如今，走进安州区的大街小巷，满眼整洁清新、道路通畅；公交车站排队礼让成为常态，市民的幸福指数节节攀升。更为重要的是，借助文明城市建设，进一步增强了安州区的软实力和综合竞争力。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;"><strong>宜居，最大的民生幸福</strong></span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">在市民眼中，安州区一天天在变化，一天天在变美。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">自去年撤县设区以来，“道德模范”、“身边好人”评选和“清洁家园”“村规民约入我心”主题活动有序进行，实实在在的城市变化呈现眼前：桑河路、辽安路、秀茶路等路段一片片色彩斑斓、错落有致的绿化景观带随处可见；新建的安州客运站投入使用，城区滨江西路、文星大道、淘金大道三条市政大道全面竣工……在这些抬头可见、触手可及的变化中，安州越来越宜居。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">与文明同频共振的，还有民生福祉的改善，安州区始终把群众需求作为“第一信号”，把群众满意作为“第一标准”，贯穿文明城市建设始终。目前，“零障碍”服务在安州区深入推进，老百姓办事看到的是笑脸、感受的是效率、享受的是服务；投入120余万元，新铺设城市照明电缆线路13500米，检修更换灯具恢复亮灯2500余盏……这一批批项目，促进城市面貌、公共秩序、社会服务等诸多方面有了明显提升，让群众切实感受到文明城市建设带来的新变化。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">“这样的文明建设只惠民、不扰民，我们支持。”安州区群众对文明城市建设的支持率、参与率、满意率持续走高。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;"><strong>文明，每位市民的坚守</strong></span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">市民是城市的主体，也是城市文明的受益者。他们发自内心的支持和参与，成为安州区文明城市建设工作的原动力和生命力。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">8月7日，微信朋友圈被这样一条信息刷屏：“安州区全域无垃圾，我接棒，我保证：无论在哪里，都爱护公共卫生，不随手扔垃圾，不随地吐痰，热爱环境，从我做起……”不少安州市民在网上传递“文明接力棒”。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">在日常社区活动中，一个个社会“文明小细胞”被激活。“签了承诺书，就要遵守文明公约。”在花荄镇益昌社区，社区居民自发签订承诺书，为演绎社会大文明贡献力量；在民生小区的宣传栏上，社区居民用笔绘制出一幅幅文明城市建设手抄报，引导身边人讲文明树新风，争做文明绵阳人……</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">在安州区，建设文明城市犹如一场“幸福风暴”。利用“网上+线下”，广泛开展文明城市建设宣传，让市民积极参与文明城市建设，成为城市文明的倡导者、践行者、传播者和监督者。在全区发放印制有公益宣传内容的扇子、手袋等宣传品，印制《致全体市民的一封信》并录制成音频，由各社区志愿服务深入公共广场、主要街道、各居民小区进行宣传播放。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">不仅如此，安州区还以打造社会主义核心价值观主题宣传示范点为示范辐射，利用建筑围挡、繁华街道、客运站、公交站亭、室外大屏等广泛刊载公益广告，让社会主义核心价值观宣传成为绵阳城市新区一道亮丽的城市风景。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;"><strong>温暖，城市的幸福底色</strong></span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">从盆景到风景，从风景到风尚，安州区群众用实际行动，践行着“向上、向善、向美”，涌现出一大批学雷锋志愿服务组织和先进典型。截至目前，安州区共有141个各类志愿者服务组织、11000余名志愿者投身文明城市建设。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">连日来，在“清洁家园”主题活动中，安州区千余名志愿者深入主次干道、社区、小区居民院落，弯腰伸手、挥汗劳动，扮靓了城市形象。炎炎烈日下，一个穿着红马甲的小小身影在人群中格外抢眼，8岁的曹骏睿当天在妈妈带领下也参与到志愿活动中，清理起杂草来格外卖力。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">在安州区，以“暖冬行·爱传递”“汇聚志愿力量，建设美好家园”“文明安州·你我同行”文明交通劝导为主题的各种志愿服务活动中，时刻都有志愿者传递幸福文明“接力棒”的身影。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">近年来，安州区志愿服务活动蓬勃开展，内容日益丰富、领域不断拓展，在提高公民道德素质、培育社会文明风尚方面发挥了重要作用，成为新形势下加强精神文明建设的有力抓手。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">就这样，居住在城市每个角落的市民，或主动为之、或响应倡导，在城与人的良性互动中，渐次提升着城市文明。（《绵阳日报》记者 郭若雪 ）</span></p><div style="white-space: normal;"><span style="line-height: 2; font-size: 16px;"><br/></span></div><p><br/></p></p>
-                        
-                        
+                        <p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;"><img src="/upload/images/2017/8/s_29145654853.jpg"/>一座城市能够不断发展，最根本的力量源自不断传承的城市精神。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">撤县设区以来，文明城市建设在安州区已不再只是目标，更不是一句口号，它是人们的一举一动，是城市的一草一木。如今，走进安州区的大街小巷，满眼整洁清新、道路通畅；公交车站排队礼让成为常态，市民的幸福指数节节攀升。更为重要的是，借助文明城市建设，进一步增强了安州区的软实力和综合竞争力。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;"><strong>宜居，最大的民生幸福</strong></span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">在市民眼中，安州区一天天在变化，一天天在变美。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">自去年撤县设区以来，“道德模范”、“身边好人”评选和“清洁家园”“村规民约入我心”主题活动有序进行，实实在在的城市变化呈现眼前：桑河路、辽安路、秀茶路等路段一片片色彩斑斓、错落有致的绿化景观带随处可见；新建的安州客运站投入使用，城区滨江西路、文星大道、淘金大道三条市政大道全面竣工……在这些抬头可见、触手可及的变化中，安州越来越宜居。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">与文明同频共振的，还有民生福祉的改善，安州区始终把群众需求作为“第一信号”，把群众满意作为“第一标准”，贯穿文明城市建设始终。目前，“零障碍”服务在安州区深入推进，老百姓办事看到的是笑脸、感受的是效率、享受的是服务；投入120余万元，新铺设城市照明电缆线路13500米，检修更换灯具恢复亮灯2500余盏……这一批批项目，促进城市面貌、公共秩序、社会服务等诸多方面有了明显提升，让群众切实感受到文明城市建设带来的新变化。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">“这样的文明建设只惠民、不扰民，我们支持。”安州区群众对文明城市建设的支持率、参与率、满意率持续走高。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;"><strong>文明，每位市民的坚守</strong></span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">市民是城市的主体，也是城市文明的受益者。他们发自内心的支持和参与，成为安州区文明城市建设工作的原动力和生命力。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">8月7日，微信朋友圈被这样一条信息刷屏：“安州区全域无垃圾，我接棒，我保证：无论在哪里，都爱护公共卫生，不随手扔垃圾，不随地吐痰，热爱环境，从我做起……”不少安州市民在网上传递“文明接力棒”。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">在日常社区活动中，一个个社会“文明小细胞”被激活。“签了承诺书，就要遵守文明公约。”在花荄镇益昌社区，社区居民自发签订承诺书，为演绎社会大文明贡献力量；在民生小区的宣传栏上，社区居民用笔绘制出一幅幅文明城市建设手抄报，引导身边人讲文明树新风，争做文明绵阳人……</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">在安州区，建设文明城市犹如一场“幸福风暴”。利用“网上+线下”，广泛开展文明城市建设宣传，让市民积极参与文明城市建设，成为城市文明的倡导者、践行者、传播者和监督者。在全区发放印制有公益宣传内容的扇子、手袋等宣传品，印制《致全体市民的一封信》并录制成音频，由各社区志愿服务深入公共广场、主要街道、各居民小区进行宣传播放。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">不仅如此，安州区还以打造社会主义核心价值观主题宣传示范点为示范辐射，利用建筑围挡、繁华街道、客运站、公交站亭、室外大屏等广泛刊载公益广告，让社会主义核心价值观宣传成为绵阳城市新区一道亮丽的城市风景。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;"><strong>温暖，城市的幸福底色</strong></span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">从盆景到风景，从风景到风尚，安州区群众用实际行动，践行着“向上、向善、向美”，涌现出一大批学雷锋志愿服务组织和先进典型。截至目前，安州区共有141个各类志愿者服务组织、11000余名志愿者投身文明城市建设。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">连日来，在“清洁家园”主题活动中，安州区千余名志愿者深入主次干道、社区、小区居民院落，弯腰伸手、挥汗劳动，扮靓了城市形象。炎炎烈日下，一个穿着红马甲的小小身影在人群中格外抢眼，8岁的曹骏睿当天在妈妈带领下也参与到志愿活动中，清理起杂草来格外卖力。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">在安州区，以“暖冬行·爱传递”“汇聚志愿力量，建设美好家园”“文明安州·你我同行”文明交通劝导为主题的各种志愿服务活动中，时刻都有志愿者传递幸福文明“接力棒”的身影。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">近年来，安州区志愿服务活动蓬勃开展，内容日益丰富、领域不断拓展，在提高公民道德素质、培育社会文明风尚方面发挥了重要作用，成为新形势下加强精神文明建设的有力抓手。</span></p><p style="margin-top: 0px; margin-bottom: 0px; font-size: 12px; white-space: normal; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; text-indent: 2em; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">就这样，居住在城市每个角落的市民，或主动为之、或响应倡导，在城与人的良性互动中，渐次提升着城市文明。（《绵阳日报》记者 郭若雪 ）</span></p><div style="white-space: normal;"><span style="line-height: 2; font-size: 16px;"><br/></span></div><p><br/></p>
+                    </div>
+                </div>
+                
+                
 <link href="/sitefiles/assets/commentInput/style.css" rel="stylesheet" type="text/css" />
 <script src="/sitefiles/assets/commentInput/script.js" language="javascript"></script>
 <div id="stlCommentContainer" class="stlCommentContainer">
@@ -377,14 +387,22 @@
     loadComments('/home', '/api/stl/comments/1/1014/42', '/api/stl/comments/1/1014/42/actions/add', '/api/stl/comments/1/1014/42/actions/good', '/api/stl/comments/1/1014/42/actions/delete', '/api/users/actions/logout', 10, false);
 </script>
 
-                        
-                    </div>
-                </div>
-
 
                 <div class="qrCode">
-                    扫一扫在手机打开当前页<br />
-                    <img src="/qrcode/qrcode.gif" />
+                    扫一扫在手机打开当前页
+                    <div id="qrcodeContent" title="/contents/1014/42.html" style="width:150px;height:150px;margin:0 auto;padding:20px;box-sizing:border-box;"></div>
+                    <script>
+                    	(function() {
+							var qrcode = new QRCode('qrcodeContent', {
+								text: window.location.host + document.getElementById("qrcodeContent").getAttribute("title"),
+								width: 110,
+								height: 110,
+								colorDark : '#000000',
+								colorLight : '#ffffff',
+								correctLevel : QRCode.CorrectLevel.H
+							});
+                    	})();
+                    </script>
                 </div>                
                 <!-- comment -->
 
@@ -410,16 +428,22 @@
                             ~(-new Date() / 36e5)];
                     }
                     </script>
-                    <a href="javascript:;" class="dyBtn" data-power-command="printarea">【打印正文】</a>
+                    <a href="javascript:;" class="dyBtn">【打印正文】</a>
+                    <script>
+                    	$(".dyBtn").on("click",function(){
+                    		$(".printArea").printArea();
+                    	});
+                    </script>
                 </div>
                 <div class="others">
-                    <div class="prev">
-                        <span>shang上一篇：</span><a href="/hd/yqhy/content_105606">网传在川本一批招生高校投档线 省教育考试院辟谣：假的！</a>
-                        <span class="date">[ 2017-07-13 ]</span>
-                    </div>
-                    <div class="next">
-                        <span>下一篇：没有了！</span>
-                    </div>
+                	<st:navigation>
+                		<div class="prev">
+                			<span>上一篇:<a href="/contents/1014/43.html">城区滨江西路、文星大道、淘金大道三条市政大道全面竣工</a></span>
+	                    </div>
+	                    <div class="next">
+	                        <span>下一篇:没有了</span>
+	                    </div>
+                	</st:navigation>
                 </div>
                 <div class="rankWrap">
                     <!-- 点击排行 -->
@@ -429,66 +453,49 @@
                         </div>
                         <div class="bd">
                             <ul class="rankList">
-
-                                <li class="first hot">
-                                    <em class="number">1</em>
-                                    <a href="/xw/rdgz/content_4596" target="_blank" title="标题：安州房产市场发展28条出台 大学生、农民购房可享补助
-点击数：2878
-发表时间：2015-04-28">
-                                        安州房产市场发展28条出台 大学生、农民购房可享补助
-                                    </a>
-                                </li>
-
-
-                                <li class="hot">
-                                    <em class="number">2</em>
-                                    <a href="/xw/rdgz/content_3678" target="_blank" title="标题：打破“铁饭碗” 机关事业单位人员今后咋养老？
-点击数：2772
-发表时间：2015-01-15">
-                                        打破“铁饭碗” 机关事业单位人员今后咋养老？
-                                    </a>
-                                </li>
-
-
-                                <li class="hot">
-                                    <em class="number">3</em>
-                                    <a href="/xw/rdgz/content_4893" target="_blank" title="标题：安州今年养老金个体参保标准出台 年缴费最低4308元
-点击数：2732
-发表时间：2015-06-08">
-                                        安州今年养老金个体参保标准出台 年缴费最低4308元
-                                    </a>
-                                </li>
-
-
-                                <li>
-                                    <em class="number">4</em>
-                                    <a href="/xw/rdgz/content_3963" target="_blank" title="标题：政府工作报告绘就新一年安州区发展蓝图
-点击数：2649
-发表时间：2015-02-06">
-                                        政府工作报告绘就新一年安州区发展蓝图
-                                    </a>
-                                </li>
-
-
-                                <li>
-                                    <em class="number">5</em>
-                                    <a href="/xw/rdgz/content_4888" target="_blank" title="标题：7月1日起四川提高最低工资标准 平均上调10.5%
-点击数：2324
-发表时间：2015-06-09">
-                                        7月1日起四川提高最低工资标准 平均上调10.5%
-                                    </a>
-                                </li>
-
-
-                                <li class="last">
-                                    <em class="number">6</em>
-                                    <a href="/xw/rdgz/content_8180" target="_blank" title="标题：200元/平米购房补贴政策 安州继续实施一年
-点击数：2245
-发表时间：2016-03-24">
-                                        200元/平米购房补贴政策 安州继续实施一年
-                                    </a>
-                                </li>
-
+                            	
+                            		
+                            				<li class="hot">
+			                                    <em class="number">1</em>
+			                                    <a href="/contents/2225/243.html" title="&#9;  安州羽毛球不应成为被忽视的运动">&#9;  安州羽毛球不应成为被忽视的运动</a>
+			                                </li>
+                            			
+								
+                            		
+                            				<li class="hot">
+			                                    <em class="number">2</em>
+			                                    <a href="/contents/2225/242.html" title="&#9;  关于长兴小区烧烤店扰民的问题">&#9;  关于长兴小区烧烤店扰民的问题</a>
+			                                </li>
+                            			
+								
+                            		
+                            				<li class="hot">
+			                                    <em class="number">3</em>
+			                                    <a href="/contents/2225/241.html" title="&#9;  河堤问题">&#9;  河堤问题</a>
+			                                </li>
+                            			
+								
+                            		
+                            				<li>
+			                                    <em class="number">4</em>
+			                                    <a href="/contents/2225/240.html" title="  建议在道路一侧建隔音墙">  建议在道路一侧建隔音墙</a>
+			                                </li>
+                            			
+								
+                            		
+                            				<li>
+			                                    <em class="number">5</em>
+			                                    <a href="/contents/2225/239.html" title="客运车辆乱停乱放站外上客没有得到有效治理">客运车辆乱停乱放站外上客没有得到有效治理</a>
+			                                </li>
+                            			
+								
+                            		
+                            				<li>
+			                                    <em class="number">6</em>
+			                                    <a href="/contents/2225/238.html" title="文明城市中的不文明">文明城市中的不文明</a>
+			                                </li>
+                            			
+								
                             </ul>
                         </div>
                     </div>
@@ -499,28 +506,31 @@
                         </div>
                         <div class="bd">
                             <ul class="picPageList picPageListA">
-                                <li class="first">
-                                    <div class="pic">
-                                        <a href="/xw/jrxx/content_113178">
-                                            <img alt="安州：创新机制抓双拥 军民融合抓双拥" src="/upload/main/image/2017/08/01/201708020903158425_240_180.jpg" width="240" height="180" />
-                                        </a>
-                                    </div>
-                                    <div class="title">
-                                        <a class="tit" href="/xw/jrxx/content_113178" title="安州：创新机制抓双拥 军民融合抓双拥">安州：创新机制抓双拥 军民融合抓双拥</a>
-                                    </div>
-                                    <span class="titleBg"></span>
-                                </li>
-                                <li class="last">
-                                    <div class="pic">
-                                        <a href="/xw/jrxx/content_113176">
-                                            <img alt="花荄镇对89个村开展财务审计 整治“微腐败”" src="/upload/main/image/2017/08/01/201708020900070984_240_180.jpg" width="240" height="180" />
-                                        </a>
-                                    </div>
-                                    <div class="title">
-                                        <a class="tit" href="/xw/jrxx/content_113176" title="花荄镇对89个村开展财务审计 整治“微腐败”">花荄镇对89个村开展财务审计 整治“微腐败”</a>
-                                    </div>
-                                    <span class="titleBg"></span>
-                                </li>
+                            	
+                            		<li>
+	                                    <div class="pic">
+	                                    	<a href="/contents/1014/49.html">
+	                                    		<img src="/upload/images/2017/8/t_29145436740.jpg" alt="感谢你对安州体育事业的关心" width="240" height="180" />
+	                                    	</a>
+	                                    </div>
+	                                    <div class="title">
+	                                    	<a href="/contents/1014/49.html" class="tit" title="感谢你对安州体育事业的关心">感谢你对安州体育事业的关心</a>
+	                                    </div>
+	                                    <span class="titleBg"></span>
+	                               </li>
+								
+                            		<li>
+	                                    <div class="pic">
+	                                    	<a href="/contents/8/5.html">
+	                                    		<img src="/upload/images/2017/8/t_299545697.jpg" alt="廖雪梅到永河镇调研" width="240" height="180" />
+	                                    	</a>
+	                                    </div>
+	                                    <div class="title">
+	                                    	<a href="/contents/8/5.html" class="tit" title="廖雪梅到永河镇调研">廖雪梅到永河镇调研</a>
+	                                    </div>
+	                                    <span class="titleBg"></span>
+	                               </li>
+								
                             </ul>
                         </div>
                     </div>
@@ -528,133 +538,165 @@
             </article>
             <!-- 正文内容 E -->
         </div>
-        
         <!-- content E -->
         <footer id="footer">
-    <div class="siteWidth">
-        <div class="footNav">
+	<div class="siteWidth">
+		<div class="footNav">
 
-            <a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
-            <a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
-            <a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
-            <a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
-            <a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
-            <a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
-        </div>
-        <div class="copyRight">
-            <p>
-                安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br />地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br />蜀ICP备12001441号<br /> &nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1" />川公网安备 51070302110201号</a>
-            </p>
-            <div class="pics">
-                <a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg" /></a> &nbsp;&nbsp;
-                <script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg" /></a> &nbsp;&nbsp;<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png" /></a>
-            </div>
-        </div>
-    </div>
+			<a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
+			<a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
+			<a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
+			<a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
+			<a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
+			<a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
+		</div>
+		<div class="copyRight">
+			<p>
+				安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br />地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br />蜀ICP备12001441号<br /> &nbsp;
+				<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1" />川公网安备 51070302110201号</a>
+			</p>
+			<div class="pics">
+				<a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg" /></a> &nbsp;&nbsp;
+				<script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;
+				<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg" /></a> &nbsp;&nbsp;
+				<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png" /></a>
+			</div>
+		</div>
+	</div>
 </footer>
 <!-- footer E -->
 <script>
-	(function () {
-        var navST;
-        var navST1;
-        var name = 'mainNav';
-        var t = 200;
-        var type = 1;
-        var removeOn = 'False';
-        var effect = 'fade';
-        var appendItem = '#';
-        var li = "#" + name + " li";
-        var index = 0;
-
-        //栏目页调整
+	(function() {
+		var navST;
+		var navST1;
+		var name = 'mainNav';
+		var t = 200;
+		var type = 1;
+		var removeOn = 'False';
+		var effect = 'fade';
+		var appendItem = '#';
+		var li = "#" + name + " li";
+		var index = 0;
+		
+		
+		//滚动事件
+		scrollFun();
+		window.onscroll = function(){
+			scrollFun();	
+		}
+		function scrollFun(){
+			if(getScrollTop() > 100) {
+				$(".topBar").addClass("topHei");
+				$("#logo2").addClass("show");
+			} else {
+				$(".topBar").removeClass("topHei");
+				$("#logo2").removeClass("show");
+			}
+		}
+		function getScrollTop() {
+			var scrollPos;
+			if(window.pageYOffset) {
+				scrollPos = window.pageYOffset;
+			} else if(document.compatMode && document.compatMode != 'BackCompat') {
+				scrollPos = document.documentElement.scrollTop;
+			} else if(document.body) {
+				scrollPos = document.body.scrollTop;
+			}
+			return scrollPos;
+		}
+		
+		//栏目页调整
 		if($(".path").length>0){
 			//当前状态
-			var _url = document.querySelectorAll(".path a")[1].getAttribute("href");
+			var _url = document.querySelectorAll(".path a")[1].getAttribute("href"),
+				_name = document.querySelectorAll(".path a")[1].innerHTML,
+				_title = $(".sideMenu .hd h3").data("title");
+			$(".sideMenu .hd h3").html(_name);
 			$(".mainNav .li1 a").each(function(i,e){
 				if($(e).attr("href") == _url){
 					$(e).closest(".li1").addClass("on1").siblings().removeClass("on1");
 					index = i;
 				}
 			})
-			//.topNav .tip
-			$(".topNav .tip").hide();
+			$(".sideMenu .singleList li a").each(function(i,e){
+				if($(e).html() == _title){
+					$(e).parent().addClass("on");
+				}
+			})
+			
+			//.topBar
+			$(".topBar").addClass("topFixed");
+		}
+		
+		
+
+		//鼠标离开导航后，回复默认.on1类位置
+		$("#" + name)
+			.hover(
+				function() {
+					if(navST1 != null) {
+						clearTimeout(navST1);
+					}
+				},
+				function() {
+					navST1 = setTimeout(function() {
+							$("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
+						},
+						500);
+				}
+			);
+
+		if(type == '1') {
+			li = "#" + name + " .li1";
+		}
+		if(appendItem != '#') { //插入内容
+			var appendHtml = $(appendItem).html();
+			$(li).first().append(appendHtml);
+			$(appendItem).remove();
 		}
 
-        //鼠标离开导航后，回复默认.on1类位置
-        $("#" + name)
-            .hover(
-                function () {
-                    if (navST1 != null) {
-                        clearTimeout(navST1);
-                    }
-                },
-                function () {
-                    navST1 = setTimeout(function () {
-                            $("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
-                        },
-                        500);
-                }
-            );
+		if(type == '3') {
+			$("#" + name + " .on1").find("ul").first().show();
+		}
 
-        if (type == '1') {
-            li = "#" + name + " .li1";
-        }
-        if (appendItem != '#') { //插入内容
-            var appendHtml = $(appendItem).html();
-            $(li).first().append(appendHtml);
-            $(appendItem).remove();
-        }
+		$(li)
+			.hover(function() {
+					var curItem = $(this);
+					var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+					$(li).removeClass("on" + onNum);
+					curItem.addClass("on" + onNum);
+					navST = setTimeout(function() { //延时触发
 
-        if (type == '3') {
-            $("#" + name + " .on1").find("ul").first().show();
-        }
-
-        $(li)
-            .hover(function () {
-                    var curItem = $(this);
-                    var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
-                    $(li).removeClass("on" + onNum);
-                    curItem.addClass("on" + onNum);
-                    navST = setTimeout(function () { //延时触发
-
-                            if ($("ul:first", curItem).css("display") != "block") {
-                                $(li + " .ul" + onNum).hide();
-                                if (effect == 'fade') {
-                                    $("ul:first", curItem).fadeIn(t);
-                                } else {
-                                    $("ul:first", curItem).slideDown(t);
-                                }
-                            };
-                            navST = null;
-                        },
-                        t);
-                },
-                function () {
-                    if (navST != null) {
-                        clearTimeout(navST);
-                    }
-                    if (type == '1' || type == '2') {
-                        if (effect == 'fade') {
-                            $(this).find("ul").first().fadeOut(t);
-                        } else {
-                            $(this).find("ul").first().slideUp(t);
-                        }
-                    }
-                    if (removeOn == 'True') {
-                        $(this).removeClass("on1");
-                    }
-                },
-                t); //end hover
-    })()
+							if($("ul:first", curItem).css("display") != "block") {
+								$(li + " .ul" + onNum).hide();
+								if(effect == 'fade') {
+									$("ul:first", curItem).fadeIn(t);
+								} else {
+									$("ul:first", curItem).slideDown(t);
+								}
+							};
+							navST = null;
+						},
+						t);
+				},
+				function() {
+					if(navST != null) {
+						clearTimeout(navST);
+					}
+					if(type == '1' || type == '2') {
+						if(effect == 'fade') {
+							$(this).find("ul").first().fadeOut(t);
+						} else {
+							$(this).find("ul").first().slideUp(t);
+						}
+					}
+					if(removeOn == 'True') {
+						$(this).removeClass("on1");
+					}
+				},
+				t); //end hover
+	})()
 </script>
-        
     </div>
-    <script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
-    <script src="/Content/_Common/Base/js/power.js"></script>
-
-    <script src="/Content/_Common/Assets/Scripts/jquery.PrintArea.js"></script>
-    <script src="/Content/_Common/Base/js/article.js"></script>
-
 </body>
 </html>
-

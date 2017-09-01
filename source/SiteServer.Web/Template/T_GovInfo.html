@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" />
+    <meta name="description" />
+    <meta name="application-name" content="安州区人民政府门户网站" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true" />
+  </head>
+  <body>
+<h1>yi异步获取实例</h1>
+      <stl:dynamic><stl:sqlContents connectionString="server=192.168.13.93;uid=sa;pwd=123456;database=DTcmsdb4" cellpadding="2">
+ <stl:queryString> SELECT top {Request.top} * FROM  dt_link</stl:queryString>
+ <li><stl:sqlContent type="{Request.item}"></stl:sqlContent> ----- <stl:sqlContent type="{Request.item2}"></stl:sqlContent>  </li>
+ </stl:sqlContents></stl:dynamic>
+    </body>
+  </html>

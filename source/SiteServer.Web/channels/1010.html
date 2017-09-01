@@ -10,26 +10,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="format-detection" content="telephone=no, email=no">
     <meta name="HandheldFriendly" content="true" />
-    <title>政务动态_安州区人民政府门户网站</title>
-    
+    <title>政务公开_安州区人民政府门户网站</title>
     <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
 <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
 <link href="/Content/Main/Base/css/cssWeiban.css" rel="stylesheet" type="text/css" />
-<link href="/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
 <link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
-
 <script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
 <script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
 <script src="/Content/_Common/Base/js/webCommon.js"></script>
 <script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
 <script src="/Content/_Common/Base/js/slides.js"></script>
-<script src="/Content/_Common/Base/js/indexJSRed.js"></script>
 <script src="/Content/_Common/Base/js/StoT.js"></script>
+    <link href="/Content/Main/InfoPublicity/css/infoPublicity.css" rel="stylesheet" />
 <script>var $pageInfo = {publishmentSystemID : 1, channelID : 1010, contentID : 0, siteUrl : "", homeUrl : "/home", currentUrl : "/channels/1010.html", rootUrl : "", apiUrl : "/api"};</script></head>
 <body>
     <div class="wrap">
-      <!--背景轮播-->
-    <div class="loopBg">
+        <!--背景轮播-->
+        <div class="loopBg">
 	<div class="bd">
 		<ul>
 			<li style="background-image: url(/Content/Main/Base/img/body-1.png);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Main/Base/img/body-1.png',sizingMethod='scale');"></li>
@@ -110,41 +107,45 @@
 		}
 	}
 </style>
-    <!--topBar-->
+        <!--topBar-->
         <div class="topBar">
     <div class="siteWidth">
-        <h1 title="中共安州区委区人民政府门户网站" id="logo2"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo-mini.png" /></a></h1>
+        <h1 title="中共安州区委区人民政府门户网站" id="logo2"><a href="/"><img src="/content/main/base/img/logo-mini.png" /></a></h1>
         <ul class="list">
-            <li class="en"><a href="/english">English</a></li>
+            <li class="en"><a href="javascript:void(0);">English</a></li>
             <li class="phone">
-                <a href="javascript:;">手机版</a>
+                <a href="javascript:void(0);">手机版</a>
                 <div class="pic">
                     <img src="/qrcode/qrcode.gif">
                     <i></i>
                 </div>
             </li>
-            <li class="obstacleFree"><a target="_blank" href="/wca.html">无障碍版</a></li>
+            <li class="obstacleFree"><a target="_blank" href="javascript:void(0);">无障碍版</a></li>
             <li class="wechat">
-                <a href="javascript:;">政务微信</a>
+                <a href="javascript:void(0);">政务微信</a>
                 <div class="pic">
                     <img src='/Content/Main/Base/img/weixin.png' />
                     <i></i>
                 </div>
             </li>
-            <li class="robot"><a href="/znjqr">政务机器人</a></li>
+            <li class="robot"><a href="javascript:void(0);">政务机器人</a></li>
         </ul>
     </div>
     <span class="topBarBg"></span>
 </div>
+<div class="topB"></div>
+<script>
+	$(".topBar li").hover(function() {
+		$(this).addClass("on")
+	}, function() {
+		$(this).removeClass("on")
+	});
+</script>
         <!-- header S -->
         <header id="header">
     <div class="headerTop siteWidth">
-
-        <h1 title="中共安州区委区人民政府门户网站" id="logo"><a href="http://www.anxian.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
-
+        <h1 title="中共安州区委区人民政府门户网站" id="logo"><a href="/"><img src="/content/main/base/img/logo.png" /></a></h1>
         <div class="siteSearchBar">
-
-
             <div class="s-form">
                 <input type="hidden" id="sitelist" value="[{&quot;Name&quot;:&quot;全站群&quot;,&quot;Value&quot;:0},{&quot;Name&quot;:&quot;本站&quot;,&quot;Value&quot;:1},{&quot;Name&quot;:&quot;审计局&quot;,&quot;Value&quot;:2},{&quot;Name&quot;:&quot;农业局&quot;,&quot;Value&quot;:18}]" />
                 <input type="hidden" id="siteid" name="sid" value="0">
@@ -165,24 +166,23 @@
             </div>
             <script src="/Content/_Common/FullTextSearch/js/default-site-search-box.js"></script>
             <script>
-            document.getElementById("inputkeyword").onkeydown = function (e) {
-                e = e || window.event;
-                if (e.keyCode == 13) {
-                    gSearch();
-                }
-            };
-
-            function gSearch() {
-                var keyword = document.getElementById('inputkeyword').value;
-                var route = document.getElementById('route').value;
-
-                if (keyword == '' || keyword == "请输入关键字") {
-                    alert("请输入关键字");
-                } else {
-                    var siteid = document.getElementById('siteid').value;
-                    window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
-                }
-            }
+	            document.getElementById("inputkeyword").onkeydown = function (e) {
+	                e = e || window.event;
+	                if (e.keyCode == 13) {
+	                    gSearch();
+	                }
+	            };
+	            function gSearch() {
+	                var keyword = document.getElementById('inputkeyword').value;
+	                var route = document.getElementById('route').value;
+	
+	                if (keyword == '' || keyword == "请输入关键字") {
+	                    alert("请输入关键字");
+	                } else {
+	                    var siteid = document.getElementById('siteid').value;
+	                    window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
+	                }
+	            }
             </script>
         </div>
 
@@ -201,7 +201,7 @@
                 </li>
                 <li class="li1" id="li-zw">
                     <h3 class="h1">
-                        <a href="/channels/6.html" target="_self">政务公开</a>
+                        <a href="/channels/1010.html" target="_self">政务公开</a>
                     </h3>
                 </li>
                 <li class="li1" id="li-fw">
@@ -211,7 +211,7 @@
                 </li>
                 <li class="li1" id="li-hd">
                     <h3 class="h1">
-                        <a href="/channels/4.html" target="_self">公众参与</a>
+                        <a href="/channels/1018.html" target="_self">公众参与</a>
                     </h3>
                 </li>
                 <li class="li1" id="li-sq">
@@ -221,855 +221,2393 @@
                 </li>
             </ul>
 
-
-            <span class="tip">点击切换<i class="icon iconfont icon-pointerleft"></i></span>
+			
+            <span class="tip" data-id="政务公开">点击切换<i class="icon iconfont icon-pointerleft"></i></span>
         </nav>
         <script>
-          $(".topNav .h1").prepend("<i></i>")
+        	(function(){
+        		$(".topNav .h1").prepend("<i></i>");
+	          	if($(".topNav .tip").data("id") != "首页")$(".topNav .tip").hide();
+        	})();
         </script>
     </div>
 </header>
-        <!-- header E -->
+
         <!-- content S -->
-        <div id="content" class="newsPage">
-            <div class="path">              
-               <em>您的位置:</em>
-               <a href="/">首页</a>><a href="/channels/1010.html">信息公开</a>
+        <div id="content">
+            <div class="path">
+                <em>您的位置:</em>
+                <a href="/">首页</a>><a href="/channels/1010.html">政务公开</a>
             </div>
-            <!-- rowA S -->
-            <div class="row" id="rowA">
-                <div id="focusNews" class="focusBox">
-                    <div class="bd">
-                        <ul>
-                          
-                                <li>
-                                  <div class="pic">
-                                    <a href="/contents/1014/49.html" target="_blank">
-                                      <img src="/upload/images/2017/8/t_29145436740.jpg" alt="感谢你对安州体育事业的关心" />
-                                    </a>
-                                  </div>
-                                  <div class="con">
-                                      <h3 class="title"><a href="/contents/1014/49.html" class="tit" title="感谢你对安州体育事业的关心">感谢你对安州体育事业的关心</a></h3>
-                                      <span class="titleBg"></span>
-                                  </div>
-                              </li>
-                          
-                                <li>
-                                  <div class="pic">
-                                    <a href="/contents/8/7.html" target="_blank">
-                                      <img src="/upload/images/2017/8/t_2995824748.jpg" alt="李昊天在督查全国文明城市建设工作时强调： 抓重点、攻难点，让文明城市共建、文明成果共享" />
-                                    </a>
-                                  </div>
-                                  <div class="con">
-                                      <h3 class="title"><a href="/contents/8/7.html" class="tit" title="李昊天在督查全国文明城市建设工作时强调： 抓重点、攻难点，让文明城市共建、文明成果共享">李昊天在督查全国文明城市建设工作时强调： 抓重点、攻难点，让文明城市共建、文明成果共享</a></h3>
-                                      <span class="titleBg"></span>
-                                  </div>
-                              </li>
-                          
-                                <li>
-                                  <div class="pic">
-                                    <a href="/contents/8/5.html" target="_blank">
-                                      <img src="/upload/images/2017/8/t_299545697.jpg" alt="廖雪梅到永河镇调研" />
-                                    </a>
-                                  </div>
-                                  <div class="con">
-                                      <h3 class="title"><a href="/contents/8/5.html" class="tit" title="廖雪梅到永河镇调研">廖雪梅到永河镇调研</a></h3>
-                                      <span class="titleBg"></span>
-                                  </div>
-                              </li>
-                          
-                                <li>
-                                  <div class="pic">
-                                    <a href="/contents/8/4.html" target="_blank">
-                                      <img src="/upload/images/2017/8/t_2995053164.jpg" alt="李昊天现场督办中央环保督察组交办群众来信来电投诉举报案件" />
-                                    </a>
-                                  </div>
-                                  <div class="con">
-                                      <h3 class="title"><a href="/contents/8/4.html" class="tit" title="李昊天现场督办中央环保督察组交办群众来信来电投诉举报案件">李昊天现场督办中央环保督察组交办群众来信来电投诉举报案件</a></h3>
-                                      <span class="titleBg"></span>
-                                  </div>
-                              </li>
-                          
-                        </ul>
-                    </div>
+            <!-- columnA S -->
+            <div class="column" id="columnA">
+                <!-- 信息公开按钮组123 -->
+                <ul class="zwgkBtns">
+
+                    <li class="li1 first">
+                        <a class="tit" href="/zw/zfxxgk/zfxxgkzn" title="政府信息公开指南">政府信息公开指南</a>
+                    </li>
+                    <li class="li2">
+                        <a class="tit" href="/zw/zfxxgk/cateinfos" title="政府信息公开目录">政府信息公开目录</a>
+                    </li>
+                    <li class="li3">
+                        <a class="tit" href="/zw/zfxxgk/zfxxgkzd" title="政府信息公开制度">政府信息公开制度</a>
+                    </li>
+                    <li class="li4">
+                        <a class="tit" href="/zw/zfxxgk/zfxxgknb" title="政府信息公开年报">政府信息公开年报</a>
+                    </li>
+                    <li class="li5">
+                        <a class="tit" href="/infopublicity/applicationform" title="依申请公开">依申请公开</a>
+                    </li>
+                    <li class="li6">
+                        <a class="tit" href="/zw/zfxxgk/qmtjwgk" title="预决算及“三公”经费">预决算及“三公”经费</a>
+                    </li>
+                    <li class="li7">
+                        <a class="tit" href="/zw/zfxxgk/zdlyxxgk" title="基本信息公开">基本信息公开</a>
+                    </li>
+                    <li class="li8">
+                        <a class="tit" href="/info/index/510700000" title="重点领域信息公开">重点领域信息公开</a>
+                    </li>
+                    <li class="li9 last">
+                        <a class="tit" href="/zw/zfxxgk/bmxxgktjbb" title="全面推进五公开">全面推进五公开</a>
+                    </li>
+                </ul>
+                <script>
+                $(".zwgkBtns li").prepend("<s></s>")
+                </script>
+                <!-- 基本信息公开 -->
+                <!--
+                <div class="govSideBox" id="sideGkml">
                     <div class="hd">
-                        <ul>
-                          
-                                <li></li>
-                          
-                                <li></li>
-                          
-                                <li></li>
-                          
-                                <li></li>
-                          
+                        <h3><a href="/publicity">基本信息公开</a></h3>
+                    </div>
+                    <div class="bd">
+                        <ul class="sideNodeList">
+                            <li><a href="/ld">政府领导</a></li>
+                            <li><a href="/jg">机构职能</a></li>
+                            <li><a href="/zw/zcfg">政府文件</a></li>
+                            <li><a href="/sq">概况信息</a></li>
+                            <li><a href="/zw/zfxxgk/cateinfos?BasicCategoryId=14">统计数据</a></li>
+                            <li><a target="_blank" href="http://218.89.136.60/ceinwz/indexnewlz.htm">政府采购</a></li>
+                            <li><a href="/zw/zfxxgk/cateinfos?BasicCategoryId=22">行政收费</a></li>
+                            <li><a href="/zw/zfxxgk/cateinfos?BasicCategoryId=12">发展规划</a></li>
+                            <li><a href="/zw/zfxxgk/cateinfos?BasicCategoryId=5">办事指南</a></li>
+                            <li><a href="/zw/zfxxgk/cateinfos?BasicCategoryId=27">重大项目</a></li>
+                            <li><a href="/zw/zfxxgk/cateinfos?IsSearch=true&title=扶贫">扶贫服务</a></li>
+                            <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2176">教育服务</a></li>
+                            <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2184">医疗服务</a></li>
+                            <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2191">社会保障</a></li>
+                            <li><a href="/zw/zfxxgk/cateinfos?BasicCategoryId=28">应急预案</a></li>
+                            <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2171">环境保护</a></li>
+                            <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2184">公共卫生</a></li>
+                            <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2167">安全生产</a></li>
+                            <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2166">食品药品</a></li>
+                            <li><a href="/zw/zfxxgk/cateinfos?SubjectCategoryId=2164">产品质量</a></li>
+                            <li><a href="/zt/sjbmys">预决算公开</a></li>
                         </ul>
                     </div>
                 </div>
-                <script language="javascript"> jQuery("#focusNews").slide({ mainCell: ".bd ul", effect: "fold", autoPlay: true, vis: "auto", interTime: 3500 });</script>
-                <ul class="topicList">
-                  
-                        <li class="t">
-                          <dl class="date">
-                              <dt>14:02:56</dt>
-                              <dd>2017-08-29</dd>
-                          </dl>
-                          <div class="con">
-                              <div class="title">
-                                <a href="/contents/1017/72.html" class="tit" title="安州区羽毛球不应成为被忽视的运动">安州区羽毛球不应成为被忽视的运动</a>
-                              </div>
-                              <span class="titleBg"></span>
-                              <div class="intro">
-                                体育馆每周一、三、五上午为免费开放，市、区下达体育馆免费开放每年4.5万人次，比赛涉及全区18个乡镇、区级20多个部门以及市内多个单位，项目多、人员广、时间跨度长，每天比赛进行到21:00以后安州区体育馆是我区重要的全民健身场地。
-                              </div>
-                          </div>
-                      </li>
-                  
-                        <li class="t">
-                          <dl class="date">
-                              <dt>14:02:18</dt>
-                              <dd>2017-08-29</dd>
-                          </dl>
-                          <div class="con">
-                              <div class="title">
-                                <a href="/contents/1017/71.html" class="tit" title="我馆将打紧安排各项赛事活动">我馆将打紧安排各项赛事活动</a>
-                              </div>
-                              <span class="titleBg"></span>
-                              <div class="intro">
-                                根据安州区2017年全民健身活动计划和省市比赛安排，体育馆要进行篮球、象棋、乒乓球、桥牌等活动。2017年安州区总工会安排5至6月在体育馆开展全区“劳动杯”职工运动会，进行象棋、桥牌、乒乓球、拔河、篮球等五项比赛活动，下： ，为满足群众健身需要，体育馆每周一
-                              </div>
-                          </div>
-                      </li>
-                  
-                        <li class="t">
-                          <dl class="date">
-                              <dt>14:00:57</dt>
-                              <dd>2017-08-29</dd>
-                          </dl>
-                          <div class="con">
-                              <div class="title">
-                                <a href="/contents/1017/69.html" class="tit" title="要承担体育所有项目的训练和比赛，无法固定时间段">要承担体育所有项目的训练和比赛，无法固定时间段</a>
-                              </div>
-                              <span class="titleBg"></span>
-                              <div class="intro">
-                                为满足群众健身需要，体育馆每周一、三、五上午为免费开放，市、区下达体育馆免费开放每年4.5万人次，比赛涉及全区18个乡镇、区级20多个部门以及市内多个单位，项目多、人员广、时间跨度长，每天比赛进行到21:00以后安州区体育馆是我区重要的全民健身场地。
-                              </div>
-                          </div>
-                      </li>
-                  
-                </ul>
+                -->
+                <!-- 信息公开 -->
+                <div class="bjBox" id="bjtj">
+                    <div class="hd">
+                        <h3>信息公开查询</h3>
+                    </div>
+                    <div class="bd">
+                        <table class="bjcxTable">
+                            <tr>
+                                <td>
+                                    <label>查询关键词：</label><br>
+                                    <input id="code" type="text" placeholder="关键词">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>查询范围：</label><br>
+                                    <select name="department" id="department" class="xxgkInput">
+                                        <option value="0">全部</option>
+                                        <option value="92338135">区政府办公室</option>
+                                        <option value="92338136">区信访和群众工作局</option>
+                                        <option value="92338137">区法制办</option>
+                                        <option value="92338138">区安全生产监督管理局</option>
+                                        <option value="92338139">区政务中心</option>
+                                        <option value="92338140">县国资办</option>
+                                        <option value="92338141">区信息办</option>
+                                        <option value="92338143">区人力资源和社会保障局</option>
+                                        <option value="92338144">区监察局</option>
+                                        <option value="92338145">区审计局</option>
+                                        <option value="92338146">区公安分局</option>
+                                        <option value="92338147">区司法局</option>
+                                        <option value="92338148">区民政局</option>
+                                        <option value="92338149">区档案局</option>
+                                        <option value="92338150">区供销社</option>
+                                        <option value="92338151">区食品药品工商和质监管理局</option>
+                                        <option value="92338154">区财政局</option>
+                                        <option value="92338155">区住房公积金管理中心</option>
+                                        <option value="92338156">区国税局</option>
+                                        <option value="92338158">红十字会</option>
+                                        <option value="92338159">区地税局</option>
+                                        <option value="92338162">区农业局</option>
+                                        <option value="92338163">区林业局</option>
+                                        <option value="92338164">区水务局</option>
+                                        <option value="92338168">区民宗局</option>
+                                        <option value="92338169">区扶贫开发局</option>
+                                        <option value="92338170">中共安州区委党史研究室区政府地方志办公室</option>
+                                        <option value="92338171">区发展和改革局</option>
+                                        <option value="92338176">区食品药品和工商质监管理局</option>
+                                        <option value="92338177">区商务和旅游局</option>
+                                        <option value="92338178">区统计局</option>
+                                        <option value="92338179">区交通运输局</option>
+                                        <option value="92338180">县电信局</option>
+                                        <option value="92338183">区气象局</option>
+                                        <option value="92338184">区城乡规划建设和住房保障局</option>
+                                        <option value="92338185">区国土资源局</option>
+                                        <option value="92338186">区环境保护局</option>
+                                        <option value="92338187">县人防办</option>
+                                        <option value="92338188">区教育体育局</option>
+                                        <option value="92338189">区科学技术和知识产权局</option>
+                                        <option value="92338190">区防震减灾局</option>
+                                        <option value="92338192">区卫生和计划生育局</option>
+                                        <option value="92338193">区文化广电新闻出版局</option>
+                                        <option value="92338197">花荄镇</option>
+                                        <option value="92338198">桑枣镇</option>
+                                        <option value="92338199">晓坝镇</option>
+                                        <option value="92338200">千佛镇</option>
+                                        <option value="92338201">黄土镇</option>
+                                        <option value="92338202">界牌镇</option>
+                                        <option value="92338203">兴仁乡</option>
+                                        <option value="92338204">塔水镇</option>
+                                        <option value="92338205">乐兴镇</option>
+                                        <option value="92338206">宝林镇</option>
+                                        <option value="92338207">清泉镇</option>
+                                        <option value="92338208">秀水镇</option>
+                                        <option value="92338209">沸水镇</option>
+                                        <option value="92338210">雎水镇</option>
+                                        <option value="92338211">高川乡</option>
+                                        <option value="92338212">河清镇</option>
+                                        <option value="92338213">永河镇</option>
+                                        <option value="92338214">迎新乡</option>
+                                        <option value="92338215">区工业和信息化局</option>
+                                        <option value="92338872">区投促局</option>
+                                        <option value="92338873">金融办</option>
+                                        <option value="92338874">人防办</option>
+                                        <option value="92338876">信息办</option>
+                                        <option value="92338901">县法院</option>
+                                        <option value="92338902">县检察院</option>
+                                        <option value="92338903">区工商联</option>
+                                        <option value="92338904">团县委</option>
+                                        <option value="92338905">区妇联</option>
+                                        <option value="92338906">区残联</option>
+                                        <option value="92338907">区城管局</option>
+                                        <option value="92338925">应急办</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="button" class="submitBtn" value="查询" onclick="search('http://anxian.my.gov.cn/status.aspx')">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <a href="#"><img src="/Content/Main/Base/img/sgjf.png"></a>
+                <br><br>
+                <!--基本信息公开-->
+                <div class="govSideBox" id="sideZdly">
+                    <div class="hd">
+                        <h3><a href="/zw/zfxxgk/zdlyxxgk">基本信息公开</a></h3>
+                    </div>
+                    <div class="bd">
+                        <ul class="sideNodeList">
+                            <li class="li1 first">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk/xzqlyh" title="机构职能">机构职能</a>
+                            </li>
+                            <li class="li2">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk/czzj" title="领导简介及分工">领导简介及分工</a>
+                            </li>
+                            <li class="li3">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggzypz" title="政策文件">政策文件</a>
+                            </li>
+                            <li class="li4">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk/jsjfwz" title="文件解读">文件解读</a>
+                            </li>
+                            <li class="li5">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk/jzfpwz" title="规划计划">规划计划</a>
+                            </li>
+                            <li class="li6">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk/hjbhwz" title="工作动态">工作动态</a>
+                            </li>
+                            <li class="li7">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk/gyqywz" title="统计数据">统计数据</a>
+                            </li>
+                            <li class="li8">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk/jghsfwz" title="重要会议">重要会议</a>
+                            </li>
+                            <li class="li9">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggfwwz" title="人事信息">人事信息</a>
+                            </li>
+                            <li class="li10">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk/spypaqwz" title="执法监督">执法监督</a>
+                            </li>
+                            <li class="li11">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk/aqscwz" title=" 公示公告"> 公示公告</a>
+                            </li>
+                            <li class="li12">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk/ggqsydwxxwz" title="预决算及“三公”经费">预决算及“三公”经费</a>
+                            </li>
+                            <li class="li13">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk/zdjsxmwz" title="专项资金">专项资金</a>
+                            </li>
+                            <li class="li14">
+                                <a class="tit" href="/zt/sjbmys" target="_blank" title="政府采购与招投标">政府采购与招投标</a>
+                            </li>
+                            <li class="li15">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="行政事业性收费">行政事业性收费</a>
+                            </li>
+                            <li class="li16">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="便民服务">便民服务</a>
+                            </li>
+                            <li class="li17 last">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk/czsjwz" target="_blank" title="人大代表建议政协提案">人大代表建议政协提案</a>
+                            </li>
+                            <li class="li16">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="重大项目">重大项目</a>
+                            </li>
+                            <li class="li16">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="应急管理">应急管理</a>
+                            </li>
+                            <li class="li16">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="政府信息公开工作年度报告">政府信息公开工作年度报告</a>
+                            </li>
+                            <li class="li16">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="政府信息公开指南">政府信息公开指南</a>
+                            </li>
+                            <li class="li16">
+                                <a class="tit" href="/zw/zfxxgk/zdlyxxgk#row8" title="依申请公开指引">依申请公开指引</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
-            <!-- rowA E -->
-            <!-- rowB S -->
-            <div class="row" id="rowB">
-                <div class="mainContent">
-                    <!-- 盒子切换 -->
-                    <div class="boxB">
-                        <div class="hd">
-                            <a class="more" href='javascript:void(0)'>更多&gt;&gt;</a>
-                            <ul>
-                                <li><a href="/channels/8.html" target="_self">政务要闻</a></li>
-                                <li><a href="/channels/1008.html" target="_self">国省要闻</a></li>
-                                <li><a href="/channels/1009.html" target="_self">工作动态</a></li>
-                            </ul>
-                        </div>
-                        <div class="bd largStyle">
-                            <ul class="dateList">
-                              
-                                <li>
-                                      <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/8/7.html" class="tit" title="李昊天在督查全国文明城市建设工作时强调： 抓重点、攻难点，让文明城市共建、文明成果共享">李昊天在督查全国文明城市建设工作时强调： 抓重点、攻难点，让文明城市共建、文明成果共享</a>
-                                          </div>
-                                          <div class="intro">
-                                               8月25日下午，副区长、公安分局局长岳兵带队督查文星生活服务小区秩序整改情况。政法委、公安分局、城管局、食药工质局、花荄镇相关负责人参加。<a href="/contents/8/7.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              
-                                <li>
-                                      <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/8/5.html" class="tit" title="廖雪梅到永河镇调研">廖雪梅到永河镇调研</a>
-                                          </div>
-                                          <div class="intro">
-                                               进永河镇的安罗村，5000亩万寿菊在安罗村开秤收花，来自和平村、永兴村、梓橦村等地花农带着丰收的喜悦，陆续来到统一收购点，交售万寿菊花。&#13;&#10;“家里种植了多少亩？”“收成怎么样？”廖雪梅详细询问了前来交售万寿菊的群众，了解其生产生活情况，与当地干部、企业负责人和农业科技人员现场交流，实地了解合作社试点、村集体经济发展等情况。<a href="/contents/8/5.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              
-                                <li>
-                                      <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/8/4.html" class="tit" title="李昊天现场督办中央环保督察组交办群众来信来电投诉举报案件">李昊天现场督办中央环保督察组交办群众来信来电投诉举报案件</a>
-                                          </div>
-                                          <div class="intro">
-                                               8月28日，区委副书记、区长李昊天率队赴黄土镇长生村养猪场、桑枣镇松林村垃圾场及殡仪馆，就中央环保督察组交办群众来信来电投诉举报案件进行现场督办。李昊天强调，要立行立改，以实际行动把中央环保督察反馈问题整改落到实处。<a href="/contents/8/4.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              
-                                <li>
-                                      <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/8/2.html" class="tit" title="四川养老服务业调查 “护工荒”困局如何破解">四川养老服务业调查 “护工荒”困局如何破解</a>
-                                          </div>
-                                          <div class="intro">
-                                               全省约有116万名老人需要照顾或住院治疗，养老机构的护工与老人的比例应控制在1：5以内，需要护工约23万人。&#13;&#10;&#12288;&#12288;现有27965名持证护士，总人数仅为需求量的1/10。&#13;&#10;&#12288;&#12288;“护理员留不住啊&#8230;&#8230;”8月21日，成都优护家护理院院长吴恒松张贴了招聘启事：招聘养老护理员5人，月薪3500元起，有“五险”，还包吃住。<a href="/contents/8/2.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              
-                                <li>
-                                      <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/8/8.html" class="tit" title="绵阳市卫计委对安县计划生育工作进行综合督查">绵阳市卫计委对安县计划生育工作进行综合督查</a>
-                                          </div>
-                                          <div class="intro">
-                                               6月15日，绵阳市卫计委调研员陈定全一行对安县计划生育工作进行综合督查。县卫计局局长李建强，副局长黄英汇报了安县计生工作开展情况。  &#13;&#10;    督查组先后到塔水镇政府、塔水镇七里村和龙桥村、乐兴镇青龙村等地，通过听汇报、查资料、实地走访等方式，全面检查我县计生工作开展情况。<a href="/contents/8/8.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              
-                            </ul>
-                            <ul class="dateList">
-                              
-                                <li>
-                                      <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/1008/14.html" class="tit" title="李克强：让好政策尽快落地使科技人员有更多获得感">李克强：让好政策尽快落地使科技人员有更多获得感</a>
-                                          </div>
-                                          <div class="intro">
-                                               当天会议听取股权期权和分红等激励政策落实与科研项目及经费管理制度改革进展情况汇报，推动增强创新发展动力。此前一天，李克强总理到科技部考察并召开座谈会，明确要求切实把深化科技体制改革、支持科技创新的各项政策落到实处，坚决打通政策落实“最后一公里”。<a href="/contents/1008/14.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              
-                                <li>
-                                      <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/1008/13.html" class="tit" title="李克强主持召开推动制造强国建设、持续推进经济结构转型升级座谈会">李克强主持召开推动制造强国建设、持续推进经济结构转型升级座谈会</a>
-                                          </div>
-                                          <div class="intro">
-                                               李克强指出，促进制造业提质升级要依靠创新发展。企业要发挥主体作用，抓住产品品种、品质、品牌等方面攻坚发力，积极开展国际对标，倒逼关键技术创新与突破，发展高端生产性服务业，加快中国制造从低成本竞争优势向高质量、高适用性优势转变，增强品牌意识，努力打造更多享誉全球的中国制造品牌。同时要高度重视管理体制创新，各类企业都要在这方面下功夫，要依托工业互联网、大数据等平台，通过开展大众创业、万众创新和大中小企业融通发展，促进企业研发、生产、经营模式变革，形成能灵敏反映市场变化的触角，提高创新活力和资源配置效率，发展个性化定制生产，满足用户多样化需要。<a href="/contents/1008/13.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              
-                                <li>
-                                      <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/1008/12.html" class="tit" title="川省脱贫攻坚领导小组召开第十六次会议">川省脱贫攻坚领导小组召开第十六次会议</a>
-                                          </div>
-                                          <div class="intro">
-                                               8月28日上午，省脱贫攻坚领导小组召开第十六次会议。省委书记、领导小组组长王东明主持会议并讲话，省委副书记、省长、领导小组组长尹力，省委副书记、领导小组副组长邓小刚出席。会议审议了2017年第三轮脱贫攻坚督查全覆盖工作方案，听取了全省脱贫攻坚“回头看”“回头帮”、东西部扶贫协作、省内对口帮扶藏区彝区贫困县、运用国土政策助推脱贫攻坚等工作推进及下一步打算情况汇报，听取了农村低保制度与扶贫开发政策衔接、2017年全省脱贫攻坚奖评选工作情况汇报。<a href="/contents/1008/12.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              
-                                <li>
-                                      <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/1008/11.html" class="tit" title="中央环保督察组向我省移交第二十一批信访件311件">中央环保督察组向我省移交第二十一批信访件311件</a>
-                                          </div>
-                                          <div class="intro">
-                                               8月28日，中央第五环境保护督察组向我省移交第二十一批信访件共计311件。目前累计移交信访件4929件。重点案件和重复举报件已移送案件督办组跟踪督办。<a href="/contents/1008/11.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              
-                                <li>
-                                      <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/1008/10.html" class="tit" title="四川养老服务业调查 “护工荒”困局如何破解">四川养老服务业调查 “护工荒”困局如何破解</a>
-                                          </div>
-                                          <div class="intro">
-                                               全省约有116万名老人需要照顾或住院治疗，养老机构的护工与老人的比例应控制在1：5以内，需要护工约23万人。&#13;&#10;&#13;&#10;&#12288;&#12288;现有27965名持证护士，总人数仅为需求量的1/10。&#13;&#10;<a href="/contents/1008/10.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              
-                            </ul>
-                            <ul class="dateList">
-                                
-                                <li>
-                                      <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/1009/20.html" class="tit" title="食药工质局到秀水开展“散乱污”企业集中整治">食药工质局到秀水开展“散乱污”企业集中整治</a>
-                                          </div>
-                                          <div class="intro">
-                                               食药工质局一行到黄光兵木材加工坊、李治华豆制品加工坊、刘瑞金木制家具等企业进行了检查。检查发现，各企业分别存在证照不全，加工场地环境差，物品摆放杂乱，有噪音、扬尘等问题。<a href="/contents/1009/20.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              
-                                <li>
-                                      <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/1009/19.html" class="tit" title="兴仁乡召开全民参保登记工作推进会">兴仁乡召开全民参保登记工作推进会</a>
-                                          </div>
-                                          <div class="intro">
-                                               8月24日，兴仁乡召开全民参保登记工作推进会，安排部署近期全民参保登记工作。兴仁乡相关负责人、劳保中心全体成员、各村主任及相关工作人员参加会议。会上对全民参保登记工作进行了培训，针对易错易漏点进行重点讲解。<a href="/contents/1009/19.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              
-                                <li>
-                                      <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/1009/17.html" class="tit" title="司法局法律服务志愿者深入社区开展法制宣传活动">司法局法律服务志愿者深入社区开展法制宣传活动</a>
-                                          </div>
-                                          <div class="intro">
-                                               在公证法颁布12周年之际，8月28日，由司法局法律服务管理股、法律宣传股和公证处相关工作人员组成的法律服务志愿者队伍深入白鹤林社区，开展法制宣传活动。<a href="/contents/1009/17.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              
-                                <li>
-                                      <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/1009/18.html" class="tit" title="兴仁乡传达区环境保护委员会2017年第四次全体&#65288;扩大&#65289;会精神">兴仁乡传达区环境保护委员会2017年第四次全体&#65288;扩大&#65289;会精神</a>
-                                          </div>
-                                          <div class="intro">
-                                               8月28日，兴仁乡学习传达绵阳市安州区环境保护委员会2017年第四次全体&#65288;扩大&#65289;会精神。兴仁乡机关全体干部职工，各村&#65288;社区&#65289;书记、主任参加会议。<a href="/contents/1009/18.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              
-                                <li>
-                                      <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/1009/16.html" class="tit" title="安监局传达区环境保护委员会2017年第四次全体&#65288;扩大&#65289;会精神">安监局传达区环境保护委员会2017年第四次全体&#65288;扩大&#65289;会精神</a>
-                                          </div>
-                                          <div class="intro">
-                                               会议要求，全局上下要深刻领会并严格执行区委、区政府关于环境保护工作相关指示精神，立足本职，提高认识，多措并举促进全区环境保护与安全生产工作深入扎实开展。一是加大力度督促环保问题整改。要牢固树立“一盘棋”思想，务必对职责范围内目前存在环保突出问题的企业加大安全生产监察执法力度，坚决杜绝因生产安全隐患引发环境问题。<a href="/contents/1009/16.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                              
-                            </ul>
+            <!-- columnA E -->
+            <!-- columnB S -->
+            <div class="column" id="columnB">
+                <!-- 政务要闻等切换 -->
+                <div class="box tab" id="indZwyw">
+                    <div class="hd">
+                        <ul>
+                            <li><a href="/xw/zwyw">政策文件</a></li>
+                            <li><a>政务动态</a></li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <ul class="infoList">
                             
-                        </div>
+                                <li>
+                                    <dl class="date">
+                                        <dt>01</dt>
+                                        <dd>2017-09</dd>
+                                    </dl>
+                                    <div class="con">
+                                        <div class="title">
+                                            <a href="/contents/1010/45.html" class="tit" title="环保局多举措开展企业环境安全巡查工作">环保局多举措开展企业环境安全巡查工作</a>
+                                        </div>
+                                        <div class="intro">
+                                            <a href="/contents/1010/45.html" class="detail">[详细]</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                <li>
+                                    <dl class="date">
+                                        <dt>01</dt>
+                                        <dd>2017-09</dd>
+                                    </dl>
+                                    <div class="con">
+                                        <div class="title">
+                                            <a href="/contents/1010/46.html" class="tit" title="绵阳市安州区环境保护局关于拟对绵阳腾进科技有限公司剪毛机械产品建设项目作出环境影响评价批复文件公告">绵阳市安州区环境保护局关于拟对绵阳腾进科技有限公司剪毛机械产品建设项目作出环境影响评价批复文件公告</a>
+                                        </div>
+                                        <div class="intro">
+                                            <a href="/contents/1010/46.html" class="detail">[详细]</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                <li>
+                                    <dl class="date">
+                                        <dt>31</dt>
+                                        <dd>2017-08</dd>
+                                    </dl>
+                                    <div class="con">
+                                        <div class="title">
+                                            <a href="/contents/1010/44.html" class="tit" title="结果公开">结果公开</a>
+                                        </div>
+                                        <div class="intro">
+                                            <a href="/contents/1010/44.html" class="detail">[详细]</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                <li>
+                                    <dl class="date">
+                                        <dt>31</dt>
+                                        <dd>2017-08</dd>
+                                    </dl>
+                                    <div class="con">
+                                        <div class="title">
+                                            <a href="/contents/1010/43.html" class="tit" title="服务公开">服务公开</a>
+                                        </div>
+                                        <div class="intro">
+                                            <a href="/contents/1010/43.html" class="detail">[详细]</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                <li>
+                                    <dl class="date">
+                                        <dt>31</dt>
+                                        <dd>2017-08</dd>
+                                    </dl>
+                                    <div class="con">
+                                        <div class="title">
+                                            <a href="/contents/1010/42.html" class="tit" title="管理公开,管理公开">管理公开,管理公开</a>
+                                        </div>
+                                        <div class="intro">
+                                            <a href="/contents/1010/42.html" class="detail">[详细]</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+
+
+
+
+                        </ul>
+                        <ul class="infoList">
+                            
+                                <li>
+                                    <dl class="date">
+                                        <dt>30</dt>
+                                        <dd>2017-08</dd>
+                                    </dl>
+                                    <div class="con">
+                                        <div class="title">
+                                            <a href="/contents/1035/9.html" class="tit" title="安州区2017年5月主要经济数据,安州区2017年5月主要经济数据">安州区2017年5月主要经济数据,安州区2017年5月主要经济数据</a>
+                                        </div>
+                                        <div class="intro">
+                                            <a href="/contents/1035/9.html" class="detail">[详细]</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                <li>
+                                    <dl class="date">
+                                        <dt>30</dt>
+                                        <dd>2017-08</dd>
+                                    </dl>
+                                    <div class="con">
+                                        <div class="title">
+                                            <a href="/contents/1035/8.html" class="tit" title="二届绵阳市安州区人民政府第二十四次常务会议召开">二届绵阳市安州区人民政府第二十四次常务会议召开</a>
+                                        </div>
+                                        <div class="intro">
+                                            <a href="/contents/1035/8.html" class="detail">[详细]</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                                <li>
+                                    <dl class="date">
+                                        <dt>30</dt>
+                                        <dd>2017-08</dd>
+                                    </dl>
+                                    <div class="con">
+                                        <div class="title">
+                                            <a href="/contents/1035/7.html" class="tit" title="安州区农产品价格行情&#40;第十一期&#41;">安州区农产品价格行情&#40;第十一期&#41;</a>
+                                        </div>
+                                        <div class="intro">
+                                            <a href="/contents/1035/7.html" class="detail">[详细]</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                        </ul>
                     </div>
-                    
-                    <div class="boxB">
-                        <div class="hd">
-                            <a class="more" href='javascript:void(0)'>更多&gt;&gt;</a>
-                            <ul>
-                                <li><a href="/channels/1011.html" target="_self">解读回应</a></li>
-                                <li><a href="/channels/1012.html" target="_self">回应关切</a></li>
-                                <li><a href="/channels/1013.html" target="_self">新闻发布会</a></li>
-                            </ul>
-                        </div>
-                        <div class="bd">
-                            <ul class="infoList">
+                </div>
+                <!-- 政策法规等切换 -->
+                <div class="tabBox" id="indZcfg">
+                    <div class="tHd">
+                        <ul>
+                            
                                 
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1011/27.html" title="华升实业公司第伍大道方案公示" target="_blank">华升实业公司第伍大道方案公示</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1011/26.html" title="绵阳市安州区文化广电新闻出版局绵阳市安州区城乡建设和住房保障局关于城区新建公园公开征名结果的公示" target="_blank">绵阳市安州区文化广电新闻出版局绵阳市安州区城乡建设和住房保障局关于城区新建公园公开征名结果的公示</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1011/25.html" title="安州区教育和体育局召开城区小学服务区调整征求意见会" target="_blank">安州区教育和体育局召开城区小学服务区调整征求意见会</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1011/24.html" title="关于在全镇党员中开展“学党章党规、学系列讲话，做合格党员”学习教育实施方案 &#40;征求意见稿&#41;" target="_blank">关于在全镇党员中开展“学党章党规、学系列讲话，做合格党员”学习教育实施方案 &#40;征求意见稿&#41;</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1011/23.html" title="国务院法制办公室关于《中华人民共和国政府信息公开条例&#65288;修订草案征求意见稿&#65289;》公开征求意见的通知" target="_blank">国务院法制办公室关于《中华人民共和国政府信息公开条例&#65288;修订草案征求意见稿&#65289;》公开征求意见的通知</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1011/21.html" title="关于征求政府门户网站建设意见建议的结果反馈" target="_blank">关于征求政府门户网站建设意见建议的结果反馈</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1011/22.html" title="绵阳市安州区信息化工作办公室关于征求政府门户网站建设意见建议的函" target="_blank">绵阳市安州区信息化工作办公室关于征求政府门户网站建设意见建议的函</a>
-                                  </li>
-                              
-                            </ul>
-                            <ul class="infoList">
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1012/34.html" title="&#9;  沙汀实验中学招生标准" target="_blank">&#9;  沙汀实验中学招生标准</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1012/33.html" title="&#9;  安州羽毛球不应成为被忽视的运动" target="_blank">&#9;  安州羽毛球不应成为被忽视的运动</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1012/32.html" title="&#9;  关于长兴小区烧烤店扰民的问题" target="_blank">&#9;  关于长兴小区烧烤店扰民的问题</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1012/31.html" title="&#9;  河堤问题" target="_blank">&#9;  河堤问题</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1012/30.html" title="  建议在道路一侧建隔音墙" target="_blank">  建议在道路一侧建隔音墙</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1012/29.html" title="客运车辆乱停乱放站外上客没有得到有效治理" target="_blank">客运车辆乱停乱放站外上客没有得到有效治理</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1012/28.html" title="文明城市中的不文明" target="_blank">文明城市中的不文明</a>
-                                  </li>
-                              
-                            </ul>
-                            <ul class="infoList">
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1013/38.html" title="宜居，最大的民生幸福" target="_blank">宜居，最大的民生幸福</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1013/35.html" title="兴仁乡召开全民参保登记工作推进会" target="_blank">兴仁乡召开全民参保登记工作推进会</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1013/41.html" title="宜居，最大的民生幸福" target="_blank">宜居，最大的民生幸福</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1013/40.html" title="文明，每位市民的坚守" target="_blank">文明，每位市民的坚守</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1013/39.html" title="宜居，最大的民生幸福" target="_blank">宜居，最大的民生幸福</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1013/37.html" title="司法局法律服务志愿者深入社区开展法制宣传活动" target="_blank">司法局法律服务志愿者深入社区开展法制宣传活动</a>
-                                  </li>
-                              
-                                  <li>
-                                      <span class="date">2017-08-29</span>
-                                      <a href="/contents/1013/36.html" title="兴仁乡传达区环境保护委员会2017年第四次全体&#65288;扩大&#65289;会精神" target="_blank">兴仁乡传达区环境保护委员会2017年第四次全体&#65288;扩大&#65289;会精神</a>
-                                  </li>
-                              
-                            </ul>
-                        </div>
+                                <li><a href="/InfoList.html?Category4ID=35">稳增长</a><i></i></li>
+                            
+                                
+                                <li><a href="/InfoList.html?Category4ID=36">促改革</a><i></i></li>
+                            
+                                
+                                <li><a href="/InfoList.html?Category4ID=46">调结构</a><i></i></li>
+                            
+                                
+                                <li><a href="/InfoList.html?Category4ID=51">惠民生</a><i></i></li>
+                            
+                                
+                                <li><a href="/InfoList.html?Category4ID=55">防风险</a><i></i></li>
+                            
+                                
+                                <li><a href="/InfoList.html?Category4ID=62">五公开</a><i></i></li>
+                            
+                        </ul>
                     </div>
-                    <script>
-                    jQuery(".boxB").slide({ vis:1, delayTime:0, startFun: function (i, c, s, t) { s.find(".more").attr("href", t.eq(i).find("a").attr("href")) } });
-                    </script>
-                    <!-- 视频新闻 -->
-                    <div class="boxB" id="tpxw">
-                        <div class="hd">
-                            <a href="/channels/1014.html" class="more" target="_self">更多&gt;&gt;</a>
-                            <h3><a href="/channels/1014.html" target="_self">视频新闻</a></h3>
-                        </div>
-                        <div class="bd">
-                            <ul class="picPageList picPageListA">
-                              
-                                  <li>
-                                      <div class="pic">
-                                        <a href="/contents/1014/49.html">
-                                          <img src="/upload/images/2017/8/t_29145436740.jpg" alt="感谢你对安州体育事业的关心" />
+                    <div class="tBd">
+                        <!-- 循环1 -->
+                        <section class="tabBoxIn">
+                            <div class="hd">
+                                <ul>
+
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=39" title="环境保护">环境保护</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=40" title="教育">教育</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=41" title="财政资金">财政资金</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=37" title="重大建设项目">重大建设项目</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=38" title="国有企业运营监管">国有企业运营监管</a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="bd">
+                                <ul class="infoList">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 14:42:27</span>
+                                            <a href="/contents/1010/14.html" target="_blank" title="稳增长，环境保护添加测试,稳增长，环境保护添加测试">
+                                                稳增长，环境保护添加测试,稳增长，环境保护添加测试
+                                            </a>
+                                        </li>
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 17:38:30</span>
+                                            <a href="/contents/1010/16.html" target="_blank" title="111">
+                                                111
+                                            </a>
+                                        </li>
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 17:39:10</span>
+                                            <a href="/contents/1010/17.html" target="_blank" title="222,222">
+                                                222,222
+                                            </a>
+                                        </li>
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/9/1 8:35:17</span>
+                                            <a href="/contents/1010/45.html" target="_blank" title="环保局多举措开展企业环境安全巡查工作">
+                                                环保局多举措开展企业环境安全巡查工作
+                                            </a>
+                                        </li>
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/9/1 8:41:02</span>
+                                            <a href="/contents/1010/46.html" target="_blank" title="绵阳市安州区环境保护局关于拟对绵阳腾进科技有限公司剪毛机械产品建设项目作出环境影响评价批复文件公告">
+                                                绵阳市安州区环境保护局关于拟对绵阳腾进科技有限公司剪毛机械产品建设项目作出环境影响评价批复文件公告
+                                            </a>
+                                        </li>
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/9/1 8:45:27</span>
+                                            <a href="/contents/1054/47.html" target="_blank" title="绵阳市安州区环境保护局关于拟对绵阳市森业电子科技有限公司手机数据线及电脑周边线生产建设项目作出环境影响评价批复文件公告">
+                                                绵阳市安州区环境保护局关于拟对绵阳市森业电子科技有限公司手机数据线及电脑周边线生产建设项目作出环境影响评价批复文件公告
+                                            </a>
+                                        </li>
+                                    
+                                </ul>
+                                <ul class="infoList">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 14:38:24</span>
+                                            <a href="/contents/1010/12.html" target="_blank" title="测试">
+                                                测试
+                                            </a>
+                                        </li>
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 14:41:46</span>
+                                            <a href="/contents/1010/13.html" target="_blank" title="测试666">
+                                                测试666
+                                            </a>
+                                        </li>
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 17:46:10</span>
+                                            <a href="/contents/1010/18.html" target="_blank" title="教育1">
+                                                教育1
+                                            </a>
+                                        </li>
+                                    
+                                </ul>
+                                <ul class="infoList">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 17:50:15</span>
+                                            <a href="/contents/1010/19.html" target="_blank" title="财政1">
+                                                财政1
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/30 9:40:27</span>
+                                            <a href="/contents/1054/5.html" target="_blank" title="&#40;ID&#41;二届绵阳市安州区人民政府第二十五次常务会议召开">
+                                                &#40;ID&#41;二届绵阳市安州区人民政府第二十五次常务会议召开
+                                            </a>
+                                        </li>
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/30 14:14:27</span>
+                                            <a href="/contents/1035/7.html" target="_blank" title="安州区农产品价格行情&#40;第十一期&#41;">
+                                                安州区农产品价格行情&#40;第十一期&#41;
+                                            </a>
+                                        </li>
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/30 14:20:31</span>
+                                            <a href="/contents/1035/8.html" target="_blank" title="二届绵阳市安州区人民政府第二十四次常务会议召开">
+                                                二届绵阳市安州区人民政府第二十四次常务会议召开
+                                            </a>
+                                        </li>
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/30 14:22:19</span>
+                                            <a href="/contents/1035/9.html" target="_blank" title="安州区2017年5月主要经济数据,安州区2017年5月主要经济数据">
+                                                安州区2017年5月主要经济数据,安州区2017年5月主要经济数据
+                                            </a>
+                                        </li>
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/30 14:23:50</span>
+                                            <a href="/contents/1034/10.html" target="_blank" title="十七届县人民政府第二十四次常务会议召开">
+                                                十七届县人民政府第二十四次常务会议召开
+                                            </a>
+                                        </li>
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 16:46:01</span>
+                                            <a href="/contents/1010/15.html" target="_blank" title="常务会议召开">
+                                                常务会议召开
+                                            </a>
+                                        </li>
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 17:54:14</span>
+                                            <a href="/contents/1010/21.html" target="_blank" title="重大项目">
+                                                重大项目
+                                            </a>
+                                        </li>
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 17:55:53</span>
+                                            <a href="/contents/1010/22.html" target="_blank" title="重大项目2">
+                                                重大项目2
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 17:53:00</span>
+                                            <a href="/contents/1010/20.html" target="_blank" title="国有企业">
+                                                国有企业
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- 循环2 -->
+                        <section class="tabBoxIn">
+                            <div class="hd">
+                                <ul>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=42" title="">公开权责清单</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=43" title="">政务服务</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=44" title="">就业创业</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=45" title="">科技管理和项目经费</a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="bd">
+                                <div class="item">
+                                    <ul class="infoList">
+                                        
+                                            
+                                            <li class="first">
+                                                <span class="date">2017/8/31 18:16:04</span>
+                                                <a href="/contents/1010/23.html" target="_blank" title="公开权责清单">
+                                                    公开权责清单
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                                <ul class="infoList">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 18:17:01</span>
+                                            <a href="/contents/1010/24.html" target="_blank" title="政务服务">
+                                                政务服务
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 18:17:31</span>
+                                            <a href="/contents/1010/25.html" target="_blank" title="就业创业">
+                                                就业创业
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 18:17:52</span>
+                                            <a href="/contents/1010/26.html" target="_blank" title="科技管理和项目经费">
+                                                科技管理和项目经费
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- 循环3 -->
+                        <section class="tabBoxIn">
+                            <div class="hd">
+                                <ul>
+
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=48" title="">减税降费</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=50" title="">社会组织和中介机构</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=47" title="">公共资源配置</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=49" title="">卫生</a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="bd">
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 18:19:10</span>
+                                            <a href="/contents/1010/28.html" target="_blank" title="减税降费">
+                                                减税降费
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 18:20:21</span>
+                                            <a href="/contents/1010/30.html" target="_blank" title="社会组织和中介机构">
+                                                社会组织和中介机构
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 18:18:27</span>
+                                            <a href="/contents/1010/27.html" target="_blank" title="公共资源配置">
+                                                公共资源配置
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 18:19:59</span>
+                                            <a href="/zw/zcfg/gwyfg/content_111321" target="_blank" title="卫生">
+                                                卫生
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- 循环4 -->
+                        <section class="tabBoxIn">
+                            <div class="hd">
+                                <ul>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=52" title="">扶贫工作</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=53" title="">社会救助</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=54" title="">棚户区改造和农村危房改造及保障性住房</a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="bd">
+                                <!-- 实事督办 -->
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 18:20:58</span>
+                                            <a href="/contents/1010/31.html" target="_blank" title="扶贫工作">
+                                                扶贫工作
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 18:21:34</span>
+                                            <a href="/contents/1010/32.html" target="_blank" title="社会救助">
+                                                社会救助
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 18:21:59</span>
+                                            <a href="/contents/1010/33.html" target="_blank" title="棚户区改造和农村危房改造">
+                                                棚户区改造和农村危房改造
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- 循环5 -->
+                        <section class="tabBoxIn">
+                            <div class="hd">
+                                <ul>
+
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=57" title="">信用信息</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=58" title="">食品药品安全</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=56" title="">监管执法</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=59" title="">督查审计</a>
+                                        </li>
+                                    
+                                        
+                                        <li class="li1 first">
+                                            <a class="tit" href="/InfoList.html?Category4ID=61" title="">安全生产</a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="bd">
+                                <!-- 惠民行动 -->
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 18:23:16</span>
+                                            <a href="/contents/1010/35.html" target="_blank" title="信用信息">
+                                                信用信息
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 18:50:21</span>
+                                            <a href="/contents/1010/36.html" target="_blank" title="食品药品安全">
+                                                食品药品安全
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 18:22:47</span>
+                                            <a href="/contents/1010/34.html" target="_blank" title="监管执法">
+                                                监管执法
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 18:53:38</span>
+                                            <a href="/contents/1010/39.html" target="_blank" title="督查审计2">
+                                                督查审计2
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 18:51:23</span>
+                                            <a href="/contents/1010/38.html" target="_blank" title="安全生产">
+                                                安全生产
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- 五公开等切换 -->
+                <div class="tabBox" id="indZcfg">
+                    <div class="tHd">
+                        <ul>
+                            <li><a href="#">全面推进五公开</a><i></i></li>
+                        </ul>
+                    </div>
+                    <div class="tBd">
+                        <!-- 循环1 -->
+                        <section class="tabBoxIn">
+                            <div class="hd">
+                                <ul>
+
+                                    <li class="li1 first">
+                                        <a class="tit" href="/InfoList.html?Category4ID=63" title="决策公开">决策公开</a>
+                                    </li>
+                                    <li class="li2">
+                                        <a class="tit" href="/InfoList.html?Category4ID=64" title="执行公开">执行公开</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a class="href=" /InfoList.html?Category4ID=65" title="管理公开">管理公开</a>
+                                    </li>
+                                    <li class="li4">
+                                        <a class="tit" href="/InfoList.html?Category4ID=66" title="服务公开">服务公开</a>
+                                    </li>
+                                    <li class="li5 last">
+                                        <a class="tit" href="/InfoList.html?Category4ID=67" title="结果公开">结果公开</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bd">
+
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 19:08:53</span>
+                                            <a href="/contents/1010/40.html" target="_blank" title="决策公开">
+                                                决策公开
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 19:09:24</span>
+                                            <a href="/contents/1010/41.html" target="_blank" title="执行公开">
+                                                执行公开
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 19:09:50</span>
+                                            <a href="/contents/1010/42.html" target="_blank" title="管理公开,管理公开">
+                                                管理公开,管理公开
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 19:10:31</span>
+                                            <a href="/contents/1010/43.html" target="_blank" title="服务公开">
+                                                服务公开
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                                <ul class="infoList ">
+
+                                    
+                                        
+                                        <li class="first">
+                                            <span class="date">2017/8/31 19:10:58</span>
+                                            <a href="/contents/1010/44.html" target="_blank" title="结果公开">
+                                                结果公开
+                                            </a>
+                                        </li>
+                                    
+
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- 循环2 -->
+                        <section class="tabBoxIn">
+                            <div class="hd">
+                                <ul>
+
+                                    <li class="li1 first">
+                                        <a class="tit" href="/zt/sjbmys/zfyjs" target="_blank" title="政府预决算">政府预决算</a>
+                                    </li>
+                                    <li class="li2">
+                                        <a class="tit" href="/zt/sjbmys/bmyjs" target="_blank" title="部门预决算">部门预决算</a>
+                                    </li>
+                                    <li class="li3">
+                                        <a class="tit" href="/zt/sjbmys/sgjfyjs" target="_blank" title="“三公”经费预决算">“三公”经费预决算</a>
+                                    </li>
+                                    <li class="li4 last">
+                                        <a class="tit" href="/zw/zfxxgk/zdlyxxgk/czsjwz" title="财政、审计公开">财政、审计公开</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bd">
+                                <!-- 财政 -->
+                                <ul class="infoList">
+
+                                    <li class="first">
+                                        <span class="date">2017-06-15</span>
+                                        <a href="/publicity_dept10/subject04/subject132/55509" target="_blank" title="标题：安州区2017年财政预算报告
+点击数：0
+发表时间：2017-06-15">
+                                            安州区2017年财政预算报告
                                         </a>
-                                      </div>
-                                      <div class="title">
-                                        <a href="/contents/1014/49.html" class="tit" title="感谢你对安州体育事业的关心">感谢你对安州体育事业的关心</a>
-                                      </div>
-                                      <span class="titleBg"></span>
-                                  </li>
-                              
-                                  <li>
-                                      <div class="pic">
-                                        <a href="/contents/1014/51.html">
-                                          <img src="/upload/images/2017/8/t_29144241136.jpg" alt="青少年篮球训练安排" />
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-06-15</span>
+                                        <a href="/publicity_dept10/subject04/subject132/52289" target="_blank" title="标题：安州区2015年财政决算报告
+点击数：0
+发表时间：2017-06-15">
+                                            安州区2015年财政决算报告
                                         </a>
-                                      </div>
-                                      <div class="title">
-                                        <a href="/contents/1014/51.html" class="tit" title="青少年篮球训练安排">青少年篮球训练安排</a>
-                                      </div>
-                                      <span class="titleBg"></span>
-                                  </li>
-                              
-                                  <li>
-                                      <div class="pic">
-                                        <a href="/contents/1014/50.html">
-                                          <img src="/upload/images/2017/8/t_291454961.jpg" alt="2017年全民健身活动计划和省" />
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-06-15</span>
+                                        <a href="/publicity_dept10/subject04/subject132/49228" target="_blank" title="标题：安州区市本级2016年“三公”经费预算汇总情况
+点击数：0
+发表时间：2017-06-15">
+                                            安州区市本级2016年“三公”经费预算汇总情况
                                         </a>
-                                      </div>
-                                      <div class="title">
-                                        <a href="/contents/1014/50.html" class="tit" title="2017年全民健身活动计划和省">2017年全民健身活动计划和省</a>
-                                      </div>
-                                      <span class="titleBg"></span>
-                                  </li>
-                              
-                            </ul>
-                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-06-15</span>
+                                        <a href="/publicity_dept10/subject04/subject132/44231" target="_blank" title="标题：安州区2014年财政决算报告
+点击数：0
+发表时间：2017-06-15">
+                                            安州区2014年财政决算报告
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-06-15</span>
+                                        <a href="/publicity_dept10/subject04/subject132/42546" target="_blank" title="标题：安州区市本级2015年“三公”经费预算汇总情况
+点击数：0
+发表时间：2017-06-15">
+                                            安州区市本级2015年“三公”经费预算汇总情况
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-06-15</span>
+                                        <a href="/publicity_dept10/subject04/subject132/37030" target="_blank" title="标题：安州区市本级2013年度“三公”经费决算汇总情况
+点击数：0
+发表时间：2017-06-15">
+                                            安州区市本级2013年度“三公”经费决算汇总情况
+                                        </a>
+                                    </li>
+
+
+                                    <li class="last">
+                                        <span class="date">2017-06-15</span>
+                                        <a href="/publicity_dept10/subject04/subject132/28587" target="_blank" title="标题：安州区市本级2012年“三公”经费决算汇总情况
+点击数：0
+发表时间：2017-06-15">
+                                            安州区市本级2012年“三公”经费决算汇总情况
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <div class="group2">
+                                    <ul class="infoList">
+
+                                        <li class="li1 first">
+                                            <a class="tit" href="/zt/sjbmys/bmyjs/bmys/2017nbmys">2017年部门预算</a>
+                                        </li>
+                                        <li class="li2 last">
+                                            <a class="tit" href="/zt/sjbmys/bmyjs/bmys/2016nbmys">2016年部门预算</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="infoList">
+
+                                        <li class="li1 last">
+                                            <a class="tit" href="/zt/sjbmys/bmyjs/bmjs/2016nbmjs" title="2015年部门决算">2015年部门决算</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="group2">
+                                    <ul class="infoList">
+
+                                        <li class="li1 first">
+                                            <a class="tit" href="/zt/sjbmys/sgjfyjs/sgjfys/2017nsgjfys">2017年“三公”经费预算</a>
+                                        </li>
+                                        <li class="li2 last">
+                                            <a class="tit" href="/zt/sjbmys/sgjfyjs/sgjfys/2016nsgjfys">2016年“三公”经费预算</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="infoList">
+
+                                        <li class="li1 last">
+                                            <a class="tit" href="/zt/sjbmys/sgjfyjs/sgjfjs/2016nsgjfjs" title="2015年“三公”经费决算">2015年“三公”经费决算</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="infoList">
+                                    <li>
+                                        <span class="date">2017-07-26</span>
+                                        <a class="tit" href="/publicity_dept12/subject05/subject141/60868" title="花荄镇国土资源局召开2017年农村土地整理扶贫专项项目业主例会">花荄镇国土资源局召开2017年农村土地整理扶贫专项项目业主例会</a>
+                                    </li>
+                                    <li>
+                                        <span class="date">2017-07-17</span>
+                                        <a class="tit" href="/publicity_dept10/subject017/subject1120/60631" title="省财政厅莅临桑枣镇开展扶贫资金审计整改督查工作">省财政厅莅临桑枣镇开展扶贫资金审计整改督查工作</a>
+                                    </li>
+                                    <li>
+                                        <span class="date">2017-07-06</span>
+                                        <a class="tit" href="/publicity_dept12/subject05/subject141/60380" title="乐兴镇国土资源局组织召开2017年度土地整理项目技术交底暨开工动员会">乐兴镇国土资源局组织召开2017年度土地整理项目技术交底暨开工动员会</a>
+                                    </li>
+                                    <li>
+                                        <span class="date">2017-07-05</span>
+                                        <a class="tit" href="/publicity_dept12/subject05/subject141/60317" title="打古镇云回村三社滑坡治理工程终验合格">打古镇云回村三社滑坡治理工程终验合格</a>
+                                    </li>
+                                    <li>
+                                        <span class="date">2017-06-12</span>
+                                        <a class="tit" href="/publicity_dept12/subject05/subject141/59651" title="桑枣镇国土资源局召开2017年第一批6个土地整理项目开工动员大会">桑枣镇国土资源局召开2017年第一批6个土地整理项目开工动员大会</a>
+                                    </li>
+                                    <li>
+                                        <span class="date">2017-05-19</span>
+                                        <a class="tit" href="/publicity_dept6/subject016/subject1111/58908" title="市公安局党委委员、纪委书记张玉帆主持召开纪监督审部门5月工作例会">市公安局党委委员、纪委书记张玉帆主持召开纪监督审部门5月工作例会</a>
+                                    </li>
+                                    <li>
+                                        <span class="date">2017-05-19</span>
+                                        <a class="tit" href="/publicity_dept6/subject016/subject1111/58900" title="副市长、公安局长何绍明在全市公安机关党风廉政建设电视电话会议上强调：">副市长、公安局长何绍明在全市公安机关党风廉政建设电视电话会议上强…</a>
+                                    </li>
+                                    <!--财政、审计公开-->
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- 循环3 -->
+                        <section class="tabBoxIn">
+                            <div class="bd" style="height:243px; padding-top:12px">
+                                <div class="item">
+                                    <ul class="infoList">
+
+                                        <li class="first">
+                                            <span class="date">2017-07-10</span>
+                                            <a href="/zw/rsxx/rdzfrm/content_105857" target="_blank" title="标题：安州区人民政府关于任命张国蓉等职务的通知
+点击数：808
+发表时间：2017-07-10">
+                                                安州区人民政府关于任命张国蓉等职务的通知
+                                            </a>
+                                        </li>
+
+
+                                        <li>
+                                            <span class="date">2017-07-10</span>
+                                            <a href="/zw/rsxx/rdzfrm/content_105855" target="_blank" title="标题：安州区人民政府关于任免靳地胜等职务的通知
+点击数：769
+发表时间：2017-07-10">
+                                                安州区人民政府关于任免靳地胜等职务的通知
+                                            </a>
+                                        </li>
+
+
+                                        <li>
+                                            <span class="date">2017-07-10</span>
+                                            <a href="/zw/rsxx/rdzfrm/content_105854" target="_blank" title="标题：安州区人民政府关于任免钟华贵等职务的通知
+点击数：750
+发表时间：2017-07-10">
+                                                安州区人民政府关于任免钟华贵等职务的通知
+                                            </a>
+                                        </li>
+
+
+                                        <li>
+                                            <span class="date">2017-07-10</span>
+                                            <a href="/zw/rsxx/rdzfrm/content_105853" target="_blank" title="标题：安州区人民政府关于任免刘伟涛等职务的通知
+点击数：673
+发表时间：2017-07-10">
+                                                安州区人民政府关于任免刘伟涛等职务的通知
+                                            </a>
+                                        </li>
+
+
+                                        <li>
+                                            <span class="date">2017-07-10</span>
+                                            <a href="/zw/rsxx/rdzfrm/content_105852" target="_blank" title="标题：安州区人民政府关于任免叶伦汉等职务的通知
+点击数：702
+发表时间：2017-07-10">
+                                                安州区人民政府关于任免叶伦汉等职务的通知
+                                            </a>
+                                        </li>
+
+
+                                        <li class="last">
+                                            <span class="date">2017-02-27</span>
+                                            <a href="/zw/rsxx/rdzfrm/content_12742" target="_blank" title="标题：安州区人民政府关于任免尹德良等职务的通知
+点击数：797
+发表时间：2017-02-27">
+                                                安州区人民政府关于任免尹德良等职务的通知
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                    <div class="btns">
+                                        <a class="linkBtn fl linkBtn3" href="http://www.lzrsks.gov.cn/Index.aspx" target="_blank">公招公选</a>
+                                        <a class="linkBtn fr linkBtn4" href="http://www.lzrsks.gov.cn/News/NewsList.aspx?typeId=402998863ba3622a013bb75aca1e410f" target="_blank">公务员考录</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- 循环4 -->
+                        <section class="tabBoxIn">
+                            <div class="hd">
+                                <ul>
+
+                                    <li class="li1 first">
+                                        <a class="tit" href="/zw/zfxxgk/cateinfos?basiccategoryid=14" target="_blank" title="统计数据">统计数据</a>
+                                    </li>
+                                    <li class="li2 last">
+                                        <a class="tit" href="/zw/tjxx/tjfx" title="统计分析">统计分析</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bd">
+                                <!--统计数据 调用信息公开-->
+                                <ul class="infoList">
+
+                                    <li>
+                                        <span class="date">2017-07-28</span>
+                                        <a class="tit" href="/publicity_dept1/subject03/subject122/60960" title="商贸物流重点项目支撑安州构建区域商贸物流中心">商贸物流重点项目支撑安州构建区域商贸物流中心</a>
+                                    </li>
+                                    <li>
+                                        <span class="date">2017-07-26</span>
+                                        <a class="tit" href="/publicity_dept1/subject03/subject122/60870" title="安州区投资高速增长继续领跑全川">安州区投资高速增长继续领跑全川</a>
+                                    </li>
+                                    <li>
+                                        <span class="date">2017-07-26</span>
+                                        <a class="tit" href="/publicity_dept1/subject03/subject122/60869" title="我市经济增长完成“双过半”目标任务">我市经济增长完成“双过半”目标任务</a>
+                                    </li>
+                                    <li>
+                                        <span class="date">2017-07-24</span>
+                                        <a class="tit" href="/publicity_dept42/subject07/subject163/60822" title="安州区邮政管理局公布2017年6月邮政业发展情况">安州区邮政管理局公布2017年6月邮政业发展情况</a>
+                                    </li>
+                                    <li>
+                                        <span class="date">2017-07-12</span>
+                                        <a class="tit" href="/publicity_dept42/subject07/subject163/60510" title="安州区邮政管理局公布2017年5月邮政业发展情况">安州区邮政管理局公布2017年5月邮政业发展情况</a>
+                                    </li>
+                                    <li>
+                                        <span class="date">2017-07-11</span>
+                                        <a class="tit" href="/publicity_dept27/subject03/subject125/60486" title="2017年6月安州区国有企业经营情况">2017年6月安州区国有企业经营情况</a>
+                                    </li>
+                                    <li>
+                                        <span class="date">2017-07-11</span>
+                                        <a class="tit" href="/publicity_dept21/subject01/subject13/60477" title="2017年第二季度城区生活饮用水质（末梢水）监测结果">2017年第二季度城区生活饮用水质（末梢水）监测结果</a>
+                                    </li>
+                                </ul>
+                                <ul class="infoList">
+
+                                    <li class="first">
+                                        <span class="date">2017-07-19</span>
+                                        <a href="/zw/tjxx/tjfx/content_106772" target="_blank" title="标题：安州区投资高速增长继续领跑全川
+点击数：93
+发表时间：2017-07-19">
+                                            安州区投资高速增长继续领跑全川
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-07-19</span>
+                                        <a href="/zw/tjxx/tjfx/content_106768" target="_blank" title="标题：我市经济增长完成“双过半”目标任务
+点击数：110
+发表时间：2017-07-19">
+                                            我市经济增长完成“双过半”目标任务
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-07-18</span>
+                                        <a href="/zw/tjxx/tjfx/content_106722" target="_blank" title="标题：安州2017年上半年经济运行统计新闻发布会
+点击数：137
+发表时间：2017-07-18">
+                                            安州2017年上半年经济运行统计新闻发布会
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-06-23</span>
+                                        <a href="/zw/tjxx/tjfx/content_103150" target="_blank" title="标题：1-5月安州工业增长11.2%
+点击数：101
+发表时间：2017-06-23">
+                                            1-5月安州工业增长11.2%
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-05-09</span>
+                                        <a href="/zw/tjxx/tjfx/content_101792" target="_blank" title="标题：安州工业跑出&quot;加速度&quot; 一季度规模以上工业增速全省第二
+点击数：109
+发表时间：2017-05-09">
+                                            安州工业跑出"加速度" 一季度规模以上工业增速全省第二
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-04-21</span>
+                                        <a href="/zw/tjxx/tjfx/content_101311" target="_blank" title="标题：2017年一季度安州区经济运行统计新闻发布稿
+点击数：123
+发表时间：2017-04-21">
+                                            2017年一季度安州区经济运行统计新闻发布稿
+                                        </a>
+                                    </li>
+
+
+                                    <li class="last">
+                                        <span class="date">2017-04-19</span>
+                                        <a href="/zw/tjxx/tjfx/content_101228" target="_blank" title="标题：2017年一季度安州GDP达376.1亿 同比增长10.1%
+点击数：120
+发表时间：2017-04-19">
+                                            2017年一季度安州GDP达376.1亿 同比增长10.1%
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- 循环5 -->
+                        <section class="tabBoxIn">
+                            <div class="hd">
+                                <ul>
+
+                                    <li class="li1 first">
+                                        <a class="tit" href="/zw/gysy/csjz" title="慈善救助">慈善救助</a>
+                                    </li>
+                                    <li class="li2">
+                                        <a class="tit" href="/zw/gysy/csjk" title="慈善捐款">慈善捐款</a>
+                                    </li>
+                                    <li class="li3 last">
+                                        <a class="tit" href="/zw/gysy/jzgs" title="捐赠公示">捐赠公示</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bd">
+                                <ul class="infoList">
+
+                                    <li class="first">
+                                        <span class="date">2017-07-20</span>
+                                        <a href="/zw/gysy/csjz/content_106828" target="_blank" title="标题：《慈善法》的50个问与答
+点击数：173
+发表时间：2017-07-20">
+                                            《慈善法》的50个问与答
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-07-14</span>
+                                        <a href="/zw/gysy/csjz/content_106456" target="_blank" title="标题：安州启动&quot;慈善&#183;福彩帮困助学&quot;活动 285名贫困生将获资助
+点击数：99
+发表时间：2017-07-14">
+                                            安州启动"慈善·福彩帮困助学"活动 285名贫困生将获资助
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-07-10</span>
+                                        <a href="/zw/gysy/csjz/content_106294" target="_blank" title="标题：依法行善——安州区慈善总会成为安州区首家具有公开募捐资格的全市性慈善组织
+点击数：108
+发表时间：2017-07-10">
+                                            依法行善——安州区慈善总会成为安州区首家具有公开募捐资格的全市性…
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-06-20</span>
+                                        <a href="/zw/gysy/csjz/content_103045" target="_blank" title="标题：确保贫困家庭学生不因贫失学 安州启动2017年栋梁工程
+点击数：103
+发表时间：2017-06-20">
+                                            确保贫困家庭学生不因贫失学 安州启动2017年栋梁工程
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-05-31</span>
+                                        <a href="/zw/gysy/csjz/content_99572" target="_blank" title="标题：80名大病贫困患者喜领慈善救助金
+点击数：108
+发表时间：2017-05-31">
+                                            80名大病贫困患者喜领慈善救助金
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-05-02</span>
+                                        <a href="/zw/gysy/csjz/content_98966" target="_blank" title="标题：“致泸合作”农村产业扶贫捐赠仪式举行
+点击数：110
+发表时间：2017-05-02">
+                                            “致泸合作”农村产业扶贫捐赠仪式举行
+                                        </a>
+                                    </li>
+
+
+                                    <li class="last">
+                                        <span class="date">2017-04-13</span>
+                                        <a href="/zw/gysy/csjz/content_98645" target="_blank" title="标题：四川圣杰药业每月捐助500户低保特困户
+点击数：107
+发表时间：2017-04-13">
+                                            四川圣杰药业每月捐助500户低保特困户
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <ul class="infoList">
+
+                                    <li class="first">
+                                        <span class="date">2017-07-10</span>
+                                        <a href="/zw/gysy/csjk/content_105849" target="_blank" title="标题：依法行善——安州区慈善总会成为安州区首家具有公开募捐资格的全市性慈善组织
+点击数：161
+发表时间：2017-07-10">
+                                            依法行善——安州区慈善总会成为安州区首家具有公开募捐资格的全市性…
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-06-20</span>
+                                        <a href="/zw/gysy/csjk/content_103046" target="_blank" title="标题：确保贫困家庭学生不因贫失学 安州启动2017年栋梁工程
+点击数：98
+发表时间：2017-06-20">
+                                            确保贫困家庭学生不因贫失学 安州启动2017年栋梁工程
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-05-31</span>
+                                        <a href="/zw/gysy/csjk/content_102444" target="_blank" title="标题：80名大病贫困患者喜领慈善救助金
+点击数：106
+发表时间：2017-05-31">
+                                            80名大病贫困患者喜领慈善救助金
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-05-27</span>
+                                        <a href="/zw/gysy/csjk/content_99541" target="_blank" title="标题：花荄镇人大组织各界捐款71.5万元 真帮实扶助脱贫
+点击数：101
+发表时间：2017-05-27">
+                                            花荄镇人大组织各界捐款71.5万元 真帮实扶助脱贫
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-05-11</span>
+                                        <a href="/zw/gysy/csjk/content_101906" target="_blank" title="标题：安州区慈善总会关于开展2016年“慈善一日捐”活动的公告
+点击数：106
+发表时间：2017-05-11">
+                                            安州区慈善总会关于开展2016年“慈善一日捐”活动的公告
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-05-02</span>
+                                        <a href="/zw/gysy/csjk/content_101528" target="_blank" title="标题：“致泸合作”农村产业扶贫捐赠仪式举行
+点击数：109
+发表时间：2017-05-02">
+                                            “致泸合作”农村产业扶贫捐赠仪式举行
+                                        </a>
+                                    </li>
+
+
+                                    <li class="last">
+                                        <span class="date">2017-04-14</span>
+                                        <a href="/zw/gysy/csjk/content_98669" target="_blank" title="标题：厦门安州商会情系家乡献爱心
+点击数：117
+发表时间：2017-04-14">
+                                            厦门安州商会情系家乡献爱心
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <ul class="infoList">
+
+                                    <li class="first">
+                                        <span class="date">2017-05-11</span>
+                                        <a href="/zw/gysy/jzgs/content_99212" target="_blank" title="标题：安州区慈善总会关于开展2016年“慈善一日捐”活动的公告
+点击数：130
+发表时间：2017-05-11">
+                                            安州区慈善总会关于开展2016年“慈善一日捐”活动的公告
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2017-05-02</span>
+                                        <a href="/zw/gysy/jzgs/content_101529" target="_blank" title="标题：“致泸合作”农村产业扶贫捐赠仪式举行
+点击数：112
+发表时间：2017-05-02">
+                                            “致泸合作”农村产业扶贫捐赠仪式举行
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2016-12-06</span>
+                                        <a href="/zw/gysy/jzgs/content_94695" target="_blank" title="标题：安州区慈善总会 关于开展2016年“慈善一日捐”活动倡议书
+点击数：127
+发表时间：2016-12-06">
+                                            安州区慈善总会 关于开展2016年“慈善一日捐”活动倡议书
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2016-04-20</span>
+                                        <a href="/zw/gysy/jzgs/content_91286" target="_blank" title="标题：安州区慈善总会2015年1-12月捐赠活动支出情况
+点击数：139
+发表时间：2016-04-20">
+                                            安州区慈善总会2015年1-12月捐赠活动支出情况
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2016-03-09</span>
+                                        <a href="/zw/gysy/jzgs/content_7961" target="_blank" title="标题：安州男子10万礼金助学 曾捐上百万为家乡建小学
+点击数：143
+发表时间：2016-03-09">
+                                            安州男子10万礼金助学 曾捐上百万为家乡建小学
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="date">2016-03-08</span>
+                                        <a href="/zw/gysy/jzgs/content_90667" target="_blank" title="标题：安州启动2015年慈善一日捐活动 捐赠账号公布
+点击数：131
+发表时间：2016-03-08">
+                                            安州启动2015年慈善一日捐活动 捐赠账号公布
+                                        </a>
+                                    </li>
+
+
+                                    <li class="last">
+                                        <span class="date">2015-09-10</span>
+                                        <a href="/zw/gysy/jzgs/content_87578" target="_blank" title="标题：安州区慈善总会关于开展2015年元旦春节“送温暖?慈善一日捐”活动的公告
+点击数：141
+发表时间：2015-09-10">
+                                            安州区慈善总会关于开展2015年元旦春节“送温暖?慈善一日捐”活动的…
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </section>
                     </div>
-                </div><!-- mainContent E -->
-                <div class="side">
-                    <!-- 政府公告 -->
-                    <div class="news-sideBox" id="zfgg">
-                        <div class="hd">
-                            <a href="/channels/1015.html" class="more" target="_self">更多&gt;&gt;</a>
-                            <h3><a href="/channels/1015.html">政府公告</a></h3>
-                        </div>
-                        <div class="bd">
-                            <ul class="dateList">
-                
-                  <li>
-                    <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/1015/58.html" class="tit" title="打紧安排各项赛事活动">打紧安排各项赛事活动</a>
-                                          </div>
-                                          <div class="intro">
-                                               根据青少年篮球训练安排，7月5- 22日篮球正常训练，在没有其他赛事安排的情况下，每周一、四晚上可以安排羽毛球锻炼，7月23日-8月5日可以每天满足羽毛球锻炼，9月份开始，羽毛球锻炼时间将有一定的保证。由此给广大羽毛球爱好者锻炼带来了不便深表歉意<a href="/contents/1015/58.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                
-                  <li>
-                    <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/1015/55.html" class="tit" title="羽毛球锻炼时间将有一定的保证">羽毛球锻炼时间将有一定的保证</a>
-                                          </div>
-                                          <div class="intro">
-                                               每天比赛进行到21:00以后。另外，“三大球”的发展和业余训练，是体育馆的一项重要职能，体育馆承担了全区青少年篮球训练任务，而平时学生因学习不能到体育馆参加训练，只能利用寒暑假组织训练。 由于上述原因，羽毛球锻炼只能根据实际情况安排时间，我区只有一个体育馆<a href="/contents/1015/55.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                
-                  <li>
-                    <dl class="date">
-                                          <dt>29</dt>
-                                          <dd>2017-08</dd>
-                                      </dl>
-                                      <div class="con">
-                                          <div class="title">
-                                            <a href="/contents/1015/57.html" class="tit" title="区体育馆每周星期一至星期五下午15:00-20:00全馆对外开放">区体育馆每周星期一至星期五下午15:00-20:00全馆对外开放</a>
-                                          </div>
-                                          <div class="intro">
-                                               每天比赛进行到21:00以后。另外，“三大球”的发展和业余训练，是体育馆的一项重要职能，体育馆承担了全区青少年篮球训练任务，而平时学生因学习不能到体育馆参加训练，只能利用寒暑假组织训练。 由于上述原因，羽毛球锻炼只能根据实际情况安排时间，我区只有一个体育馆，要承担体育所有项目的训练和比赛，无法固定时间段。根据青少年篮球训练安排，7月5- 22日篮球正常训练，在没有其他赛事安排的情况下，每周一、四晚上可以安排羽毛球锻炼，7月23日-8月5日可以每天满足羽毛球锻炼，<a href="/contents/1015/57.html" class="detail">[详细]</a>
-                                          </div>
-                                      </div>
-                                  </li>
-                
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- 便民公告 -->
-                    <div class="news-sideBox" id="bmgg">
-                        <div class="hd">
-                            <a href="/channels/1016.html" class="more" target="_self">更多&gt;&gt;</a>
-                            <h3><a href="/channels/1016.html">便民公告</a></h3>
-                        </div>
-                        <div class="bd">
-                            <ul class="infoList">
-                              
-                                  <li>
-                                      <a href="/contents/1016/65.html" title="，市、区下达体育馆免费开放" target="_blank">，市、区下达体育馆免费开放</a>
-                                  </li>
-                              
-                                  <li>
-                                      <a href="/contents/1016/62.html" title="2017年安州区总工会安排5至6月在体育馆开展全区“" target="_blank">2017年安州区总工会安排5至6月在体育馆开展全区“</a>
-                                  </li>
-                              
-                                  <li>
-                                      <a href="/contents/1016/60.html" title="安州区体育馆是我区重要的全民健身场地" target="_blank">安州区体育馆是我区重要的全民健身场地</a>
-                                  </li>
-                              
-                                  <li>
-                                      <a href="/contents/1016/64.html" title="羽毛球锻炼时间将有一定的保证。" target="_blank">羽毛球锻炼时间将有一定的保证。</a>
-                                  </li>
-                              
-                                  <li>
-                                      <a href="/contents/1016/63.html" title="羽毛球锻炼时间将有一定的保证" target="_blank">羽毛球锻炼时间将有一定的保证</a>
-                                  </li>
-                              
-                                  <li>
-                                      <a href="/contents/1016/61.html" title="“三大球”的发展和业余训练" target="_blank">“三大球”的发展和业余训练</a>
-                                  </li>
-                              
-                                  <li>
-                                      <a href="/contents/1016/59.html" title="据青少年篮球训练安排" target="_blank">据青少年篮球训练安排</a>
-                                  </li>
-                              
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- 热点关注 -->
-                    <div class="news-sideBox" id="rdtj">
-                        <div class="hd">
-                            <h3><a href="/channels/1017.html">热点关注</a></h3>
-                        </div>
-                        <div class="bd">
-                            <ul class="rankList">
-                              
-                                 
-                                    <li class="hot"> 
-                                      <em class="number">1</em>
-                                          <a href="/contents/1017/72.html" target="_blank" title="安州区羽毛球不应成为被忽视的运动">安州区羽毛球不应成为被忽视的运动</a>
-                                      </li>
-                                  
-                              
-                                 
-                                    <li class="hot"> 
-                                      <em class="number">2</em>
-                                          <a href="/contents/1017/71.html" target="_blank" title="我馆将打紧安排各项赛事活动">我馆将打紧安排各项赛事活动</a>
-                                      </li>
-                                  
-                              
-                                 
-                                    <li class="hot"> 
-                                      <em class="number">3</em>
-                                          <a href="/contents/1017/69.html" target="_blank" title="要承担体育所有项目的训练和比赛，无法固定时间段">要承担体育所有项目的训练和比赛，无法固定时间段</a>
-                                      </li>
-                                  
-                              
-                                 
-                                    <li> 
-                                      <em class="number">4</em>
-                                          <a href="/contents/1017/66.html" target="_blank" title="体育馆每周一、三、五上午为免费开放">体育馆每周一、三、五上午为免费开放</a>
-                                      </li>
-                                  
-                              
-                                 
-                                    <li> 
-                                      <em class="number">5</em>
-                                          <a href="/contents/1017/70.html" target="_blank" title="安州区体育馆是我区重要的全民健身场地">安州区体育馆是我区重要的全民健身场地</a>
-                                      </li>
-                                  
-                              
-                                 
-                                    <li> 
-                                      <em class="number">6</em>
-                                          <a href="/contents/1017/68.html" target="_blank" title="满足群众健身需要">满足群众健身需要</a>
-                                      </li>
-                                  
-                              
-                                 
-                                    <li> 
-                                      <em class="number">7</em>
-                                          <a href="/contents/1017/67.html" target="_blank" title="承担体育所有项目的训练和比赛">承担体育所有项目的训练和比赛</a>
-                                      </li>
-                                  
-                              
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- side E -->
+                </div>
             </div>
-            <!-- rowB E -->
+            <!-- columnB E -->
+            <!-- columnC S -->
+            <div class="column" id="columnC">
+                <!-- 常务会议 -->
+                <div class="cwhyBox">
+                    <a class="picBtn" href="/zw/cwhy">领导信息</a>
+                    <ul class="indCwhy">
+                        <li class="first last">
+                            <div class="title">
+                                <a class="tit" href="/zw/cwhy/lzsrmzflccwh/content_106620" title="廖雪梅">廖雪梅</a>
+                            </div>
+                            <div class="con">
+                                <dl>
+                                    <dd>
+                                        <label>职&nbsp;&nbsp;&nbsp;&nbsp;务：</label>
+                                        <span class="date">区委书记</span>
+                                    </dd>
+                                    <dd>
+                                        <label>工作分工：</label>
+                                        <span>主持区委全面工作。<a href="#">[领导活动]</a></span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="last last">
+                            <div class="title">
+                                <a class="tit" href="/zw/cwhy/lzsrmzflccwh/content_106620" title="李昊天">李昊天</a>
+                            </div>
+                            <div class="con">
+                                <dl>
+                                    <dd>
+                                        <label>职&nbsp;&nbsp;&nbsp;&nbsp;务：</label>
+                                        <span class="date">区委副书记、区长</span>
+                                    </dd>
+                                    <dd>
+                                        <label>工作分工：</label>
+                                        <span>投领导区政府全面工作。负责监察、审计工作。分管区监察局、审计局。<a href="#">[领导活动]</a></span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 政府公告等切换 -->
+                <div class="box tab" id="indZfgg">
+                    <div class="hd">
+                        <ul>
+                            <li><a href="/zw/hzjcgk/zfgs">政府公示</a></li>
+                            <li><a href="/zw/hzjcgk/zfgg">政府公告</a></li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <ul class="dateList">
+
+                                
+                                    <li>
+                                        <dl class="date">
+                                            <dt>01</dt>
+                                            <dd>2017-09</dd>
+                                        </dl>
+                                        <div class="con">
+                                            <div class="title">
+                                                <a href="/contents/1010/45.html" class="tit" title="环保局多举措开展企业环境安全巡查工作">环保局多举措开展企业环境安全巡查工作</a>
+                                            </div>
+                                            <div class="intro">
+                                                <a href="/contents/1010/45.html" class="detail">[详细]</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                
+                                    <li>
+                                        <dl class="date">
+                                            <dt>01</dt>
+                                            <dd>2017-09</dd>
+                                        </dl>
+                                        <div class="con">
+                                            <div class="title">
+                                                <a href="/contents/1010/46.html" class="tit" title="绵阳市安州区环境保护局关于拟对绵阳腾进科技有限公司剪毛机械产品建设项目作出环境影响评价批复文件公告">绵阳市安州区环境保护局关于拟对绵阳腾进科技有限公司剪毛机械产品建设项目作出环境影响评价批复文件公告</a>
+                                            </div>
+                                            <div class="intro">
+                                                <a href="/contents/1010/46.html" class="detail">[详细]</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                
+                                    <li>
+                                        <dl class="date">
+                                            <dt>31</dt>
+                                            <dd>2017-08</dd>
+                                        </dl>
+                                        <div class="con">
+                                            <div class="title">
+                                                <a href="/contents/1010/44.html" class="tit" title="结果公开">结果公开</a>
+                                            </div>
+                                            <div class="intro">
+                                                <a href="/contents/1010/44.html" class="detail">[详细]</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                
+                                    <li>
+                                        <dl class="date">
+                                            <dt>31</dt>
+                                            <dd>2017-08</dd>
+                                        </dl>
+                                        <div class="con">
+                                            <div class="title">
+                                                <a href="/contents/1010/43.html" class="tit" title="服务公开">服务公开</a>
+                                            </div>
+                                            <div class="intro">
+                                                <a href="/contents/1010/43.html" class="detail">[详细]</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                
+                                    <li>
+                                        <dl class="date">
+                                            <dt>31</dt>
+                                            <dd>2017-08</dd>
+                                        </dl>
+                                        <div class="con">
+                                            <div class="title">
+                                                <a href="/contents/1010/42.html" class="tit" title="管理公开,管理公开">管理公开,管理公开</a>
+                                            </div>
+                                            <div class="intro">
+                                                <a href="/contents/1010/42.html" class="detail">[详细]</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                                              
+                            </ul>
+                        <ul class="dateList">
+                                
+                                    <li>
+                                        <dl class="date">
+                                            <dt>29</dt>
+                                            <dd>2017-08</dd>
+                                        </dl>
+                                        <div class="con">
+                                            <div class="title">
+                                                <a href="/contents/1015/58.html" class="tit" title="打紧安排各项赛事活动">打紧安排各项赛事活动</a>
+                                            </div>
+                                            <div class="intro">
+                                                根据青少年篮球训练安排，7月5- 22日篮球正常训练，在没有其他赛事安排的情况下，每周一、四晚上可以安排羽毛球锻炼，7月23日-8月5日可以每天满足羽毛球锻炼，9月份开始，羽毛球锻炼时间将有一定的保证。由此给广大羽毛球爱好者锻炼带来了不便深表歉意<a href="/contents/1015/58.html" class="detail">[详细]</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                
+                                    <li>
+                                        <dl class="date">
+                                            <dt>29</dt>
+                                            <dd>2017-08</dd>
+                                        </dl>
+                                        <div class="con">
+                                            <div class="title">
+                                                <a href="/contents/1015/55.html" class="tit" title="羽毛球锻炼时间将有一定的保证">羽毛球锻炼时间将有一定的保证</a>
+                                            </div>
+                                            <div class="intro">
+                                                每天比赛进行到21:00以后。另外，“三大球”的发展和业余训练，是体育馆的一项重要职能，体育馆承担了全区青少年篮球训练任务，而平时学生因学习不能到体育馆参加训练，只能利用寒暑假组织训练。 由于上述原因，羽毛球锻炼只能根据实际情况安排时间，我区只有一个体育馆<a href="/contents/1015/55.html" class="detail">[详细]</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                
+                                    <li>
+                                        <dl class="date">
+                                            <dt>29</dt>
+                                            <dd>2017-08</dd>
+                                        </dl>
+                                        <div class="con">
+                                            <div class="title">
+                                                <a href="/contents/1015/57.html" class="tit" title="区体育馆每周星期一至星期五下午15:00-20:00全馆对外开放">区体育馆每周星期一至星期五下午15:00-20:00全馆对外开放</a>
+                                            </div>
+                                            <div class="intro">
+                                                每天比赛进行到21:00以后。另外，“三大球”的发展和业余训练，是体育馆的一项重要职能，体育馆承担了全区青少年篮球训练任务，而平时学生因学习不能到体育馆参加训练，只能利用寒暑假组织训练。 由于上述原因，羽毛球锻炼只能根据实际情况安排时间，我区只有一个体育馆，要承担体育所有项目的训练和比赛，无法固定时间段。根据青少年篮球训练安排，7月5- 22日篮球正常训练，在没有其他赛事安排的情况下，每周一、四晚上可以安排羽毛球锻炼，7月23日-8月5日可以每天满足羽毛球锻炼，<a href="/contents/1015/57.html" class="detail">[详细]</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                
+                                    <li>
+                                        <dl class="date">
+                                            <dt>29</dt>
+                                            <dd>2017-08</dd>
+                                        </dl>
+                                        <div class="con">
+                                            <div class="title">
+                                                <a href="/contents/1015/56.html" class="tit" title="我区近几年每年免费开放在5.2万人次以上">我区近几年每年免费开放在5.2万人次以上</a>
+                                            </div>
+                                            <div class="intro">
+                                                三大球”的发展和业余训练，是体育馆的一项重要职能，体育馆承担了全区青少年篮球训练任务，而平时学生因学习不能到体育馆参加训练，只能利用寒暑假组织训练。 由于上述原因，羽毛球锻炼只能根据实际情况安排时间，我区只有一个体育馆，要承担体育所有项目的训练和比赛，<a href="/contents/1015/56.html" class="detail">[详细]</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                
+                                    <li>
+                                        <dl class="date">
+                                            <dt>29</dt>
+                                            <dd>2017-08</dd>
+                                        </dl>
+                                        <div class="con">
+                                            <div class="title">
+                                                <a href="/contents/1015/54.html" class="tit" title="安州区羽毛球不应成为被忽视的运">安州区羽毛球不应成为被忽视的运</a>
+                                            </div>
+                                            <div class="intro">
+                                                根据安州区2017年全民健身活动计划和省市比赛安排，体育馆要进行篮球、象棋、乒乓球、桥牌等活动。2017年安州区总工会安排5至6月在体育馆开展全区“劳动杯”职工运动会，进行象棋、桥牌、乒乓球、拔河、篮球等五项比赛活动，下： 安州区体育馆是我区重要的全民健身场地，<a href="/contents/1015/54.html" class="detail">[详细]</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                
+                            </ul>
+                    </div>
+                </div>
+                <!-- 新闻发布厅 -->
+                <div class="box" id="indXwfb">
+                    <div class="hd">
+                        <a class="more" href="/zw/hzjcgk/xwfbt">更多&gt;&gt;</a>
+                        <h3><a href="/zw/hzjcgk/xwfbt">新闻发布会</a></h3>
+                    </div>
+                    <div class="bd">
+                        <ul class="xwfbList">
+
+                            <li class="first last">
+                                <div class="pic">
+                                    <a href="/zw/hzjcgk/xwfbt/swszfxwfbt/content_106926">
+                                        <img alt="安州区全民参保登记工作新闻发布会" src="/upload/main/contentmanage/article/image/f312cfe95a8045e89d0ce29c6a9f3dfd_320_140.jpg" />
+                                    </a>
+                                </div>
+                                <div class="con">
+                                    <dl>
+                                        <dd class="name">
+                                            <label>发布主题</label>
+                                            <span><a class="tit" href="/zw/hzjcgk/xwfbt/swszfxwfbt/content_106926" title="安州区全民参保登记工作新闻发布会">安州区全民参保登记工作新闻发布会</a></span>
+                                        </dd>
+                                        <dd>
+                                            <label>发布时间</label>
+                                            <span>2017/7/31 11:28:00</span>
+                                        </dd>
+                                        <dd>
+                                            <label>发布单位</label>
+                                            <span>本站原创</span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- columnC E -->
+            <!-- 部门等切换 -->
+            <div class="box tab" id="indSjbm">
+                <div class="hd">
+                    <ul>
+                        <li><a>直管部门</a></li>
+                        <li><a>乡镇</a></li>
+                    </ul>
+                </div>
+                <div class="bd">
+                    <ul class="bsbmList">
+                        <li class="deptId59">
+                            <a href="/publicity_dept0" title="政府办" target="_blank">
+                                政府办
+                            </a>
+                        </li>
+                        <li class="deptId60">
+                            <a href="/publicity_dept1" title="应急办" target="_blank">
+                                应急办
+                            </a>
+                        </li>
+                        <li class="deptId61">
+                            <a href="/publicity_dept2" title="政务中心" target="_blank">
+                                政务中心
+                            </a>
+                        </li>
+                        <li class="deptId62">
+                            <a href="/publicity_dept3" title="审计局" target="_blank">
+                                审计局
+                            </a>
+                        </li>
+                        <li class="deptId63">
+                            <a href="/publicity_dept4" title="档案局" target="_blank">
+                                档案局
+                            </a>
+                        </li>
+                        <li class="deptId64">
+                            <a href="/publicity_dept5" title="金融办" target="_blank">
+                                金融办
+                            </a>
+                        </li>
+                        <li class="deptId65">
+                            <a href="/publicity_dept6" title="林业局" target="_blank">
+                                林业局
+                            </a>
+                        </li>
+                        <li class="deptId66">
+                            <a href="/publicity_dept7" title="民宗局" target="_blank">
+                                民宗局
+                            </a>
+                        </li>
+                        <li class="deptId67">
+                            <a href="/publicity_dept8" title="工信局" target="_blank">
+                                工信局
+                            </a>
+                        </li>
+                        <li class="deptId68">
+                            <a href="/publicity_dept9" title="统计局" target="_blank">
+                                统计局
+                            </a>
+                        </li>
+                        <li class="deptId69">
+                            <a href="/publicity_dept10" title="扶贫开发局" target="_blank">
+                                扶贫开发局
+                            </a>
+                        </li>
+                        <li class="deptId70">
+                            <a href="/publicity_dept11" title="国土局" target="_blank">
+                                国土局
+                            </a>
+                        </li>
+                        <li class="deptId71">
+                            <a href="/publicity_dept12" title="城管局" target="_blank">
+                                城管局
+                            </a>
+                        </li>
+                        <li class="deptId72">
+                            <a href="/publicity_dept13" title="公安局" target="_blank">
+                                公安局
+                            </a>
+                        </li>
+                        <li class="deptId73">
+                            <a href="/publicity_dept14" title="供销社" target="_blank">
+                                供销社
+                            </a>
+                        </li>
+                        <li class="deptId74">
+                            <a href="/publicity_dept15" title="国税局" target="_blank">
+                                国税局
+                            </a>
+                        </li>
+                        <li class="deptId75">
+                            <a href="/publicity_dept16" title="水务局" target="_blank">
+                                水务局
+                            </a>
+                        </li>
+                        <li class="deptId76">
+                            <a href="/publicity_dept17" title="气象局" target="_blank">
+                                气象局
+                            </a>
+                        </li>
+                        <li class="deptId77">
+                            <a href="/publicity_dept18" title="科技局" target="_blank">
+                                科技局
+                            </a>
+                        </li>
+                        <li class="deptId78">
+                            <a href="/publicity_dept19" title="交通局" target="_blank">
+                                交通局
+                            </a>
+                        </li>
+                        <li class="deptId79">
+                            <a href="/publicity_dept20" title="防震减灾局" target="_blank">
+                                防震减灾局
+                            </a>
+                        </li>
+                        <li class="deptId80">
+                            <a href="/publicity_dept21" title="法制办" target="_blank">
+                                法制办
+                            </a>
+                        </li>
+                        <li class="deptId81">
+                            <a href="/publicity_dept22" title="人社局" target="_blank">
+                                人社局
+                            </a>
+                        </li>
+                        <li class="deptId82">
+                            <a href="/publicity_dept23" title="司法局" target="_blank">
+                                司法局
+                            </a>
+                        </li>
+                        <li class="deptId83">
+                            <a href="/publicity_dept24" title="安监局" target="_blank">
+                                安监局
+                            </a>
+                        </li>
+                        <li class="deptId84">
+                            <a href="/publicity_dept25" title="地税局" target="_blank">
+                                地税局
+                            </a>
+                        </li>
+                        <li class="deptId85">
+                            <a href="/publicity_dept26" title="卫计局" target="_blank">
+                                卫计局
+                            </a>
+                        </li>
+                        <li class="deptId86">
+                            <a href="/publicity_dept27" title="方志办" target="_blank">
+                                方志办
+                            </a>
+                        </li>
+                        <li class="deptId87">
+                            <a href="/publicity_dept28" title="投促局" target="_blank">
+                                投促局
+                            </a>
+                        </li>
+                        <li class="deptId88">
+                            <a href="/publicity_dept29" title="教体局" target="_blank">
+                                教体局
+                            </a>
+                        </li>
+                        <li class="deptId89">
+                            <a href="/publicity_dept30" title="公积金管理处" target="_blank">
+                                公积金管理处
+                            </a>
+                        </li>
+                        <li class="deptId90">
+                            <a href="/publicity_dept31" title="监察局" target="_blank">
+                                监察局
+                            </a>
+                        </li>
+                        <li class="deptId91">
+                            <a href="/publicity_dept32" title="民政局" target="_blank">
+                                民政局
+                            </a>
+                        </li>
+                        <li class="deptId92">
+                            <a href="/publicity_dept33" title="农业局" target="_blank">
+                                农业局
+                            </a>
+                        </li>
+                        <li class="deptId93">
+                            <a href="/publicity_dept34" title="住建局" target="_blank">
+                                住建局
+                            </a>
+                        </li>
+                        <li class="deptId94">
+                            <a href="/publicity_dept35" title="发改局" target="_blank">
+                                发改局
+                            </a>
+                        </li>
+                        <li class="deptId95">
+                            <a href="/publicity_dept36" title="商旅局" target="_blank">
+                                商旅局
+                            </a>
+                        </li>
+                        <li class="deptId96">
+                            <a href="/publicity_dept37" title="文广新局" target="_blank">
+                                文广新局
+                            </a>
+                        </li>
+                        <li class="deptId97">
+                            <a href="/publicity_dept38" title="食药工质局" target="_blank">
+                                食药工质局
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="bsbmList">
+                        <li class="deptId103">
+
+                            <a href="http://anxian.my.gov.cn:83/" title="花荄" target="_blank">
+                                花荄
+                            </a>
+                        </li>
+                        <li class="deptId104">
+                            <a href="http://anxian.my.gov.cn:86/" title="桑枣" target="_blank">
+                                桑枣
+                            </a>
+                        </li>
+                        <li class="deptId105">
+                            <a href="http://anxian.my.gov.cn:84/" title="黄土" target="_blank">
+                                黄土
+                            </a>
+                        </li>
+                        <li class="deptId106">
+                            <a href="http://anxian.my.gov.cn:85/" title="乐兴" target="_blank">
+                                乐兴
+                            </a>
+                        </li>
+                        <li class="deptId107">
+                            <a href="http://anxian.my.gov.cn:88/" title="沸水" target="_blank">
+                                沸水
+                            </a>
+                        </li>
+                        <li class="deptId108">
+                            <a href="http://anxian.my.gov.cn:81/" title="永河" target="_blank">
+                                永河
+                            </a>
+                        </li>
+                        <li class="deptId109">
+                            <a href="http://anxian.my.gov.cn:82/" title="千佛" target="_blank">
+                                千佛
+                            </a>
+                        </li>
+                        <li class="deptId109">
+                            <a href="http://anxian.my.gov.cn:82/" title="界牌" target="_blank">
+                                界牌
+                            </a>
+                        </li>
+                        <li class="deptId109">
+                            <a href="http://anxian.my.gov.cn:82/" title="兴仁" target="_blank">
+                                兴仁
+                            </a>
+                        </li>
+                        <li class="deptId109">
+                            <a href="http://anxian.my.gov.cn:82/" title="塔水" target="_blank">
+                                塔水
+                            </a>
+                        </li>
+                        <li class="deptId109">
+                            <a href="http://anxian.my.gov.cn:82/" title="宝林" target="_blank">
+                                宝林
+                            </a>
+                        </li>
+                        <li class="deptId109">
+                            <a href="http://anxian.my.gov.cn:82/" title="清泉" target="_blank">
+                                清泉
+                            </a>
+                        </li>
+                        <li class="deptId109">
+                            <a href="http://anxian.my.gov.cn:82/" title="秀水" target="_blank">
+                                秀水
+                            </a>
+                        </li>
+                        <li class="deptId109">
+                            <a href="http://anxian.my.gov.cn:82/" title="雎水" target="_blank">
+                                雎水
+                            </a>
+                        </li>
+                        <li class="deptId109">
+                            <a href="http://anxian.my.gov.cn:82/" title="高川" target="_blank">
+                                高川
+                            </a>
+                        </li>
+                        <li class="deptId109">
+                            <a href="http://anxian.my.gov.cn:82/" title="河清" target="_blank">
+                                河清
+                            </a>
+                        </li>
+                        <li class="deptId109">
+                            <a href="http://anxian.my.gov.cn:82/" title="迎新" target="_blank">
+                                迎新
+                            </a>
+                        </li>
+                        <li class="deptId109">
+                            <a href="http://anxian.my.gov.cn:82/" title="晓坝" target="_blank">
+                                晓坝
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <!-- content E -->
+        <script>
+        $(".tab, .tabBoxIn").slide({ delayTime:0 });
+        $(".tabBox").slide({ delayTime:0, titCell:".tHd li", mainCell:".tBd" });
+        </script>
         <!-- footer S -->
         <footer id="footer">
-    <div class="siteWidth">
-        <div class="footNav">
+	<div class="siteWidth">
+		<div class="footNav">
 
-            <a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
-            <a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
-            <a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
-            <a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
-            <a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
-            <a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
-        </div>
-        <div class="copyRight">
-            <p>
-                安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br />地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br />蜀ICP备12001441号<br /> &nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1" />川公网安备 51070302110201号</a>
-            </p>
-            <div class="pics">
-                <a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg" /></a> &nbsp;&nbsp;
-                <script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg" /></a> &nbsp;&nbsp;<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png" /></a>
-            </div>
-        </div>
-    </div>
+			<a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
+			<a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
+			<a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
+			<a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
+			<a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
+			<a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
+		</div>
+		<div class="copyRight">
+			<p>
+				安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br />地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br />蜀ICP备12001441号<br /> &nbsp;
+				<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1" />川公网安备 51070302110201号</a>
+			</p>
+			<div class="pics">
+				<a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg" /></a> &nbsp;&nbsp;
+				<script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;
+				<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg" /></a> &nbsp;&nbsp;
+				<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png" /></a>
+			</div>
+		</div>
+	</div>
 </footer>
 <!-- footer E -->
 <script>
-	(function () {
-        var navST;
-        var navST1;
-        var name = 'mainNav';
-        var t = 200;
-        var type = 1;
-        var removeOn = 'False';
-        var effect = 'fade';
-        var appendItem = '#';
-        var li = "#" + name + " li";
-        var index = 0;
-
-        //栏目页调整
+	(function() {
+		var navST;
+		var navST1;
+		var name = 'mainNav';
+		var t = 200;
+		var type = 1;
+		var removeOn = 'False';
+		var effect = 'fade';
+		var appendItem = '#';
+		var li = "#" + name + " li";
+		var index = 0;
+		
+		
+		//滚动事件
+		scrollFun();
+		window.onscroll = function(){
+			scrollFun();	
+		}
+		function scrollFun(){
+			if(getScrollTop() > 100) {
+				$(".topBar").addClass("topHei");
+				$("#logo2").addClass("show");
+			} else {
+				$(".topBar").removeClass("topHei");
+				$("#logo2").removeClass("show");
+			}
+		}
+		function getScrollTop() {
+			var scrollPos;
+			if(window.pageYOffset) {
+				scrollPos = window.pageYOffset;
+			} else if(document.compatMode && document.compatMode != 'BackCompat') {
+				scrollPos = document.documentElement.scrollTop;
+			} else if(document.body) {
+				scrollPos = document.body.scrollTop;
+			}
+			return scrollPos;
+		}
+		
+		//栏目页调整
 		if($(".path").length>0){
 			//当前状态
-			var _url = document.querySelectorAll(".path a")[1].getAttribute("href");
+			var _url = document.querySelectorAll(".path a")[1].getAttribute("href"),
+				_name = document.querySelectorAll(".path a")[1].innerHTML,
+				_title = $(".sideMenu .hd h3").data("title");
+			$(".sideMenu .hd h3").html(_name);
 			$(".mainNav .li1 a").each(function(i,e){
 				if($(e).attr("href") == _url){
 					$(e).closest(".li1").addClass("on1").siblings().removeClass("on1");
 					index = i;
 				}
 			})
-			//.topNav .tip
-			$(".topNav .tip").hide();
+			$(".sideMenu .singleList li a").each(function(i,e){
+				if($(e).html() == _title){
+					$(e).parent().addClass("on");
+				}
+			})
+			
+			//.topBar
+			$(".topBar").addClass("topFixed");
+		}
+		
+		
+
+		//鼠标离开导航后，回复默认.on1类位置
+		$("#" + name)
+			.hover(
+				function() {
+					if(navST1 != null) {
+						clearTimeout(navST1);
+					}
+				},
+				function() {
+					navST1 = setTimeout(function() {
+							$("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
+						},
+						500);
+				}
+			);
+
+		if(type == '1') {
+			li = "#" + name + " .li1";
+		}
+		if(appendItem != '#') { //插入内容
+			var appendHtml = $(appendItem).html();
+			$(li).first().append(appendHtml);
+			$(appendItem).remove();
 		}
 
-        //鼠标离开导航后，回复默认.on1类位置
-        $("#" + name)
-            .hover(
-                function () {
-                    if (navST1 != null) {
-                        clearTimeout(navST1);
-                    }
-                },
-                function () {
-                    navST1 = setTimeout(function () {
-                            $("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
-                        },
-                        500);
-                }
-            );
+		if(type == '3') {
+			$("#" + name + " .on1").find("ul").first().show();
+		}
 
-        if (type == '1') {
-            li = "#" + name + " .li1";
-        }
-        if (appendItem != '#') { //插入内容
-            var appendHtml = $(appendItem).html();
-            $(li).first().append(appendHtml);
-            $(appendItem).remove();
-        }
+		$(li)
+			.hover(function() {
+					var curItem = $(this);
+					var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+					$(li).removeClass("on" + onNum);
+					curItem.addClass("on" + onNum);
+					navST = setTimeout(function() { //延时触发
 
-        if (type == '3') {
-            $("#" + name + " .on1").find("ul").first().show();
-        }
-
-        $(li)
-            .hover(function () {
-                    var curItem = $(this);
-                    var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
-                    $(li).removeClass("on" + onNum);
-                    curItem.addClass("on" + onNum);
-                    navST = setTimeout(function () { //延时触发
-
-                            if ($("ul:first", curItem).css("display") != "block") {
-                                $(li + " .ul" + onNum).hide();
-                                if (effect == 'fade') {
-                                    $("ul:first", curItem).fadeIn(t);
-                                } else {
-                                    $("ul:first", curItem).slideDown(t);
-                                }
-                            };
-                            navST = null;
-                        },
-                        t);
-                },
-                function () {
-                    if (navST != null) {
-                        clearTimeout(navST);
-                    }
-                    if (type == '1' || type == '2') {
-                        if (effect == 'fade') {
-                            $(this).find("ul").first().fadeOut(t);
-                        } else {
-                            $(this).find("ul").first().slideUp(t);
-                        }
-                    }
-                    if (removeOn == 'True') {
-                        $(this).removeClass("on1");
-                    }
-                },
-                t); //end hover
-    })()
+							if($("ul:first", curItem).css("display") != "block") {
+								$(li + " .ul" + onNum).hide();
+								if(effect == 'fade') {
+									$("ul:first", curItem).fadeIn(t);
+								} else {
+									$("ul:first", curItem).slideDown(t);
+								}
+							};
+							navST = null;
+						},
+						t);
+				},
+				function() {
+					if(navST != null) {
+						clearTimeout(navST);
+					}
+					if(type == '1' || type == '2') {
+						if(effect == 'fade') {
+							$(this).find("ul").first().fadeOut(t);
+						} else {
+							$(this).find("ul").first().slideUp(t);
+						}
+					}
+					if(removeOn == 'True') {
+						$(this).removeClass("on1");
+					}
+				},
+				t); //end hover
+	})()
 </script>
     </div>
     <script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
@@ -1077,3 +2615,4 @@
 
 </body>
 </html>
+

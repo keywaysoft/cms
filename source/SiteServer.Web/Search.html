@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" />
+    <meta name="description" />
+    <meta name="application-name" content="安州区人民政府门户网站" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="HandheldFriendly" content="true" />
+    <title>首页-</title>
+    <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
+<link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+<link href="/Content/Main/Base/css/cssWeiban.css" rel="stylesheet" type="text/css" />
+<link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
+<script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
+<script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
+<script src="/Content/_Common/Base/js/webCommon.js"></script>
+<script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
+<script src="/Content/_Common/Base/js/slides.js"></script>
+<script src="/Content/_Common/Base/js/StoT.js"></script>
+    <link href="/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
+    <script src="/Content/_Common/Base/js/qrcode.min.js"></script>
+    <script src="/Content/_Common/Assets/Scripts/jquery.PrintArea.js"></script>
+    <script src="/Content/_Common/Base/js/article.js"></script>
+    
+<script>var $pageInfo = {publishmentSystemID : 1, channelID : 1, contentID : 0, siteUrl : "", homeUrl : "/home", currentUrl : "/Search.html", rootUrl : "", apiUrl : "/api"};</script></head>
+<body>
+<script type="text/javascript">!window.jQuery&&document.write('<script src="/sitefiles/assets/components/jquery-1.9.1.min.js" language="javascript"></'+'script>');</script>
+
+    <div class="wrap">
+        <!--背景轮播-->
+    <div class="loopBg">
+	<div class="bd">
+		<ul>
+			<li style="background-image: url(/Content/Main/Base/img/body-1.png);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Main/Base/img/body-1.png',sizingMethod='scale');"></li>
+			<li style="background-image: url(/Content/Main/Base/img/body-2.png);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Main/Base/img/body-2.png',sizingMethod='scale');"></li>
+			<li style="background-image: url(/Content/Main/Base/img/body-3.png);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Main/Base/img/body-3.png',sizingMethod='scale');"></li>
+		</ul>
+	</div>
+	<!--页码 可选-->
+	<div class="hd">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</div>
+<script>
+	$(function() {
+		/*背景轮播*/
+		$(".loopBg").slide({
+			mainCell: ".bd ul",
+			autoPlay: true,
+			mouseOverStop: false,
+			effect: "fold",
+			interTime: 12000,
+			delayTime: 8000,
+			startFun: function(i, c) {
+				$(".bd ul li").eq(i).addClass("on");
+			},
+			endFun: function(i, c) {
+				$(".bd ul li").eq(i).siblings().removeClass("on");
+			}
+		});
+	})
+</script>
+<style>
+	/*背景轮播*/
+	
+	.loopBg {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	.loopBg .bd,
+	.loopBg .bd .tempWrap,
+	.loopBg .bd ul,
+	.loopBg .bd li {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.loopBg .bd li {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	
+	.loopBg .bd .on {
+		animation: bigger 8s linear 0s both;
+	}
+	
+	.loopBg .hd {
+		display: none;
+	}
+	
+	@keyframes bigger {
+		from {
+			transform: scale(1);
+		}
+		to {
+			transform: scale(1.05);
+		}
+	}
+</style>
+    <!--topBar-->
+    <div class="topBar">
+    <div class="siteWidth">
+        <h1 title="中共安州区委区人民政府门户网站" id="logo2"><a href="/"><img src="/content/main/base/img/logo-mini.png" /></a></h1>
+        <ul class="list">
+            <li class="en"><a href="javascript:void(0);">English</a></li>
+            <li class="phone">
+                <a href="javascript:void(0);">手机版</a>
+                <div class="pic">
+                    <img src="/qrcode/qrcode.gif">
+                    <i></i>
+                </div>
+            </li>
+            <li class="obstacleFree"><a target="_blank" href="javascript:void(0);">无障碍版</a></li>
+            <li class="wechat">
+                <a href="javascript:void(0);">政务微信</a>
+                <div class="pic">
+                    <img src='/Content/Main/Base/img/weixin.png' />
+                    <i></i>
+                </div>
+            </li>
+            <li class="robot"><a href="javascript:void(0);">政务机器人</a></li>
+        </ul>
+    </div>
+    <span class="topBarBg"></span>
+</div>
+<div class="topB"></div>
+<script>
+	$(".topBar li").hover(function() {
+		$(this).addClass("on")
+	}, function() {
+		$(this).removeClass("on")
+	});
+</script>
+    <!-- header S -->
+    <header id="header">
+    <div class="headerTop siteWidth">
+        <h1 title="中共安州区委区人民政府门户网站" id="logo"><a href="/"><img src="/content/main/base/img/logo.png" /></a></h1>
+        <div class="siteSearchBar">
+            <div class="s-form">
+                <input type="hidden" id="sitelist" value="[{&quot;Name&quot;:&quot;全站群&quot;,&quot;Value&quot;:0},{&quot;Name&quot;:&quot;本站&quot;,&quot;Value&quot;:1},{&quot;Name&quot;:&quot;审计局&quot;,&quot;Value&quot;:2},{&quot;Name&quot;:&quot;农业局&quot;,&quot;Value&quot;:18}]" />
+                <input type="hidden" id="siteid" name="sid" value="0">
+                <div class="select-box">
+                    <a id="sOptionBtn" class="s-option" href="javascript:void(0)">全站群</a>
+                    <i class="arrow-dn"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="from-control" id="inputkeyword" placeholder="请输入关键词" spellcheck="false">
+                </div>
+                <div class="btn-box">
+                    <input type="submit" id="search" class="btn" onclick="gSearch();" value="搜 索">
+                    <input type="hidden" id="route" value="s" />
+                </div>
+            </div>
+            <div class="hotWords">
+                热门搜索：<a target="_blank" href="/s?st=1&wd=环保">环保</a><a target="_blank" href="/s?st=1&wd=生育">生育</a><a target="_blank" href="/s?st=1&wd=农业">农业</a><a target="_blank" href="/s?st=1&wd=医疗">医疗</a><a target="_blank" href="/s?st=1&wd=就业">就业</a>
+            </div>
+            <script src="/Content/_Common/FullTextSearch/js/default-site-search-box.js"></script>
+            <script>
+	            document.getElementById("inputkeyword").onkeydown = function (e) {
+	                e = e || window.event;
+	                if (e.keyCode == 13) {
+	                    gSearch();
+	                }
+	            };
+	            function gSearch() {
+	                var keyword = document.getElementById('inputkeyword').value;
+	                var route = document.getElementById('route').value;
+	
+	                if (keyword == '' || keyword == "请输入关键字") {
+	                    alert("请输入关键字");
+	                } else {
+	                    var siteid = document.getElementById('siteid').value;
+	                    window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
+	                }
+	            }
+            </script>
+        </div>
+
+        <nav class="topNav clearfix">
+            <span class="menuBtn"></span>
+            <ul id="mainNav" class="mainNav">
+                <li class="li1 on1" id="li-home">
+                    <h3 class="h1">
+                        <a class="a1" href='/'>首页</a>
+                    </h3>
+                </li>
+                <li class="li1" id="li-xw">
+                    <h3 class="h1">
+                        <a href="/channels/3.html" target="_self">政务动态</a>
+                    </h3>
+                </li>
+                <li class="li1" id="li-zw">
+                    <h3 class="h1">
+                        <a href="/channels/1010.html" target="_self">政务公开</a>
+                    </h3>
+                </li>
+                <li class="li1" id="li-fw">
+                    <h3 class="h1">
+                        <a href="/channels/5.html" target="_self">政务服务</a>
+                    </h3>
+                </li>
+                <li class="li1" id="li-hd">
+                    <h3 class="h1">
+                        <a href="/channels/1018.html" target="_self">公众参与</a>
+                    </h3>
+                </li>
+                <li class="li1" id="li-sq">
+                    <h3 class="h1">
+                        <a href="/channels/7.html" target="_self">走进安州</a>
+                    </h3>
+                </li>
+            </ul>
+
+			
+            <span class="tip" data-id="首页">点击切换<i class="icon iconfont icon-pointerleft"></i></span>
+        </nav>
+        <script>
+        	(function(){
+        		$(".topNav .h1").prepend("<i></i>");
+	          	if($(".topNav .tip").data("id") != "首页")$(".topNav .tip").hide();
+        	})();
+        </script>
+    </div>
+</header>
+        
+        <!-- content S -->
+      
+        <div id="content">
+            <div class="path">
+                <em>您的位置：</em>搜索结果页            
+            </div>
+          <!-- Seach S -->
+<div id="ajaxElement_1_478"><div class="stl_loading"><div class="alert alert-info" role="alert">
+            <strong>提示!</strong> 系统正在搜索中，请稍后...
+        </div></div><div class="stl_yes" style="display:none"></div><div class="stl_no" style="display:none"><div class="alert alert-danger" role="alert">
+            <strong>抱歉!</strong> 找不到和您的查询相符的项目
+        </div></div></div>
+<script type="text/javascript" language="javascript">
+jQuery(document).ready(function(){
+    var url = '/api/stl/actions/search';
+    var parameters = 
+{
+    isallsites: false,
+    sitename: '',
+    sitedir: '',
+    siteids: '',
+    channelindex: '',
+    channelname: '',
+    channelids: '',
+    type: 'Title',
+    word: '',
+    dateattribute: 'AddDate',
+    datefrom: '',
+    dateto: '',
+    since: '',
+    pagenum: 0,
+    ishighlight: false,
+    isdefaultdisplay: false,
+    publishmentsystemid: '1',
+    ajaxdivid: 'ajaxElement_1_478',
+    template: 'e8lUF0slash0a6ssSilaEDzCwYbPoZkK0vjJPm6SFrGAepknOrq9cd2DfFI5RjW6PG5LMGh3RaICH0slash0GJV9PfrLi7V9dh0add0XvjJn0slash0xY1EMMq0slash0De9BLN1zzoeGjuGnijD1hu3wptxjZUrPtVaXTwuQltYM0slash0g0omVpj0slash0DZgtA4jSWhi2Cs5w4375WncQXNnPSqeFP22o2grW5u9dsIx57lM82IXgNeoG0add0Yt0slash0D1qJdICD0slash0sdhfQ6jlrS4BTMKlftmxcsDm3jhFVhhJ8TPcKY3cwP8ZLqW3HzNqHCnrmfzEt0slash0FFGH5uRWquEzkIrg4MYnQv2Sa1dUwH5a9LPbwNvAiX5ex26l5ZOiI5Vcb4cyya1lrBQ0cOxq2LEe0ApPcSrhWB9VlLPgrUibvNTxAOlqf3qoHlXi8beE3pBU5zns6azIvkSvmksiBoXYbR0slash0F5rg3ElPOTtYkq5NfdrquXHmvbLkVtbozGBDnvV70IiLYVRKQAOXcXdirRK57b9ufv0add05ainrTVeDoQmMIhlCgekCiqvG6f3YwUQ6uFuMXVOXq6MqGIbgjrDFIjsGG1QK8mTNkchBCwdb5aIKJ36T2SCXy29qFfJ4x6a6bEKyK43tHA3Cjvi0hchEesCJ3tyzTAA20add0pLstlao0slash0lbA1pMlE5jLDujYw6Vk9uvQ35ga38UnEkKzvTqEpYQHmoa80slash0OXaLQraBAm9fkpDSJI6k2VmCn90add00l20slash0B2uG80slash01ZsnBTLj7pMrvgtB5NQou8Je9R1CPHbFSS4i5xGm0STfLl7pskQfbWaGfWiZsdGkc0add0GUemf0add0aAz7oT1Ia3907lyguYPy7OgTrchjhhPEy0slash0zIffXfMbo86WdP3hKWQnOllDv00uT0tKNliNE4Iv1WpxVodjyiJPW0add0XPKaa0slash0Ha3GrWCtdbgUhciroPi8aKXETWdi0add0rCHrrwU0slash0WaSpxy9NT0slash04MX0slash0uR66aPMNhoQXLr8HC0add0avIhgEZFU0HwUreZZGdHFsnQkX5R8maoPtOQtcTs851I0slash00fmpXpF0add0LDZ1eAp0slash0ZUEn8t0slash0tFAx3Fb5DU7BWYh7mhQioDQ7xkJwVwUPR41VdZ2mmYVvChH0IixxbdGpKr15cvDyM6ovT0slash0CtYhVi7TVcWcGE74zROIHJnLL4SgeeeH4AcOy1LR0ClwaM7VCfMWWC2neDk0aIl9daV1K5F7lPCGVgtUE0CDGzmlkwyevaUnnuJmEYyxfcBzNRHz0add0WHqrKTSn9RSAQrWK4fxN13bPjl1ARz8EyCWFCelHsmTEsniW9qP3QLzZXS9Dr7f08jW71m85qeqCyjgtZzczMT7rOHBG0slash0tdhgYJ4yccHx5PTVfOLtrHkX7uk2wwvCJ6FsO6VVvycQQUb433g5cmbstAiyfXU9XAIYXQ4qMzvzPqqJQq8bwyPhf3wLuUOfIIFwIt4jnRE98qPjhgAHkL3Oz5boFOqVpjyC6HFHKr72daHsyxsbn7z813I1bsneOYhdG9mOQxolvIpYMXVrkzngay77SUyFfX00slash0AZxy0Teqd9UqglbXIIUHBd60slash0TNs8NTpE5JIU95P6K6JJ3rsUWGj4XsP0add0QM8hvKD6ns7hNUndVKdY2pClbkHCycLlQODCmDGORXgfjv1KRL2Dcbnkqw0OtNcxHLPLg0equals00equals0',
+};
+
+    var queryString = document.location.search;
+    if (queryString && queryString.length > 1) {
+        queryString = queryString.substring(1);
+        var arr = queryString.split('&');
+        for(var i=0; i < arr.length; i++) {
+            var item = arr[i];
+            var arr2 = item.split('=');
+            if (arr2 && arr2.length == 2) {
+                var key = (arr2[0] || '').toLowerCase();
+                if (key) {
+                    parameters[key] = decodeURIComponent(arr2[1]);
+                }
+            }
+        }
+        if (!parameters['page']) {
+            parameters['page'] = 1;
+        }
+
+        jQuery.support.cors = true;
+        jQuery.ajax({
+            url: url,
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(parameters),
+            dataType: 'json',
+            success: function(res) {
+                jQuery("#ajaxElement_1_478 .stl_loading").hide();
+                jQuery("#ajaxElement_1_478 .stl_yes").show();
+                jQuery("#ajaxElement_1_478 .stl_no").hide();
+                jQuery("#ajaxElement_1_478 .stl_yes").html(res);
+            },
+            error: function(e) {
+                jQuery("#ajaxElement_1_478 .stl_loading").hide();
+                jQuery("#ajaxElement_1_478 .stl_yes").hide();
+                jQuery("#ajaxElement_1_478 .stl_no").show();
+            }
+        });
+    } else {
+        jQuery("#ajaxElement_1_478 .stl_loading").hide();
+        jQuery("#ajaxElement_1_478 .stl_yes").hide();
+        jQuery("#ajaxElement_1_478 .stl_no").show();
+    }
+});
+
+function stlRedirectajaxElement_1_478(page)
+{
+    var queryString = document.location.search;
+    if (queryString && queryString.length > 1) {
+        queryString = queryString.substring(1);
+        var parameters = '';
+        var arr = queryString.split('&');
+        for(var i=0; i < arr.length; i++) {
+            var item = arr[i];
+            var arr2 = item.split('=');
+            if (arr2 && arr2.length == 2) {
+                if (arr2[0] !== 'page') {
+                    parameters += item + '&';
+                }
+            }
+        }
+        parameters += 'page=' + page;
+        location.href = location.protocol + '//' + location.host + location.pathname + location.hash + '?' + parameters;
+    }
+}
+
+function stlJumpajaxElement_1_478(selObj)
+{
+    stlRedirectajaxElement_1_478(selObj.options[selObj.selectedIndex].value);
+}
+</script>
+
+          <!-- Seach E -->
+        </div>
+        <!-- content E -->
+        <footer id="footer">
+	<div class="siteWidth">
+		<div class="footNav">
+
+			<a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
+			<a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
+			<a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
+			<a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
+			<a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
+			<a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
+		</div>
+		<div class="copyRight">
+			<p>
+				安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br />地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br />蜀ICP备12001441号<br /> &nbsp;
+				<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1" />川公网安备 51070302110201号</a>
+			</p>
+			<div class="pics">
+				<a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg" /></a> &nbsp;&nbsp;
+				<script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;
+				<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg" /></a> &nbsp;&nbsp;
+				<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png" /></a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- footer E -->
+<script>
+	(function() {
+		//滚动事件
+		scrollFun();
+		window.onscroll = function(){
+			scrollFun();	
+		}
+		function scrollFun(){
+			if(getScrollTop() > 100) {
+				$(".topBar").addClass("topHei");
+				$("#logo2").addClass("show");
+			} else {
+				$(".topBar").removeClass("topHei");
+				$("#logo2").removeClass("show");
+			}
+		}
+		function getScrollTop() {
+			var scrollPos;
+			if(window.pageYOffset) {
+				scrollPos = window.pageYOffset;
+			} else if(document.compatMode && document.compatMode != 'BackCompat') {
+				scrollPos = document.documentElement.scrollTop;
+			} else if(document.body) {
+				scrollPos = document.body.scrollTop;
+			}
+			return scrollPos;
+		}
+		
+		//栏目页调整
+		if($(".path").length>0){
+			//当前状态
+			var _url = document.querySelectorAll(".path a")[1].getAttribute("href");
+			$(".mainNav .li1 a").each(function(i,e){
+				if($(e).attr("href") == _url){
+					$(e).closest(".li1").addClass("on1").siblings().removeClass("on1");
+					index = i;
+				}
+			})
+			//.topBar
+			$(".topBar").addClass("topFixed");
+		}
+		
+		
+		var navST;
+		var navST1;
+		var name = 'mainNav';
+		var t = 200;
+		var type = 1;
+		var removeOn = 'False';
+		var effect = 'fade';
+		var appendItem = '#';
+		var li = "#" + name + " li";
+		var index = 0;
+
+		//鼠标离开导航后，回复默认.on1类位置
+		$("#" + name)
+			.hover(
+				function() {
+					if(navST1 != null) {
+						clearTimeout(navST1);
+					}
+				},
+				function() {
+					navST1 = setTimeout(function() {
+							$("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
+						},
+						500);
+				}
+			);
+
+		if(type == '1') {
+			li = "#" + name + " .li1";
+		}
+		if(appendItem != '#') { //插入内容
+			var appendHtml = $(appendItem).html();
+			$(li).first().append(appendHtml);
+			$(appendItem).remove();
+		}
+
+		if(type == '3') {
+			$("#" + name + " .on1").find("ul").first().show();
+		}
+
+		$(li)
+			.hover(function() {
+					var curItem = $(this);
+					var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+					$(li).removeClass("on" + onNum);
+					curItem.addClass("on" + onNum);
+					navST = setTimeout(function() { //延时触发
+
+							if($("ul:first", curItem).css("display") != "block") {
+								$(li + " .ul" + onNum).hide();
+								if(effect == 'fade') {
+									$("ul:first", curItem).fadeIn(t);
+								} else {
+									$("ul:first", curItem).slideDown(t);
+								}
+							};
+							navST = null;
+						},
+						t);
+				},
+				function() {
+					if(navST != null) {
+						clearTimeout(navST);
+					}
+					if(type == '1' || type == '2') {
+						if(effect == 'fade') {
+							$(this).find("ul").first().fadeOut(t);
+						} else {
+							$(this).find("ul").first().slideUp(t);
+						}
+					}
+					if(removeOn == 'True') {
+						$(this).removeClass("on1");
+					}
+				},
+				t); //end hover
+	})()
+</script>
+    </div>
+</body>
+</html>

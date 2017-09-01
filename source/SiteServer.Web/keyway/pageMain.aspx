@@ -90,16 +90,16 @@
                     </a>
                     <ul class="dropdown-menu pull-right">
                         <li><a href="pageRight.aspx"><i class="icon-dashboard"></i> 系统面板</a></li>
-                        <li><a href="platform/pageUserProfile.aspx"><i class="icon-user"></i> 修改资料</a></li>
-                        <li><a href="platform/pageUserPassword.aspx"><i class="icon-key"></i> 更改密码</a></li>
+                        <li><a href="platform/pageUserPassword.aspx"><i class="icon-user"></i> 更改密码</a></li>
+                        <li><a href="javascript:;"  onclick="sysLoginOut();"><i class="icon-signout"></i> 退出系统</a></li>
                     </ul>
                 </div>
 
                 <ul class="icon-nav">
 
                     <li>
-                        <form action="logout.aspx" method="post" target="_self">
-                            <a href="javascript:;" title="退出系统" onclick="$(this).parent().submit();"><i class="fa fa-cog fa-spin fa-2x fa-fw"></i></a>
+                        <form action="logout.aspx" method="post" target="_self" id="logout">
+                            <a href="platform/pageUserProfile.aspx" title="个人设置"><i class="fa fa-cog fa-spin fa-2x fa-fw"></i></a>
                             <style>
                                 .icon-nav li > form {
                                     display: inline;
@@ -111,6 +111,11 @@
                                     background:rgb(160,0,40);text-decoration:none;
                                 }
                             </style>
+                            <script>
+                                function sysLoginOut() {                                    
+                                    $("#logout").submit();                                    
+                                }
+                            </script>
                         </form>
                     </li>
 

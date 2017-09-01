@@ -12,25 +12,27 @@
     <meta name="HandheldFriendly" content="true" />
     <title>安州简介-安州简介</title>
     <link href="/Content/Main/Base/css/module.css" rel="stylesheet" type="text/css" />
-    <link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+<link href="/Content/Main/Base/css/default.css" rel="stylesheet" type="text/css" />
+<link href="/Content/Main/Base/css/cssWeiban.css" rel="stylesheet" type="text/css" />
+<link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
+<script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
+<script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
+<script src="/Content/_Common/Base/js/webCommon.js"></script>
+<script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
+<script src="/Content/_Common/Base/js/slides.js"></script>
+<script src="/Content/_Common/Base/js/StoT.js"></script>
     <link href="/Content/Main/ContentManage/css/page.css" rel="stylesheet" />
-    <link href="/sitefiles/assets/commentInput/style.css" rel="stylesheet" type="text/css" />
-    <script src="/sitefiles/assets/commentInput/script.js" language="javascript"></script>
-    <link href="/Content/_Common/Base/css/power.css" rel="stylesheet" />
-    <script src="/Content/_Common/Assets/Scripts/jquery-1.11.1.js"></script>
-    <script src="/Content/_Common/Assets/Scripts/jquery.cookie.js"></script>
-    <!--     <script src="/Content/_Common/Base/js/antiClickjack.js"></script> -->
-    <script src="/Content/_Common/Base/js/webCommon.js"></script>
-    <script src="/Content/_Common/Base/js/jquery.SuperSlide.js"></script>
-    <script src="/Content/_Common/Base/js/StoT.js"></script>
+    <script src="/Content/_Common/Base/js/qrcode.min.js"></script>
+    <script src="/Content/_Common/Assets/Scripts/jquery.PrintArea.js"></script>
+    <script src="/Content/_Common/Base/js/article.js"></script>
+    
 <script>var $pageInfo = {publishmentSystemID : 1, channelID : 2168, contentID : 140, siteUrl : "", homeUrl : "/home", currentUrl : "/contents/2168/140.html", rootUrl : "", apiUrl : "/api"};</script></head>
 <body>
-<script type="text/javascript" charset="utf-8" src="/sitefiles/assets/components/jquery-1.9.1.min.js"></script><script type="text/javascript" charset="utf-8" src="/sitefiles/assets/jquery/jquery-jtemplates.js"></script><link href="/sitefiles/assets/jquery/showLoading/css/showLoading.css" rel="stylesheet" media="screen" /><script type="text/javascript" charset="utf-8" src="/sitefiles/assets/jquery/showLoading/js/jquery.showLoading.min.js"></script><script type="text/javascript" charset="utf-8" src="/sitefiles/assets/jquery/validate.js"></script><script type="text/javascript">!window.jQuery&&document.write('<script src="/sitefiles/assets/components/jquery-1.9.1.min.js" language="javascript"></'+'script>');</script><script src="/sitefiles/assets/components/js.cookie.js" type="text/javascript"></script><link href="/sitefiles/assets/vote/css/vote.css" type="text/css" rel="stylesheet" />
-<script src="/sitefiles/assets/components/lodash-4.17.4.min.js" type="text/javascript"></script><script src="/sitefiles/assets/components/stlClient.js" type="text/javascript"></script><script src="/sitefiles/assets/components/vue-2.1.10.min.js" type="text/javascript"></script>
+<script src="/sitefiles/assets/components/js.cookie.js" type="text/javascript"></script><script src="/sitefiles/assets/components/lodash-4.17.4.min.js" type="text/javascript"></script><script src="/sitefiles/assets/components/stlClient.js" type="text/javascript"></script><script src="/sitefiles/assets/components/vue-2.1.10.min.js" type="text/javascript"></script>
 
     <div class="wrap">
         <!--背景轮播-->
-    <div class="loopBg">
+		<div class="loopBg">
 	<div class="bd">
 		<ul>
 			<li style="background-image: url(/Content/Main/Base/img/body-1.png);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Main/Base/img/body-1.png',sizingMethod='scale');"></li>
@@ -111,41 +113,45 @@
 		}
 	}
 </style>
-    <!--topBar-->
-    <div class="topBar">
+		<!--topBar-->
+		<div class="topBar">
     <div class="siteWidth">
-        <h1 title="中共安州区委区人民政府门户网站" id="logo2"><a href="http://www.luzhou.gov.cn"><img src="/content/main/base/img/logo-mini.png" /></a></h1>
+        <h1 title="中共安州区委区人民政府门户网站" id="logo2"><a href="/"><img src="/content/main/base/img/logo-mini.png" /></a></h1>
         <ul class="list">
-            <li class="en"><a href="/english">English</a></li>
+            <li class="en"><a href="javascript:void(0);">English</a></li>
             <li class="phone">
-                <a href="javascript:;">手机版</a>
+                <a href="javascript:void(0);">手机版</a>
                 <div class="pic">
                     <img src="/qrcode/qrcode.gif">
                     <i></i>
                 </div>
             </li>
-            <li class="obstacleFree"><a target="_blank" href="/wca.html">无障碍版</a></li>
+            <li class="obstacleFree"><a target="_blank" href="javascript:void(0);">无障碍版</a></li>
             <li class="wechat">
-                <a href="javascript:;">政务微信</a>
+                <a href="javascript:void(0);">政务微信</a>
                 <div class="pic">
                     <img src='/Content/Main/Base/img/weixin.png' />
                     <i></i>
                 </div>
             </li>
-            <li class="robot"><a href="/znjqr">政务机器人</a></li>
+            <li class="robot"><a href="javascript:void(0);">政务机器人</a></li>
         </ul>
     </div>
     <span class="topBarBg"></span>
 </div>
-    <!-- header S -->
-    <header id="header">
+<div class="topB"></div>
+<script>
+	$(".topBar li").hover(function() {
+		$(this).addClass("on")
+	}, function() {
+		$(this).removeClass("on")
+	});
+</script>
+		<!-- header S -->
+		<header id="header">
     <div class="headerTop siteWidth">
-
-        <h1 title="中共安州区委区人民政府门户网站" id="logo"><a href="http://www.anxian.gov.cn"><img src="/content/main/base/img/logo.png" /></a></h1>
-
+        <h1 title="中共安州区委区人民政府门户网站" id="logo"><a href="/"><img src="/content/main/base/img/logo.png" /></a></h1>
         <div class="siteSearchBar">
-
-
             <div class="s-form">
                 <input type="hidden" id="sitelist" value="[{&quot;Name&quot;:&quot;全站群&quot;,&quot;Value&quot;:0},{&quot;Name&quot;:&quot;本站&quot;,&quot;Value&quot;:1},{&quot;Name&quot;:&quot;审计局&quot;,&quot;Value&quot;:2},{&quot;Name&quot;:&quot;农业局&quot;,&quot;Value&quot;:18}]" />
                 <input type="hidden" id="siteid" name="sid" value="0">
@@ -166,24 +172,23 @@
             </div>
             <script src="/Content/_Common/FullTextSearch/js/default-site-search-box.js"></script>
             <script>
-            document.getElementById("inputkeyword").onkeydown = function (e) {
-                e = e || window.event;
-                if (e.keyCode == 13) {
-                    gSearch();
-                }
-            };
-
-            function gSearch() {
-                var keyword = document.getElementById('inputkeyword').value;
-                var route = document.getElementById('route').value;
-
-                if (keyword == '' || keyword == "请输入关键字") {
-                    alert("请输入关键字");
-                } else {
-                    var siteid = document.getElementById('siteid').value;
-                    window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
-                }
-            }
+	            document.getElementById("inputkeyword").onkeydown = function (e) {
+	                e = e || window.event;
+	                if (e.keyCode == 13) {
+	                    gSearch();
+	                }
+	            };
+	            function gSearch() {
+	                var keyword = document.getElementById('inputkeyword').value;
+	                var route = document.getElementById('route').value;
+	
+	                if (keyword == '' || keyword == "请输入关键字") {
+	                    alert("请输入关键字");
+	                } else {
+	                    var siteid = document.getElementById('siteid').value;
+	                    window.location = '/' + route + '?sid=' + siteid + '&st=1&wd=' + encodeURIComponent(keyword);
+	                }
+	            }
             </script>
         </div>
 
@@ -202,7 +207,7 @@
                 </li>
                 <li class="li1" id="li-zw">
                     <h3 class="h1">
-                        <a href="/channels/6.html" target="_self">政务公开</a>
+                        <a href="/channels/1010.html" target="_self">政务公开</a>
                     </h3>
                 </li>
                 <li class="li1" id="li-fw">
@@ -212,7 +217,7 @@
                 </li>
                 <li class="li1" id="li-hd">
                     <h3 class="h1">
-                        <a href="/channels/4.html" target="_self">公众参与</a>
+                        <a href="/channels/1018.html" target="_self">公众参与</a>
                     </h3>
                 </li>
                 <li class="li1" id="li-sq">
@@ -222,11 +227,14 @@
                 </li>
             </ul>
 
-
-            <span class="tip">点击切换<i class="icon iconfont icon-pointerleft"></i></span>
+			
+            <span class="tip" data-id="安州简介">点击切换<i class="icon iconfont icon-pointerleft"></i></span>
         </nav>
         <script>
-          $(".topNav .h1").prepend("<i></i>")
+        	(function(){
+        		$(".topNav .h1").prepend("<i></i>");
+	          	if($(".topNav .tip").data("id") != "首页")$(".topNav .tip").hide();
+        	})();
         </script>
     </div>
 </header>
@@ -238,7 +246,7 @@
             </div>
             <!-- 正文内容 S -->
             <article class="articleCon">
-                <div class="printArea" data-power-area='content'>
+                <div class="printArea">
                     <!-- 标题 -->
                     <h2 class="title">
                         安州简介
@@ -248,9 +256,11 @@
                     </div>
                     <!-- 正文 -->
                     <div class="conTxt" data-power-defaultFontSize="16" data-power-defaultLineHeight="2" data-power-imgMaxWidth="800">
-                        <p><p><span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 13px; text-align: justify; text-indent: 26px;"></span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">绵阳市安州区，幅员面积1189平方公里，辖18个乡镇234个行政村27个社区，总人口44.9万人，其中</span><a style="color: rgb(102, 102, 102);"><span style="line-height: 2; font-size: 16px;">农业人口</span></a><span style="line-height: 2; font-size: 16px;">32.2万人、非农业人口12.7万人。是中国宜居宜业典范县、中国经济发展转型示范县、国家农产品质量安全县、国家级杂交水稻制种基地县、全国粮食生产先进单位、国家义务教育发展基本均衡县、全国基层中医药工作先进县、全国科技进步先进县、四川省扩权强县试点县、四川省县域经济发展先进县、四川省法治宣传教育先进县、四川省绿化模范县、四川省维护社会稳定先进县、四川省乡村旅游示范县。2015年，安州县域经济发展综合评价排名位列全省第67位，比2014年上升7位。2016年，全区实现地区生产总值117.95亿元，同比增长8.4%；规上工业总产值219.66亿元，工业增加值增速达10.5%；地方公共财政预算收入5.67亿元，同比增长9.05%；全社会固定资产投资114.32亿元，同比增长13.2%；社会消费品零售总额65.08亿元，同比增长12.3%；城镇居民人均可支配收入27620元，同比增长8.3%；农村居民人均可支配收入14152元，同比增长9.3%。三产比例为24.2:50.7:25.1。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">安州历史厚重，人杰地灵。置县于公元347年（东晋永和三年），先后经历西浦县、平川县、金山县、龙安县、安州、安县等设置，花荄镇联丰村观斗山、沸水镇境内都曾为故城城址。公元1374年降安州为安县，县城由安州故城迁至安昌镇。2002年县政府驻地由安昌镇迁至花荄镇。2016年3月20日国务院批复同意撤销安县设立绵阳市安州区，同年5月20日挂牌成立。这里人文荟萃、英才辈出，是清代旷世才子李调元的桑梓，也是现代著名作家沙汀的故里，“长征”时期红四方面军曾在千佛山阻击激战70余天，抗日战争和解放战争中11496人从军参战，抗美援朝中陈开茂、蔡朝兴被誉为黄继光式的战斗英雄。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">安州区位独特，交通便捷。位于国家科技城集中发展区的核心区域，与绵阳市涪城区、江油市、北川县毗邻，与德阳市绵竹市、罗江县和阿坝州茂县接壤。距四川省会成都110余公里，紧邻成绵广高速、108国道、绵渝高速3条高等级公路，其中成绵高速复线途经安州并在宝林镇设双向出入口，正在修建的成兰铁路穿境而过并在雎水镇设有绵阳市境内唯一的客货两站。全区公路总里程达2226.7公里，境内辽宁大道、成青路、辽安路、茶北路、桑河路构架起“六纵三横一环”的全域交通体系，S418线（花荄至雎水快速通道）正在加快建设，以城区为核心的区域半小时经济圈基本形成。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">安州商气富集，产业兴盛。工业经济提质增效，汽车及零部件、精细化工、医药食品3大产业规模不断壮大；绵阳综合保税区布局安州，四川绵阳汽车产业园加快建设，入驻汽车整车及零部件企业30户；建成国家和省市企业技术中心8个，全区高新技术企业达10户，战略性新兴产业达24户，“两新”产业产值占工业总产值的比重分别达到45%和23%，区创业服务中心被认定为省级科技企业孵化器；省级工业园区“一区多园、一园一主业”发展格局更加稳固，入驻企业146户，被评为四川省知识产权试点园区；全区规上工业企业达109户，产值亿元以上企业达41户，科技型中小企业达518户，工业化率达43.1%。服务业快速发展，全力打造温泉旅游、乡村旅游和健康养老三大品牌，安州被纳入国家全域旅游示范区创建名单，荣膺网民票选的“最美中国·生态旅游目的地”称号，“中国春社·雎水踩桥”荣获中国最具特色民族节庆奖，“花城果乡”“幸福七里”被评为3A级旅游景区；累计接待游客654.7万人次，同比增长31%；实现旅游总收入47.9亿元，同比增长25.5%；电子商务蓬勃发展，建成电商产业园7万余平方米，村淘电商服务站73家；实现电商交易额30.5亿元，同比增长198.4%；网络零售额9.8亿元，同比增长170.7%。现代农业稳步发展，绵安和辽安新农村示范片建设成果显著，建成幸福美丽新村94个；全区专合组织达460家、家庭农场达156个、市级农业龙头企业达40户，认证“三品一标”农产品65个，“安县魔芋”被批准为国家地理标志保护产品；实现农业总产值45.6亿元，同比增长3.8%。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">安州资源丰富，风光旖旎。地处龙门山脉南麓，境内有</span><a href="http://baike.baidu.com/subview/1229387/1229387.htm" style="color: rgb(102, 102, 102); text-decoration-line: none;"><span style="line-height: 2; font-size: 16px;">安昌河</span></a><span style="line-height: 2; font-size: 16px;">、雎水河、</span><a href="http://baike.baidu.com/subview/9953334/12242786.htm" style="color: rgb(102, 102, 102); text-decoration-line: none;"><span style="line-height: 2; font-size: 16px;">秀水河</span></a><span style="line-height: 2; font-size: 16px;">、白溪河、茶坪河5条河流，共计汇集溪流78条。有各类矿产资源29种、动物资源948种、植物资源2802种，其中大熊猫、金丝猴等国家一、二级保护动物77种，红豆杉、珙桐等国家一级珍稀植物及黄连、杜仲、乌药等中药材100余种，晓坝镇素有“中国枣皮之乡”美称。有全国唯一的海绵生物礁国家地质公园、国家级自然保护区千佛山国家森林公园、可与法国“薇姿”温泉相媲美的罗浮山温泉、唐代佛教名地“飞鸣禅院”、省级文化产业示范园罗浮山羌王城、“西蜀明珠”白水湖省级风景名胜区以及闻名中外的姊妹桥等。焦鸭子、安州米粉等招牌美食让人回味无穷，魔芋、包蛋、猕猴桃、无花果、花荄牛肉、益昌薯条6大优质</span><a style="color: rgb(102, 102, 102);"><span style="line-height: 2; font-size: 16px;">农</span></a><span style="line-height: 2; font-size: 16px;">副产品独具特色，石雕、木雕、根雕等工艺品名扬省外。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">安州宜业宜居，安心安逸。气候温润，雨量充沛，四季分明，日照充足。年均气温16.5摄氏度，年均降水量983.3毫米，2016年空气质量优良天数达293天，城区绿地率36.51%，全区森林覆盖率39.9%。形成了河西主城区、河东新区和工业园区“一城三区”互动发展格局，城区面积拓展到14.7平方公里，城区人口达9万人，全区城镇化率达46.48%。辖区内幼儿园、小学、中学、大学等教育体系一应俱全，医院、文化馆、体育馆、图书馆等优质公共服务设施完备，城市交通便捷通达，集贸市场布局科学，湿地公园、马安公园镶嵌其中，整座城市呈现四季有花、水绕全城、绿树成荫、物阜民丰的幸福美丽景象。各乡镇因地制宜建设旅游观光镇、生态农业镇、新型工业镇和特色商贸镇，桑枣镇成功申报全国美丽宜居小镇，界牌镇入选全省“十三五”特色小城镇发展规划，塔水镇获评四川环境优美示范乡镇。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">面对新形势、新机遇、新挑战。当前，安州正紧密团结在以习近平同志为核心的党中央周围，深入贯彻中央、省委、市委重大决策，牢固树立和认真践行“五大发展理念”，紧紧围绕“建设全省经济生态强区”总目标，牢牢把握“科技城集中发展区建设和新区建设”两大机遇，按照“国家科技城产业新高地、美丽绵阳城市新组团、幸福绵阳安州新家园”三新引领发展思路，继续深入推动“新型工业化、新型城镇化、旅游品牌化、农业现代化”四化融合互动，大力开展“科技城集中发展区建设、产业倍增、城市建设管理提升、美丽乡村建设、基础设施建设”五大攻坚行动，切实推动全区经济社会持续健康发展。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">滨水安州，美丽花城——欢迎您！</span></p><p><span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 13px; text-align: justify; text-indent: 26px;"></span><img src="/upload/images/2017/8/s_30103714188.png"/><br/></p></p>
-                        
-                        
+                        <p><span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 13px; text-align: justify; text-indent: 26px;"></span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">绵阳市安州区，幅员面积1189平方公里，辖18个乡镇234个行政村27个社区，总人口44.9万人，其中</span><a style="color: rgb(102, 102, 102);"><span style="line-height: 2; font-size: 16px;">农业人口</span></a><span style="line-height: 2; font-size: 16px;">32.2万人、非农业人口12.7万人。是中国宜居宜业典范县、中国经济发展转型示范县、国家农产品质量安全县、国家级杂交水稻制种基地县、全国粮食生产先进单位、国家义务教育发展基本均衡县、全国基层中医药工作先进县、全国科技进步先进县、四川省扩权强县试点县、四川省县域经济发展先进县、四川省法治宣传教育先进县、四川省绿化模范县、四川省维护社会稳定先进县、四川省乡村旅游示范县。2015年，安州县域经济发展综合评价排名位列全省第67位，比2014年上升7位。2016年，全区实现地区生产总值117.95亿元，同比增长8.4%；规上工业总产值219.66亿元，工业增加值增速达10.5%；地方公共财政预算收入5.67亿元，同比增长9.05%；全社会固定资产投资114.32亿元，同比增长13.2%；社会消费品零售总额65.08亿元，同比增长12.3%；城镇居民人均可支配收入27620元，同比增长8.3%；农村居民人均可支配收入14152元，同比增长9.3%。三产比例为24.2:50.7:25.1。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">安州历史厚重，人杰地灵。置县于公元347年（东晋永和三年），先后经历西浦县、平川县、金山县、龙安县、安州、安县等设置，花荄镇联丰村观斗山、沸水镇境内都曾为故城城址。公元1374年降安州为安县，县城由安州故城迁至安昌镇。2002年县政府驻地由安昌镇迁至花荄镇。2016年3月20日国务院批复同意撤销安县设立绵阳市安州区，同年5月20日挂牌成立。这里人文荟萃、英才辈出，是清代旷世才子李调元的桑梓，也是现代著名作家沙汀的故里，“长征”时期红四方面军曾在千佛山阻击激战70余天，抗日战争和解放战争中11496人从军参战，抗美援朝中陈开茂、蔡朝兴被誉为黄继光式的战斗英雄。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">安州区位独特，交通便捷。位于国家科技城集中发展区的核心区域，与绵阳市涪城区、江油市、北川县毗邻，与德阳市绵竹市、罗江县和阿坝州茂县接壤。距四川省会成都110余公里，紧邻成绵广高速、108国道、绵渝高速3条高等级公路，其中成绵高速复线途经安州并在宝林镇设双向出入口，正在修建的成兰铁路穿境而过并在雎水镇设有绵阳市境内唯一的客货两站。全区公路总里程达2226.7公里，境内辽宁大道、成青路、辽安路、茶北路、桑河路构架起“六纵三横一环”的全域交通体系，S418线（花荄至雎水快速通道）正在加快建设，以城区为核心的区域半小时经济圈基本形成。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">安州商气富集，产业兴盛。工业经济提质增效，汽车及零部件、精细化工、医药食品3大产业规模不断壮大；绵阳综合保税区布局安州，四川绵阳汽车产业园加快建设，入驻汽车整车及零部件企业30户；建成国家和省市企业技术中心8个，全区高新技术企业达10户，战略性新兴产业达24户，“两新”产业产值占工业总产值的比重分别达到45%和23%，区创业服务中心被认定为省级科技企业孵化器；省级工业园区“一区多园、一园一主业”发展格局更加稳固，入驻企业146户，被评为四川省知识产权试点园区；全区规上工业企业达109户，产值亿元以上企业达41户，科技型中小企业达518户，工业化率达43.1%。服务业快速发展，全力打造温泉旅游、乡村旅游和健康养老三大品牌，安州被纳入国家全域旅游示范区创建名单，荣膺网民票选的“最美中国·生态旅游目的地”称号，“中国春社·雎水踩桥”荣获中国最具特色民族节庆奖，“花城果乡”“幸福七里”被评为3A级旅游景区；累计接待游客654.7万人次，同比增长31%；实现旅游总收入47.9亿元，同比增长25.5%；电子商务蓬勃发展，建成电商产业园7万余平方米，村淘电商服务站73家；实现电商交易额30.5亿元，同比增长198.4%；网络零售额9.8亿元，同比增长170.7%。现代农业稳步发展，绵安和辽安新农村示范片建设成果显著，建成幸福美丽新村94个；全区专合组织达460家、家庭农场达156个、市级农业龙头企业达40户，认证“三品一标”农产品65个，“安县魔芋”被批准为国家地理标志保护产品；实现农业总产值45.6亿元，同比增长3.8%。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">安州资源丰富，风光旖旎。地处龙门山脉南麓，境内有</span><a href="http://baike.baidu.com/subview/1229387/1229387.htm" style="color: rgb(102, 102, 102); text-decoration-line: none;"><span style="line-height: 2; font-size: 16px;">安昌河</span></a><span style="line-height: 2; font-size: 16px;">、雎水河、</span><a href="http://baike.baidu.com/subview/9953334/12242786.htm" style="color: rgb(102, 102, 102); text-decoration-line: none;"><span style="line-height: 2; font-size: 16px;">秀水河</span></a><span style="line-height: 2; font-size: 16px;">、白溪河、茶坪河5条河流，共计汇集溪流78条。有各类矿产资源29种、动物资源948种、植物资源2802种，其中大熊猫、金丝猴等国家一、二级保护动物77种，红豆杉、珙桐等国家一级珍稀植物及黄连、杜仲、乌药等中药材100余种，晓坝镇素有“中国枣皮之乡”美称。有全国唯一的海绵生物礁国家地质公园、国家级自然保护区千佛山国家森林公园、可与法国“薇姿”温泉相媲美的罗浮山温泉、唐代佛教名地“飞鸣禅院”、省级文化产业示范园罗浮山羌王城、“西蜀明珠”白水湖省级风景名胜区以及闻名中外的姊妹桥等。焦鸭子、安州米粉等招牌美食让人回味无穷，魔芋、包蛋、猕猴桃、无花果、花荄牛肉、益昌薯条6大优质</span><a style="color: rgb(102, 102, 102);"><span style="line-height: 2; font-size: 16px;">农</span></a><span style="line-height: 2; font-size: 16px;">副产品独具特色，石雕、木雕、根雕等工艺品名扬省外。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">安州宜业宜居，安心安逸。气候温润，雨量充沛，四季分明，日照充足。年均气温16.5摄氏度，年均降水量983.3毫米，2016年空气质量优良天数达293天，城区绿地率36.51%，全区森林覆盖率39.9%。形成了河西主城区、河东新区和工业园区“一城三区”互动发展格局，城区面积拓展到14.7平方公里，城区人口达9万人，全区城镇化率达46.48%。辖区内幼儿园、小学、中学、大学等教育体系一应俱全，医院、文化馆、体育馆、图书馆等优质公共服务设施完备，城市交通便捷通达，集贸市场布局科学，湿地公园、马安公园镶嵌其中，整座城市呈现四季有花、水绕全城、绿树成荫、物阜民丰的幸福美丽景象。各乡镇因地制宜建设旅游观光镇、生态农业镇、新型工业镇和特色商贸镇，桑枣镇成功申报全国美丽宜居小镇，界牌镇入选全省“十三五”特色小城镇发展规划，塔水镇获评四川环境优美示范乡镇。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">面对新形势、新机遇、新挑战。当前，安州正紧密团结在以习近平同志为核心的党中央周围，深入贯彻中央、省委、市委重大决策，牢固树立和认真践行“五大发展理念”，紧紧围绕“建设全省经济生态强区”总目标，牢牢把握“科技城集中发展区建设和新区建设”两大机遇，按照“国家科技城产业新高地、美丽绵阳城市新组团、幸福绵阳安州新家园”三新引领发展思路，继续深入推动“新型工业化、新型城镇化、旅游品牌化、农业现代化”四化融合互动，大力开展“科技城集中发展区建设、产业倍增、城市建设管理提升、美丽乡村建设、基础设施建设”五大攻坚行动，切实推动全区经济社会持续健康发展。</span></p><p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; min-width: 0px; color: rgb(51, 51, 51); font-family: SimSun, 宋体, &quot;Arial Narrow&quot;, HELVETICA; font-size: 12px; text-indent: 2em; white-space: normal; background-color: rgb(255, 255, 255);"><span style="line-height: 2; font-size: 16px;">滨水安州，美丽花城——欢迎您！</span></p><p><span style="color: rgb(51, 51, 51); font-family: &quot;Microsoft YaHei&quot;; font-size: 13px; text-align: justify; text-indent: 26px;"></span><br/></p>
+                    </div>
+                </div>
+                
+                
 <link href="/sitefiles/assets/commentInput/style.css" rel="stylesheet" type="text/css" />
 <script src="/sitefiles/assets/commentInput/script.js" language="javascript"></script>
 <div id="stlCommentContainer" class="stlCommentContainer">
@@ -377,14 +387,22 @@
     loadComments('/home', '/api/stl/comments/1/2168/140', '/api/stl/comments/1/2168/140/actions/add', '/api/stl/comments/1/2168/140/actions/good', '/api/stl/comments/1/2168/140/actions/delete', '/api/users/actions/logout', 10, false);
 </script>
 
-                        
-                    </div>
-                </div>
-
 
                 <div class="qrCode">
-                    扫一扫在手机打开当前页<br />
-                    <img src="/qrcode/qrcode.gif" />
+                    扫一扫在手机打开当前页
+                    <div id="qrcodeContent" title="/contents/2168/140.html" style="width:150px;height:150px;margin:0 auto;padding:20px;box-sizing:border-box;"></div>
+                    <script>
+                    	(function() {
+							var qrcode = new QRCode('qrcodeContent', {
+								text: window.location.host + document.getElementById("qrcodeContent").getAttribute("title"),
+								width: 110,
+								height: 110,
+								colorDark : '#000000',
+								colorLight : '#ffffff',
+								correctLevel : QRCode.CorrectLevel.H
+							});
+                    	})();
+                    </script>
                 </div>                
                 <!-- comment -->
 
@@ -410,16 +428,22 @@
                             ~(-new Date() / 36e5)];
                     }
                     </script>
-                    <a href="javascript:;" class="dyBtn" data-power-command="printarea">【打印正文】</a>
+                    <a href="javascript:;" class="dyBtn">【打印正文】</a>
+                    <script>
+                    	$(".dyBtn").on("click",function(){
+                    		$(".printArea").printArea();
+                    	});
+                    </script>
                 </div>
                 <div class="others">
-                    <div class="prev">
-                        <span>shang上一篇：</span><a href="/hd/yqhy/content_105606">网传在川本一批招生高校投档线 省教育考试院辟谣：假的！</a>
-                        <span class="date">[ 2017-07-13 ]</span>
-                    </div>
-                    <div class="next">
-                        <span>下一篇：没有了！</span>
-                    </div>
+                	<st:navigation>
+                		<div class="prev">
+                			<span>上一篇:没有了</span>
+	                    </div>
+	                    <div class="next">
+	                        <span>下一篇:没有了</span>
+	                    </div>
+                	</st:navigation>
                 </div>
                 <div class="rankWrap">
                     <!-- 点击排行 -->
@@ -429,66 +453,49 @@
                         </div>
                         <div class="bd">
                             <ul class="rankList">
-
-                                <li class="first hot">
-                                    <em class="number">1</em>
-                                    <a href="/xw/rdgz/content_4596" target="_blank" title="标题：安州房产市场发展28条出台 大学生、农民购房可享补助
-点击数：2878
-发表时间：2015-04-28">
-                                        安州房产市场发展28条出台 大学生、农民购房可享补助
-                                    </a>
-                                </li>
-
-
-                                <li class="hot">
-                                    <em class="number">2</em>
-                                    <a href="/xw/rdgz/content_3678" target="_blank" title="标题：打破“铁饭碗” 机关事业单位人员今后咋养老？
-点击数：2772
-发表时间：2015-01-15">
-                                        打破“铁饭碗” 机关事业单位人员今后咋养老？
-                                    </a>
-                                </li>
-
-
-                                <li class="hot">
-                                    <em class="number">3</em>
-                                    <a href="/xw/rdgz/content_4893" target="_blank" title="标题：安州今年养老金个体参保标准出台 年缴费最低4308元
-点击数：2732
-发表时间：2015-06-08">
-                                        安州今年养老金个体参保标准出台 年缴费最低4308元
-                                    </a>
-                                </li>
-
-
-                                <li>
-                                    <em class="number">4</em>
-                                    <a href="/xw/rdgz/content_3963" target="_blank" title="标题：政府工作报告绘就新一年安州区发展蓝图
-点击数：2649
-发表时间：2015-02-06">
-                                        政府工作报告绘就新一年安州区发展蓝图
-                                    </a>
-                                </li>
-
-
-                                <li>
-                                    <em class="number">5</em>
-                                    <a href="/xw/rdgz/content_4888" target="_blank" title="标题：7月1日起四川提高最低工资标准 平均上调10.5%
-点击数：2324
-发表时间：2015-06-09">
-                                        7月1日起四川提高最低工资标准 平均上调10.5%
-                                    </a>
-                                </li>
-
-
-                                <li class="last">
-                                    <em class="number">6</em>
-                                    <a href="/xw/rdgz/content_8180" target="_blank" title="标题：200元/平米购房补贴政策 安州继续实施一年
-点击数：2245
-发表时间：2016-03-24">
-                                        200元/平米购房补贴政策 安州继续实施一年
-                                    </a>
-                                </li>
-
+                            	
+                            		
+                            				<li class="hot">
+			                                    <em class="number">1</em>
+			                                    <a href="/contents/2171/164.html" title="姊妹桥">姊妹桥</a>
+			                                </li>
+                            			
+								
+                            		
+                            				<li class="hot">
+			                                    <em class="number">2</em>
+			                                    <a href="/contents/2171/163.html" title="温泉花海">温泉花海</a>
+			                                </li>
+                            			
+								
+                            		
+                            				<li class="hot">
+			                                    <em class="number">3</em>
+			                                    <a href="/contents/2171/162.html" title="千佛山">千佛山</a>
+			                                </li>
+                            			
+								
+                            		
+                            				<li>
+			                                    <em class="number">4</em>
+			                                    <a href="/contents/2171/161.html" title="环湖碧荷园">环湖碧荷园</a>
+			                                </li>
+                            			
+								
+                            		
+                            				<li>
+			                                    <em class="number">5</em>
+			                                    <a href="/contents/2171/160.html" title="白水湖">白水湖</a>
+			                                </li>
+                            			
+								
+                            		
+                            				<li>
+			                                    <em class="number">6</em>
+			                                    <a href="/contents/2172/159.html" title="新型材料">新型材料</a>
+			                                </li>
+                            			
+								
                             </ul>
                         </div>
                     </div>
@@ -499,28 +506,31 @@
                         </div>
                         <div class="bd">
                             <ul class="picPageList picPageListA">
-                                <li class="first">
-                                    <div class="pic">
-                                        <a href="/xw/jrxx/content_113178">
-                                            <img alt="安州：创新机制抓双拥 军民融合抓双拥" src="/upload/main/image/2017/08/01/201708020903158425_240_180.jpg" width="240" height="180" />
-                                        </a>
-                                    </div>
-                                    <div class="title">
-                                        <a class="tit" href="/xw/jrxx/content_113178" title="安州：创新机制抓双拥 军民融合抓双拥">安州：创新机制抓双拥 军民融合抓双拥</a>
-                                    </div>
-                                    <span class="titleBg"></span>
-                                </li>
-                                <li class="last">
-                                    <div class="pic">
-                                        <a href="/xw/jrxx/content_113176">
-                                            <img alt="花荄镇对89个村开展财务审计 整治“微腐败”" src="/upload/main/image/2017/08/01/201708020900070984_240_180.jpg" width="240" height="180" />
-                                        </a>
-                                    </div>
-                                    <div class="title">
-                                        <a class="tit" href="/xw/jrxx/content_113176" title="花荄镇对89个村开展财务审计 整治“微腐败”">花荄镇对89个村开展财务审计 整治“微腐败”</a>
-                                    </div>
-                                    <span class="titleBg"></span>
-                                </li>
+                            	
+                            		<li>
+	                                    <div class="pic">
+	                                    	<a href="/contents/2172/155.html">
+	                                    		<img src="/upload/images/2017/8/t_3011342873.png" alt="旅游业" width="240" height="180" />
+	                                    	</a>
+	                                    </div>
+	                                    <div class="title">
+	                                    	<a href="/contents/2172/155.html" class="tit" title="旅游业">旅游业</a>
+	                                    </div>
+	                                    <span class="titleBg"></span>
+	                               </li>
+								
+                            		<li>
+	                                    <div class="pic">
+	                                    	<a href="/contents/2169/147.html">
+	                                    		<img src="/upload/images/2017/8/t_30111514163.png" alt="安州人文" width="240" height="180" />
+	                                    	</a>
+	                                    </div>
+	                                    <div class="title">
+	                                    	<a href="/contents/2169/147.html" class="tit" title="安州人文">安州人文</a>
+	                                    </div>
+	                                    <span class="titleBg"></span>
+	                               </li>
+								
                             </ul>
                         </div>
                     </div>
@@ -528,160 +538,165 @@
             </article>
             <!-- 正文内容 E -->
         </div>
-        
         <!-- content E -->
         <footer id="footer">
-    <div class="siteWidth">
-        <div class="footNav">
+	<div class="siteWidth">
+		<div class="footNav">
 
-            <a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
-            <a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
-            <a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
-            <a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
-            <a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
-            <a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
-        </div>
-        <div class="copyRight">
-            <p>
-                安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br />地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br />蜀ICP备12001441号<br /> &nbsp;<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1" />川公网安备 51070302110201号</a>
-            </p>
-            <div class="pics">
-                <a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg" /></a> &nbsp;&nbsp;
-                <script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg" /></a> &nbsp;&nbsp;<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png" /></a>
-            </div>
-        </div>
-    </div>
+			<a class="tit" href="/dbxgdy/yqlj19" title="常用网站">常用网站</a>
+			<a class="tit" href="/dbxgdy/bzdt" title="本站地图">本站地图</a>
+			<a class="tit" href="/dbxgdy/lxwm116" title="联系我们">联系我们</a>
+			<a class="tit" href="/dbxgdy/sybz" title="使用帮助">使用帮助</a>
+			<a class="tit" href="/dbxgdy/flsm" title="法律声明">法律声明</a>
+			<a class="tit" href="/dbxgdy/bmdh1" title="便民电话">便民电话</a>
+		</div>
+		<div class="copyRight">
+			<p>
+				安州区人民政府办公室 主办 &nbsp; &nbsp; &nbsp;安州区信息化工作办公室 承办 &nbsp; &nbsp; &nbsp;Tel:+86-0816-4509769 &nbsp; &nbsp;0816-4336030 &nbsp; &nbsp; &nbsp;fax:+86-0816-4509769 <br />地址： 安州区花荄镇银河大道8号一楼 &nbsp; 建议用1920*1080 分辨率浏览 &nbsp; 版权所有，未经许可，不得复制、转载<br />蜀ICP备12001441号<br /> &nbsp;
+				<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51070302110201"><img src="/Content/Main/Base/img/ghs.png" border="0" data-bd-imgshare-binded="1" />川公网安备 51070302110201号</a>
+			</p>
+			<div class="pics">
+				<a href="http://www.12377.cn" target="_blank"><img src="/Content/Main/Base/img/footer-jubao.jpg" /></a> &nbsp;&nbsp;
+				<script id="_jiucuo_" sitecode="5107240009" src="http://pucha.kaipuyun.cn/exposure/jiucuo.js"></script> &nbsp;&nbsp;
+				<a href="http://www.scjb.gov.cn/" target="_blank"><img src="/Content/Main/Base/img/footer-jubao1.jpg" /></a> &nbsp;&nbsp;
+				<a href="//bszs.conac.cn/sitename?method=show&id=09C5DEBDACEC299FE053012819AC6FE1" target="_blank"><img src="/Content/Main/Base/img/footer-dangzheng.png" /></a>
+			</div>
+		</div>
+	</div>
 </footer>
 <!-- footer E -->
 <script>
-	//滚动事件
-	window.onscroll = function() {
-		if(getScrollTop() > 100) {
-			$(".topBar").addClass("topHei");
-			$("#logo2").addClass("show");
-		} else {
-			$(".topBar").removeClass("topHei");
-			$("#logo2").removeClass("show");
+	(function() {
+		var navST;
+		var navST1;
+		var name = 'mainNav';
+		var t = 200;
+		var type = 1;
+		var removeOn = 'False';
+		var effect = 'fade';
+		var appendItem = '#';
+		var li = "#" + name + " li";
+		var index = 0;
+		
+		
+		//滚动事件
+		scrollFun();
+		window.onscroll = function(){
+			scrollFun();	
 		}
-	}
-
-	function getScrollTop() {
-		var scrollPos;
-		if(window.pageYOffset) {
-			scrollPos = window.pageYOffset;
-		} else if(document.compatMode && document.compatMode != 'BackCompat') {
-			scrollPos = document.documentElement.scrollTop;
-		} else if(document.body) {
-			scrollPos = document.body.scrollTop;
+		function scrollFun(){
+			if(getScrollTop() > 100) {
+				$(".topBar").addClass("topHei");
+				$("#logo2").addClass("show");
+			} else {
+				$(".topBar").removeClass("topHei");
+				$("#logo2").removeClass("show");
+			}
 		}
-		return scrollPos;
-	}
-</script>
-
-<script>
-	(function () {
-        var navST;
-        var navST1;
-        var name = 'mainNav';
-        var t = 200;
-        var type = 1;
-        var removeOn = 'False';
-        var effect = 'fade';
-        var appendItem = '#';
-        var li = "#" + name + " li";
-        var index = 0;
-
-        //栏目页调整
+		function getScrollTop() {
+			var scrollPos;
+			if(window.pageYOffset) {
+				scrollPos = window.pageYOffset;
+			} else if(document.compatMode && document.compatMode != 'BackCompat') {
+				scrollPos = document.documentElement.scrollTop;
+			} else if(document.body) {
+				scrollPos = document.body.scrollTop;
+			}
+			return scrollPos;
+		}
+		
+		//栏目页调整
 		if($(".path").length>0){
 			//当前状态
-			var _url = document.querySelectorAll(".path a")[1].getAttribute("href");
+			var _url = document.querySelectorAll(".path a")[1].getAttribute("href"),
+				_name = document.querySelectorAll(".path a")[1].innerHTML,
+				_title = $(".sideMenu .hd h3").data("title");
+			$(".sideMenu .hd h3").html(_name);
 			$(".mainNav .li1 a").each(function(i,e){
 				if($(e).attr("href") == _url){
 					$(e).closest(".li1").addClass("on1").siblings().removeClass("on1");
 					index = i;
 				}
 			})
-			//.topNav .tip
-			$(".topNav .tip").hide();
+			$(".sideMenu .singleList li a").each(function(i,e){
+				if($(e).html() == _title){
+					$(e).parent().addClass("on");
+				}
+			})
+			
 			//.topBar
 			$(".topBar").addClass("topFixed");
 		}
+		
+		
 
-        //鼠标离开导航后，回复默认.on1类位置
-        $("#" + name)
-            .hover(
-                function () {
-                    if (navST1 != null) {
-                        clearTimeout(navST1);
-                    }
-                },
-                function () {
-                    navST1 = setTimeout(function () {
-                            $("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
-                        },
-                        500);
-                }
-            );
+		//鼠标离开导航后，回复默认.on1类位置
+		$("#" + name)
+			.hover(
+				function() {
+					if(navST1 != null) {
+						clearTimeout(navST1);
+					}
+				},
+				function() {
+					navST1 = setTimeout(function() {
+							$("#" + name + " .li1").removeClass("on1").eq(index).addClass("on1");
+						},
+						500);
+				}
+			);
 
-        if (type == '1') {
-            li = "#" + name + " .li1";
-        }
-        if (appendItem != '#') { //插入内容
-            var appendHtml = $(appendItem).html();
-            $(li).first().append(appendHtml);
-            $(appendItem).remove();
-        }
+		if(type == '1') {
+			li = "#" + name + " .li1";
+		}
+		if(appendItem != '#') { //插入内容
+			var appendHtml = $(appendItem).html();
+			$(li).first().append(appendHtml);
+			$(appendItem).remove();
+		}
 
-        if (type == '3') {
-            $("#" + name + " .on1").find("ul").first().show();
-        }
+		if(type == '3') {
+			$("#" + name + " .on1").find("ul").first().show();
+		}
 
-        $(li)
-            .hover(function () {
-                    var curItem = $(this);
-                    var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
-                    $(li).removeClass("on" + onNum);
-                    curItem.addClass("on" + onNum);
-                    navST = setTimeout(function () { //延时触发
+		$(li)
+			.hover(function() {
+					var curItem = $(this);
+					var onNum = (curItem.attr("class").split(" "))[0].replace("li", "");
+					$(li).removeClass("on" + onNum);
+					curItem.addClass("on" + onNum);
+					navST = setTimeout(function() { //延时触发
 
-                            if ($("ul:first", curItem).css("display") != "block") {
-                                $(li + " .ul" + onNum).hide();
-                                if (effect == 'fade') {
-                                    $("ul:first", curItem).fadeIn(t);
-                                } else {
-                                    $("ul:first", curItem).slideDown(t);
-                                }
-                            };
-                            navST = null;
-                        },
-                        t);
-                },
-                function () {
-                    if (navST != null) {
-                        clearTimeout(navST);
-                    }
-                    if (type == '1' || type == '2') {
-                        if (effect == 'fade') {
-                            $(this).find("ul").first().fadeOut(t);
-                        } else {
-                            $(this).find("ul").first().slideUp(t);
-                        }
-                    }
-                    if (removeOn == 'True') {
-                        $(this).removeClass("on1");
-                    }
-                },
-                t); //end hover
-    })()
+							if($("ul:first", curItem).css("display") != "block") {
+								$(li + " .ul" + onNum).hide();
+								if(effect == 'fade') {
+									$("ul:first", curItem).fadeIn(t);
+								} else {
+									$("ul:first", curItem).slideDown(t);
+								}
+							};
+							navST = null;
+						},
+						t);
+				},
+				function() {
+					if(navST != null) {
+						clearTimeout(navST);
+					}
+					if(type == '1' || type == '2') {
+						if(effect == 'fade') {
+							$(this).find("ul").first().fadeOut(t);
+						} else {
+							$(this).find("ul").first().slideUp(t);
+						}
+					}
+					if(removeOn == 'True') {
+						$(this).removeClass("on1");
+					}
+				},
+				t); //end hover
+	})()
 </script>
-        
     </div>
-    <script src="/Admin/Content/Assets/Scripts/audio.min.js"></script>
-    <script src="/Content/_Common/Base/js/power.js"></script>
-
-    <script src="/Content/_Common/Assets/Scripts/jquery.PrintArea.js"></script>
-    <script src="/Content/_Common/Base/js/article.js"></script>
-
 </body>
 </html>
-
